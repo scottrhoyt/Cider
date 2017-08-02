@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B9E36821F3142930014CB60 /* AmpUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */; };
 		3BA049021F313BC4009DABCB /* AmpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA048F81F313BC4009DABCB /* AmpKit.framework */; };
 		3BA049071F313BC4009DABCB /* AmpKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA049061F313BC4009DABCB /* AmpKitTests.swift */; };
 		3BA049091F313BC4009DABCB /* AmpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA048FB1F313BC4009DABCB /* AmpKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpUrlBuilder.swift; sourceTree = "<group>"; };
 		3BA048F81F313BC4009DABCB /* AmpKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmpKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA048FB1F313BC4009DABCB /* AmpKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmpKit.h; sourceTree = "<group>"; };
 		3BA048FC1F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				3BA048FB1F313BC4009DABCB /* AmpKit.h */,
 				3BA048FC1F313BC4009DABCB /* Info.plist */,
+				3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */,
 			);
 			path = AmpKit;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					3BA048F71F313BC4009DABCB = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 					3BA049001F313BC4009DABCB = {
 						CreatedOnToolsVersion = 9.0;
@@ -194,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B9E36821F3142930014CB60 /* AmpUrlBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +337,7 @@
 		3BA0490D1F313BC4009DABCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6GXULLP7L9;
@@ -344,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.AmpKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -352,6 +359,7 @@
 		3BA0490E1F313BC4009DABCB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 6GXULLP7L9;
@@ -372,6 +380,7 @@
 		3BA049101F313BC4009DABCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6GXULLP7L9;
 				INFOPLIST_FILE = AmpKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -385,6 +394,7 @@
 		3BA049111F313BC4009DABCB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6GXULLP7L9;
 				INFOPLIST_FILE = AmpKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
