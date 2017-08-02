@@ -20,6 +20,7 @@ struct AlbumAttributes: Codable {
     let releaseDate: String
     let trackCount: Int
     let url: URL
+    let editorialNotes: EditorialNotes?
 }
 
 struct AlbumArtwork: Codable {

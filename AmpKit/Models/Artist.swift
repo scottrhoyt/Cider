@@ -12,4 +12,5 @@ struct ArtistAttributes: Codable {
     let genreNames: [String]
     let name: String
     let url: URL
+    let editorialNotes: EditorialNotes?
 }

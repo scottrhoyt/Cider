@@ -40,5 +40,7 @@ class AlbumTests: XCTestCase {
 
         XCTAssertEqual(album.attributes.playParams.id, "900721190")
         XCTAssertEqual(album.attributes.playParams.kind, .album)
+
+        XCTAssertNil(album.attributes.editorialNotes)
     }
 }
