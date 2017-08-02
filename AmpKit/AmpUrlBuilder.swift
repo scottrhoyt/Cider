@@ -12,11 +12,6 @@ enum Storefront: String, Codable {
     case unitedStates = "us"
 }
 
-enum MediaType: String, Codable {
-    case albums
-    case songs
-}
-
 struct AmpUrlBuilder {
 
     // MARK: Inputs

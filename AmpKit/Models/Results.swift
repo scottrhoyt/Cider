@@ -15,18 +15,19 @@ struct SearchResults: Codable {
 
 struct Results: Codable {
     let albums: Result<MediaResult<AlbumAttributes>>?
+    let artists: Result<MediaResult<ArtistAttributes>>?
 }
 
 struct Result<T: Codable>: Codable {
     let data: [T]
 
-    // Could potentially be a non-optional
-    let href: String?
+    let href: String
+    let next: String?
 }
 
 struct MediaResult<T: Codable>: Codable {
     let id: String
     let attributes: T
     let type: MediaType
-    let href: String?
+    let href: String
 }
