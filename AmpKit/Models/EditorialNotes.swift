@@ -9,5 +9,6 @@
 import Foundation
 
 struct EditorialNotes: Codable {
-    let standard: String
+    let standard: String?
+    let short: String?
 }

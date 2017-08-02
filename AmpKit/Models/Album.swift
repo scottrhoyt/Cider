@@ -10,7 +10,7 @@ import Foundation
 
 struct AlbumAttributes: Codable {
     let artistName: String
-    let artwork: AlbumArtwork
+    let artwork: Artwork
     let name: String
     let playParams: PlayParams
     let copyright: String
@@ -21,17 +21,4 @@ struct AlbumAttributes: Codable {
     let trackCount: Int
     let url: URL
     let editorialNotes: EditorialNotes?
-}
-
-struct AlbumArtwork: Codable {
-    let bgColor: String
-    let height: Int
-    let width: Int
-    let url: String
-
-    // These might not be optionals
-    let textColor1: String?
-    let textColor2: String?
-    let textColor3: String?
-    let textColor4: String?
 }

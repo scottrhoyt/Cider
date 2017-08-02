@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B1C416A1F322B210000AADB /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1C41691F322B210000AADB /* Artwork.swift */; };
 		3B2DEA821F31826100551AA2 /* AmpUrlBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2DEA811F31826100551AA2 /* AmpUrlBuilderTests.swift */; };
 		3B2DEA851F3193A600551AA2 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B2DEA841F3193A600551AA2 /* search.json */; };
 		3B2DEA881F31991800551AA2 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2DEA871F31991800551AA2 /* Results.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B1C41691F322B210000AADB /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		3B2DEA811F31826100551AA2 /* AmpUrlBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpUrlBuilderTests.swift; sourceTree = "<group>"; };
 		3B2DEA841F3193A600551AA2 /* search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
 		3B2DEA871F31991800551AA2 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				3B9B8C9C1F31B3EE009ECADB /* Artist.swift */,
 				3B9B8C9E1F31B473009ECADB /* MediaType.swift */,
 				3B9B8CA21F32271C009ECADB /* EditorialNotes.swift */,
+				3B1C41691F322B210000AADB /* Artwork.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			files = (
 				3B9B8C9F1F31B473009ECADB /* MediaType.swift in Sources */,
 				3B2DEA881F31991800551AA2 /* Results.swift in Sources */,
+				3B1C416A1F322B210000AADB /* Artwork.swift in Sources */,
 				3BD1D15E1F31A462001E9705 /* PlayParams.swift in Sources */,
 				3B9B8CA31F32271C009ECADB /* EditorialNotes.swift in Sources */,
 				3B9E36821F3142930014CB60 /* AmpUrlBuilder.swift in Sources */,
