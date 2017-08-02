@@ -9,9 +9,13 @@
 /* Begin PBXBuildFile section */
 		3B2DEA821F31826100551AA2 /* AmpUrlBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2DEA811F31826100551AA2 /* AmpUrlBuilderTests.swift */; };
 		3B2DEA851F3193A600551AA2 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B2DEA841F3193A600551AA2 /* search.json */; };
+		3B2DEA881F31991800551AA2 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2DEA871F31991800551AA2 /* Results.swift */; };
 		3B9E36821F3142930014CB60 /* AmpUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */; };
 		3BA049021F313BC4009DABCB /* AmpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA048F81F313BC4009DABCB /* AmpKit.framework */; };
 		3BA049091F313BC4009DABCB /* AmpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA048FB1F313BC4009DABCB /* AmpKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BD1D15A1F319C83001E9705 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D1591F319C83001E9705 /* AlbumTests.swift */; };
+		3BD1D15C1F31A1D8001E9705 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15B1F31A1D8001E9705 /* Album.swift */; };
+		3BD1D15E1F31A462001E9705 /* PlayParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15D1F31A462001E9705 /* PlayParams.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +31,16 @@
 /* Begin PBXFileReference section */
 		3B2DEA811F31826100551AA2 /* AmpUrlBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpUrlBuilderTests.swift; sourceTree = "<group>"; };
 		3B2DEA841F3193A600551AA2 /* search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
+		3B2DEA871F31991800551AA2 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpUrlBuilder.swift; sourceTree = "<group>"; };
 		3BA048F81F313BC4009DABCB /* AmpKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmpKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA048FB1F313BC4009DABCB /* AmpKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmpKit.h; sourceTree = "<group>"; };
 		3BA048FC1F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA049011F313BC4009DABCB /* AmpKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmpKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA049081F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BD1D1591F319C83001E9705 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
+		3BD1D15B1F31A1D8001E9705 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		3BD1D15D1F31A462001E9705 /* PlayParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayParams.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,16 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
+		3B2DEA861F3198F500551AA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3BD1D15B1F31A1D8001E9705 /* Album.swift */,
+				3B2DEA871F31991800551AA2 /* Results.swift */,
+				3BD1D15D1F31A462001E9705 /* PlayParams.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3BA048EE1F313BC4009DABCB = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +101,7 @@
 		3BA048FA1F313BC4009DABCB /* AmpKit */ = {
 			isa = PBXGroup;
 			children = (
+				3B2DEA861F3198F500551AA2 /* Models */,
 				3BA048FB1F313BC4009DABCB /* AmpKit.h */,
 				3BA048FC1F313BC4009DABCB /* Info.plist */,
 				3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */,
@@ -96,6 +115,7 @@
 				3B2DEA831F31937300551AA2 /* Fixtures */,
 				3BA049081F313BC4009DABCB /* Info.plist */,
 				3B2DEA811F31826100551AA2 /* AmpUrlBuilderTests.swift */,
+				3BD1D1591F319C83001E9705 /* AlbumTests.swift */,
 			);
 			path = AmpKitTests;
 			sourceTree = "<group>";
@@ -210,7 +230,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2DEA881F31991800551AA2 /* Results.swift in Sources */,
+				3BD1D15E1F31A462001E9705 /* PlayParams.swift in Sources */,
 				3B9E36821F3142930014CB60 /* AmpUrlBuilder.swift in Sources */,
+				3BD1D15C1F31A1D8001E9705 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B2DEA821F31826100551AA2 /* AmpUrlBuilderTests.swift in Sources */,
+				3BD1D15A1F319C83001E9705 /* AlbumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
