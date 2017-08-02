@@ -1,0 +1,118 @@
+{
+  "results": {
+    "albums": {
+      "data": [
+        {
+          "attributes": {
+            "artistName": "James Brown",
+            "artwork": {
+              "bgColor": "ffffff",
+              "height": 1400,
+              "textColor1": "0a0a09",
+              "textColor2": "2a240f",
+              "textColor3": "3b3b3a",
+              "textColor4": "544f3f",
+              "url": "https://example.mzstatic.com/image/thumb/Music4/v4/76/85/e5/7685e5c8-9346-88db-95ff-af87bf84151b/source/{w}x{h}bb.jpg",
+              "width": 1400
+            },
+            "copyright": "℗ 1991 Universal Records, a Division of UMG Recordings, Inc.",
+            "genreNames": [
+              "Soul",
+              "Music",
+              "R&B/Soul",
+              "Funk"
+            ],
+            "isComplete": true,
+            "isSingle": false,
+            "name": "20 All-Time Greatest Hits!",
+            "playParams": {
+              "id": "900721190",
+              "kind": "album"
+            },
+            "releaseDate": "1991-10-22",
+            "trackCount": 20,
+            "url": "https://itunes.apple.com/us/album/20-all-time-greatest-hits/id900721190"
+          },
+          "href": "/v1/catalog/us/albums/900721190",
+          "id": "900721190",
+          "type": "albums"
+        },
+        {
+          "attributes": {
+            "artistName": "James Brown",
+            "artwork": {
+              "bgColor": "4e92c4",
+              "height": 1500,
+              "textColor1": "030506",
+              "textColor2": "161616",
+              "textColor3": "12222c",
+              "textColor4": "222f39",
+              "url": "https://example.mzstatic.com/image/thumb/Music5/v4/8e/45/c7/8e45c7cb-e181-edf1-c9fe-d9cfa1973133/source/{w}x{h}bb.jpg",
+              "width": 1500
+            },
+            "copyright": "℗ 2007 Universal Records, a Division of UMG Recordings, Inc.",
+            "editorialNotes": {
+              "standard": "James Brown never enjoyed a number one pop hit in <i>Billboard</i>, though seventeen R&amp;B chart-toppers bore his name. One that hit eighteen, “Doing It to Death,” was credited to Fred Wesley and the J.B.’s, while “Get Up (I Feel Like Being a) Sex Machine” peaked at number two in <i>Billboard</i>, and at number one in the rival <i>Cashbox</i>. Brown’s entry in the <i>Number 1's</i> series pays tribute to all these happy occasions by collecting the radio-friendly short versions of discs spanning 1958 (the heavenly vocal-group ballad “Try Me”) to 1974 (variations on the funk “My Thang,” “The Payback” and “Papa Don’t Take No Mess”). All these, of course, have much to show anyone wants to understand James Brown, his music and how it sounded on the airwaves of its time. Though no longer with us, he’s not about to stop teaching us now."
+            },
+            "genreNames": [
+              "R&B/Soul",
+              "Music",
+              "Rock",
+              "Soundtrack",
+              "Soundtrack",
+              "Soul",
+              "Funk"
+            ],
+            "isComplete": true,
+            "isSingle": false,
+            "name": "Number 1's: James Brown",
+            "playParams": {
+              "id": "219576768",
+              "kind": "album"
+            },
+            "releaseDate": "2007-03-27",
+            "trackCount": 19,
+            "url": "https://itunes.apple.com/us/album/number-1s-james-brown/id219576768"
+          },
+          "href": "/v1/catalog/us/albums/219576768",
+          "id": "219576768",
+          "type": "albums"
+        }
+      ],
+      "href": "/v1/catalog/us/search?types=albums&term=james+brown&limit=2",
+      "next": "/v1/catalog/us/search?types=albums&term=james+brown&offset=2"
+    },
+    "artists": {
+      "data": [
+        {
+          "attributes": {
+            "editorialNotes": {
+              "standard": "The Godfather of Soul, The Hardest Working Man in Show Business, Soul Brother Number One . . . Mountain-of-a-man nicknames, no doubt, but not one of them ever did James Brown the justice he deserved. JB’s influence is so large it’s plain impossible to imagine what music today would sound like without him. James didn’t just master soul and funk; he invented them. From the on-bended-knee plea called “Try Me” straight to ground zero of the hip-hop revolution, where his screams, grunts, and funky drummer backboned every cut worth mentioning, Brown was soul power itself, an inspiration to an entire nation. Now that Mr. Dynamite has taken his last sweat-drenched shuffle offstage, we’re all left like an awe-struck Apollo audience — still screaming for just one more encore while trying to take in the force of nature we were blessed to witness. James Brown’s face should be on money. His likeness carved on a mountain. And, most importantly, his music played forever."
+            },
+            "genreNames": [
+              "R&B/Soul"
+            ],
+            "name": "James Brown",
+            "url": "https://itunes.apple.com/us/artist/james-brown/id117118"
+          },
+          "href": "/v1/catalog/us/artists/117118",
+          "id": "117118",
+          "type": "artists"
+        },
+        {
+          "attributes": {
+            "genreNames": [
+              "R&B/Soul"
+            ],
+            "name": "James Brown & His Famous Flames",
+            "url": "https://itunes.apple.com/us/artist/james-brown-his-famous-flames/id283317494"
+          },
+          "href": "/v1/catalog/us/artists/283317494",
+          "id": "283317494",
+          "type": "artists"
+        }
+      ],
+      "href": "/v1/catalog/us/search?types=artists&term=james+brown&limit=2"
+    }
+  }
+}
