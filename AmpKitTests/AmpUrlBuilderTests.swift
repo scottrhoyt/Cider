@@ -10,15 +10,19 @@ import XCTest
 @testable import AmpKit
 
 class AmpUrlBuilderTests: XCTestCase {
-    let term = "search term"
+
     let limit = 10
-    let types = [MediaType.albums, MediaType.songs]
     let devToken = "devToken"
     let storefront = Storefront.unitedStates
 
     var builder: AmpUrlBuilder {
         return AmpUrlBuilder(storefront: storefront, developerToken: devToken)
     }
+
+    // MARK: - Search
+
+    let term = "search term"
+    let types = [MediaType.albums, MediaType.songs]
 
     var searchRequest: URLRequest {
         return builder.searchRequest(term: term, limit: limit, types: types)
