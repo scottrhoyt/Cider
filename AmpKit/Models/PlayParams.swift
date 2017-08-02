@@ -10,6 +10,7 @@ import Foundation
 
 enum PlayParamsKind: String, Codable {
     case album
+    case song
 }
 
 struct PlayParams: Codable {

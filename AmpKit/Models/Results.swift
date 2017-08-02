@@ -21,13 +21,14 @@ struct Results: Codable {
 struct Result<T: Codable>: Codable {
     let data: [T]
 
-    let href: String
+    let href: String?
     let next: String?
 }
 
 struct MediaResult<T: Codable>: Codable {
     let id: String
-    let attributes: T
+    let attributes: T?
     let type: MediaType
     let href: String
+    let relationships: Relationships?
 }

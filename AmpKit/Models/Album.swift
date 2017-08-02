@@ -22,3 +22,8 @@ struct AlbumAttributes: Codable {
     let url: URL
     let editorialNotes: EditorialNotes?
 }
+
+struct Relationships: Codable {
+    let artists: Result<MediaResult<ArtistAttributes>>
+    let tracks: Result<MediaResult<TrackAttributes>>
+}
