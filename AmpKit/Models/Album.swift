@@ -24,6 +24,7 @@ struct AlbumAttributes: Codable {
 }
 
 struct Relationships: Codable {
-    let artists: Result<MediaResult<ArtistAttributes>>
-    let tracks: Result<MediaResult<TrackAttributes>>
+    let albums: Result<MediaResult<AlbumAttributes>>?
+    let artists: Result<MediaResult<ArtistAttributes>>?
+    let tracks: Result<MediaResult<TrackAttributes>>?
 }

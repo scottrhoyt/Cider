@@ -1,0 +1,60 @@
+{
+  "data": [
+    {
+      "attributes": {
+        "artistName": "Michael de Jong",
+        "artwork": {
+          "bgColor": "346687",
+          "height": 2400,
+          "textColor1": "c9fcf0",
+          "textColor2": "b4fbf3",
+          "textColor3": "abdedb",
+          "textColor4": "9bdddd",
+          "url": "https://example.mzstatic.com/image/thumb/Music3/v4/8d/5f/4e/8d5f4e8f-d677-ba24-15f0-f8035047a4cc/source/{w}x{h}bb.jpg",
+          "width": 2400
+        },
+        "composerName": "Michael de Jong",
+        "discNumber": 1,
+        "durationInMillis": 327693,
+        "genreNames": [
+          "Singer/Songwriter",
+          "Music",
+          "Blues"
+        ],
+        "name": "Something For the Pain",
+        "playParams": {
+          "id": "900032829",
+          "kind": "song"
+        },
+        "releaseDate": "2014-07-11",
+        "trackNumber": 7,
+        "url": "https://itunes.apple.com/us/album/something-for-the-pain/id900032785?i=900032829"
+      },
+      "href": "/v1/catalog/us/songs/900032829",
+      "id": "900032829",
+      "relationships": {
+        "albums": {
+          "data": [
+            {
+              "href": "/v1/catalog/us/albums/900032785",
+              "id": "900032785",
+              "type": "albums"
+            }
+          ],
+          "href": "/v1/catalog/us/songs/900032829/albums"
+        },
+        "artists": {
+          "data": [
+            {
+              "href": "/v1/catalog/us/artists/6671250",
+              "id": "6671250",
+              "type": "artists"
+            }
+          ],
+          "href": "/v1/catalog/us/songs/900032829/artists"
+        }
+      },
+      "type": "songs"
+    }
+  ]
+}

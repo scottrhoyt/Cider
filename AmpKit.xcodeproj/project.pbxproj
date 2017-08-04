@@ -13,6 +13,8 @@
 		3B2DEA821F31826100551AA2 /* AmpUrlBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2DEA811F31826100551AA2 /* AmpUrlBuilderTests.swift */; };
 		3B2DEA851F3193A600551AA2 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B2DEA841F3193A600551AA2 /* search.json */; };
 		3B2DEA881F31991800551AA2 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2DEA871F31991800551AA2 /* Results.swift */; };
+		3B58AC5C1F3503C3006112EC /* song.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B58AC5B1F3503C3006112EC /* song.json */; };
+		3B58AC601F350495006112EC /* TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58AC5F1F350495006112EC /* TrackTests.swift */; };
 		3B9B8C9D1F31B3EE009ECADB /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8C9C1F31B3EE009ECADB /* Artist.swift */; };
 		3B9B8C9F1F31B473009ECADB /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8C9E1F31B473009ECADB /* MediaType.swift */; };
 		3B9B8CA11F31B4A5009ECADB /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8CA01F31B4A5009ECADB /* XCTestCase+Helpers.swift */; };
@@ -43,6 +45,8 @@
 		3B2DEA811F31826100551AA2 /* AmpUrlBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpUrlBuilderTests.swift; sourceTree = "<group>"; };
 		3B2DEA841F3193A600551AA2 /* search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
 		3B2DEA871F31991800551AA2 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
+		3B58AC5B1F3503C3006112EC /* song.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = song.json; sourceTree = "<group>"; };
+		3B58AC5F1F350495006112EC /* TrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTests.swift; sourceTree = "<group>"; };
 		3B9B8C9C1F31B3EE009ECADB /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		3B9B8C9E1F31B473009ECADB /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		3B9B8CA01F31B4A5009ECADB /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 			children = (
 				3B2DEA841F3193A600551AA2 /* search.json */,
 				3B1C416B1F322BBE0000AADB /* album.json */,
+				3B58AC5B1F3503C3006112EC /* song.json */,
 			);
 			path = Fixtures;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				3BD1D1591F319C83001E9705 /* AlbumTests.swift */,
 				3B9B8CA01F31B4A5009ECADB /* XCTestCase+Helpers.swift */,
 				3B9B8CA41F322796009ECADB /* ArtistTests.swift */,
+				3B58AC5F1F350495006112EC /* TrackTests.swift */,
 			);
 			path = AmpKitTests;
 			sourceTree = "<group>";
@@ -244,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B2DEA851F3193A600551AA2 /* search.json in Resources */,
+				3B58AC5C1F3503C3006112EC /* song.json in Resources */,
 				3B1C416C1F322BBE0000AADB /* album.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9B8CA11F31B4A5009ECADB /* XCTestCase+Helpers.swift in Sources */,
+				3B58AC601F350495006112EC /* TrackTests.swift in Sources */,
 				3B2DEA821F31826100551AA2 /* AmpUrlBuilderTests.swift in Sources */,
 				3B9B8CA51F322796009ECADB /* ArtistTests.swift in Sources */,
 				3BD1D15A1F319C83001E9705 /* AlbumTests.swift in Sources */,
