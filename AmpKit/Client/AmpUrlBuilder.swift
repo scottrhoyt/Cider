@@ -12,6 +12,10 @@ enum Storefront: String, Codable {
     case unitedStates = "us"
 }
 
+public enum AmpUrlBuilderError: Error {
+    case noUserToken
+}
+
 struct AmpUrlBuilder {
 
     // MARK: Inputs
@@ -100,8 +104,19 @@ struct AmpUrlBuilder {
     private func addAuth(request: URLRequest) -> URLRequest {
         var request = request
 
-        let authHeader = "bearer \(developerToken)"
+        let authHeader = "Bearer \(developerToken)"
         request.setValue(authHeader, forHTTPHeaderField: "Authorization")
+
+        return request
+    }
+
+    private func addUserToken(request: URLRequest) throws -> URLRequest {
+        guard let userToken = userToken else {
+            throw AmpUrlBuilderError.noUserToken
+        }
+
+        var request = request
+        request.setValue(userToken, forHTTPHeaderField: "Music-User-Token")
 
         return request
     }

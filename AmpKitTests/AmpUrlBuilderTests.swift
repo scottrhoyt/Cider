@@ -33,7 +33,7 @@ class AmpUrlBuilderTests: XCTestCase {
     }
 
     func testSearchRequestHeaders() {
-        XCTAssertEqual(searchRequest.allHTTPHeaderFields!, ["Authorization": "bearer devToken"])
+        XCTAssertEqual(searchRequest.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
     }
 
     func testSearchRequestMethod() {
