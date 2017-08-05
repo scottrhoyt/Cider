@@ -39,4 +39,18 @@ class AmpUrlBuilderTests: XCTestCase {
     func testSearchRequestMethod() {
         XCTAssertEqual(searchRequest.httpMethod, "GET")
     }
+
+    // MARK: - Fetch
+
+    func testFetchArtistUrl() {
+        XCTAssertEqual(builder.fetchURL(mediaType: .artists, id: "id123"), URL(string: "https://api.music.apple.com/v1/catalog/us/artists/id123")!)
+    }
+
+    func testFetchAlbumUrl() {
+        XCTAssertEqual(builder.fetchURL(mediaType: .albums, id: "id123"), URL(string: "https://api.music.apple.com/v1/catalog/us/albums/id123")!)
+    }
+
+    func testFetchSongUrl() {
+        XCTAssertEqual(builder.fetchURL(mediaType: .songs, id: "id123"), URL(string: "https://api.music.apple.com/v1/catalog/us/songs/id123")!)
+    }
 }

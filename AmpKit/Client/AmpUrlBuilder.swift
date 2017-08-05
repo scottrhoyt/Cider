@@ -50,6 +50,11 @@ struct AmpUrlBuilder: UrlBuilder {
         static let searchTerm = "term"
         static let searchLimit = "limit"
         static let searchTypes = "types"
+
+        // Fetch
+        static let artistPath = "v1/catalog/{storefront}/artists/{id}"
+        static let albumsPath = "v1/catalog/{storefront}/albums/{id}"
+        static let songsPath = "v1/catalog/{storefront}/songs/{id}"
     }
 
     private var baseApiUrl: URL {
@@ -69,8 +74,7 @@ struct AmpUrlBuilder: UrlBuilder {
 
         var components = URLComponents()
 
-        let searchPath = AppleMusicApi.searchPath.replacingOccurrences(of: "{storefront}", with: storefront.rawValue)
-        components.path = searchPath
+        components.path = addStorefront(urlString: AppleMusicApi.searchPath)
 
         // Construct query items
 
@@ -91,6 +95,25 @@ struct AmpUrlBuilder: UrlBuilder {
         // Construct final url
 
         return components.url(relativeTo: baseApiUrl)!
+    }
+
+    func fetchURL(mediaType: MediaType, id: String) -> URL {
+        var components = URLComponents()
+        var fetchPath: String
+
+        switch mediaType {
+        case .artists: fetchPath = AppleMusicApi.artistPath
+        case .albums: fetchPath = AppleMusicApi.albumsPath
+        case .songs: fetchPath = AppleMusicApi.songsPath
+        }
+
+        components.path = addStorefront(urlString: fetchPath).replacingOccurrences(of: "{id}", with: id)
+
+        return components.url(relativeTo: baseApiUrl)!.absoluteURL
+    }
+
+    private func addStorefront(urlString: String) -> String {
+        return urlString.replacingOccurrences(of: "{storefront}", with: storefront.rawValue)
     }
 
     // MARK: Construct requests
