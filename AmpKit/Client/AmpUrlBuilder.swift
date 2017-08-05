@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol UrlBuilder {
+    func searchRequest(term: String, limit: Int?, types: [MediaType]?) -> URLRequest
+}
+
 enum Storefront: String, Codable {
     case unitedStates = "us"
 }
@@ -16,7 +20,7 @@ public enum AmpUrlBuilderError: Error {
     case noUserToken
 }
 
-struct AmpUrlBuilder {
+struct AmpUrlBuilder: UrlBuilder {
 
     // MARK: Inputs
 
