@@ -25,6 +25,7 @@
 		3B9E36821F3142930014CB60 /* AmpUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */; };
 		3BA049021F313BC4009DABCB /* AmpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA048F81F313BC4009DABCB /* AmpKit.framework */; };
 		3BA049091F313BC4009DABCB /* AmpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA048FB1F313BC4009DABCB /* AmpKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BA5B9631F37788100480149 /* ArtworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B9621F37788100480149 /* ArtworkTests.swift */; };
 		3BD1D15A1F319C83001E9705 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D1591F319C83001E9705 /* AlbumTests.swift */; };
 		3BD1D15C1F31A1D8001E9705 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15B1F31A1D8001E9705 /* Album.swift */; };
 		3BD1D15E1F31A462001E9705 /* PlayParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15D1F31A462001E9705 /* PlayParams.swift */; };
@@ -62,6 +63,7 @@
 		3BA048FC1F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA049011F313BC4009DABCB /* AmpKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmpKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA049081F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BA5B9621F37788100480149 /* ArtworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTests.swift; sourceTree = "<group>"; };
 		3BD1D1591F319C83001E9705 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
 		3BD1D15B1F31A1D8001E9705 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		3BD1D15D1F31A462001E9705 /* PlayParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayParams.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				3B9B8CA01F31B4A5009ECADB /* XCTestCase+Helpers.swift */,
 				3B9B8CA41F322796009ECADB /* ArtistTests.swift */,
 				3B58AC5F1F350495006112EC /* TrackTests.swift */,
+				3BA5B9621F37788100480149 /* ArtworkTests.swift */,
 			);
 			path = AmpKitTests;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				3B58AC601F350495006112EC /* TrackTests.swift in Sources */,
 				3B2DEA821F31826100551AA2 /* AmpUrlBuilderTests.swift in Sources */,
 				3B9B8CA51F322796009ECADB /* ArtistTests.swift in Sources */,
+				3BA5B9631F37788100480149 /* ArtworkTests.swift in Sources */,
 				3BD1D15A1F319C83001E9705 /* AlbumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,4 +19,9 @@ public struct Artwork: Codable {
     let textColor2: String?
     let textColor3: String?
     let textColor4: String?
+
+    public func url(forWidth width: Int) -> URL? {
+        let urlString = url.replacingOccurrences(of: "{w}", with: "\(width)").replacingOccurrences(of: "{h}", with: "\(width)")
+        return URL(string: urlString)
+    }
 }
