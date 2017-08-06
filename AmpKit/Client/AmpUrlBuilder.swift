@@ -10,6 +10,7 @@ import Foundation
 
 protocol UrlBuilder {
     func searchRequest(term: String, limit: Int?, types: [MediaType]?) -> URLRequest
+    func fetchRequest(mediaType: MediaType, id: String) -> URLRequest
 }
 
 enum Storefront: String, Codable {

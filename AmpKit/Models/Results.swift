@@ -16,6 +16,7 @@ struct SearchResults: Codable {
 struct Results: Codable {
     let albums: Result<MediaResult<AlbumAttributes>>?
     let artists: Result<MediaResult<ArtistAttributes>>?
+    let songs: Result<MediaResult<TrackAttributes>>?
 }
 
 struct Result<T: Codable>: Codable {

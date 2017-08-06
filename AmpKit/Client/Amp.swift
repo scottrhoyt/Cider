@@ -26,8 +26,23 @@ public struct Amp {
 
     // MARK: Requests
 
-    func searchRequest(term: String, limit: Int? = nil, types: [MediaType]? = nil, completion: ((SearchResults?, Error?) -> Void)?) {
+    func search(term: String, limit: Int? = nil, types: [MediaType]? = nil, completion: ((SearchResults?, Error?) -> Void)?) {
         let request = urlBuilder.searchRequest(term: term, limit: limit, types: types)
+        fetch(request, completion: completion)
+    }
+
+    func artist(id: String, completion: ((Result<MediaResult<ArtistAttributes>>?, Error?) -> Void)?) {
+        let request = urlBuilder.fetchRequest(mediaType: .artists, id: id)
+        fetch(request, completion: completion)
+    }
+
+    func album(id: String, completion: ((Result<MediaResult<AlbumAttributes>>?, Error?) -> Void)?) {
+        let request = urlBuilder.fetchRequest(mediaType: .albums, id: id)
+        fetch(request, completion: completion)
+    }
+
+    func aong(id: String, completion: ((Result<MediaResult<TrackAttributes>>?, Error?) -> Void)?) {
+        let request = urlBuilder.fetchRequest(mediaType: .songs, id: id)
         fetch(request, completion: completion)
     }
 
