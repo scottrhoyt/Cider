@@ -97,7 +97,7 @@ struct AmpUrlBuilder: UrlBuilder {
         return components.url(relativeTo: baseApiUrl)!
     }
 
-    func fetchURL(mediaType: MediaType, id: String) -> URL {
+    private func fetchURL(mediaType: MediaType, id: String) -> URL {
         var components = URLComponents()
         var fetchPath: String
 
@@ -120,6 +120,15 @@ struct AmpUrlBuilder: UrlBuilder {
 
     func searchRequest(term: String, limit: Int? = nil, types: [MediaType]? = nil) -> URLRequest {
         let url = seachUrl(term: term, limit: limit, types: types)
+        return constructRequest(url: url)
+    }
+
+    func fetchRequest(mediaType: MediaType, id: String) -> URLRequest {
+        let url = fetchURL(mediaType: mediaType, id: id)
+        return constructRequest(url: url)
+    }
+
+    private func constructRequest(url: URL) -> URLRequest {
         var request = URLRequest(url: url, cachePolicy: cachePolicy, timeoutInterval: timeout)
         request = addAuth(request: request)
 

@@ -42,15 +42,21 @@ class AmpUrlBuilderTests: XCTestCase {
 
     // MARK: - Fetch
 
-    func testFetchArtistUrl() {
-        XCTAssertEqual(builder.fetchURL(mediaType: .artists, id: "id123"), URL(string: "https://api.music.apple.com/v1/catalog/us/artists/id123")!)
+    func testFetchArtistRequest() {
+        var request = builder.fetchRequest(mediaType: .artists, id: "id123")
+        XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/artists/id123")!)
+        XCTAssertEqual(request.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
     }
 
-    func testFetchAlbumUrl() {
-        XCTAssertEqual(builder.fetchURL(mediaType: .albums, id: "id123"), URL(string: "https://api.music.apple.com/v1/catalog/us/albums/id123")!)
+    func testFetchAlbumRequest() {
+        var request = builder.fetchRequest(mediaType: .albums, id: "id123")
+        XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/albums/id123")!)
+        XCTAssertEqual(request.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
     }
 
-    func testFetchSongUrl() {
-        XCTAssertEqual(builder.fetchURL(mediaType: .songs, id: "id123"), URL(string: "https://api.music.apple.com/v1/catalog/us/songs/id123")!)
+    func testFetchSongRequest() {
+        var request = builder.fetchRequest(mediaType: .songs, id: "id123")
+        XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/songs/id123")!)
+        XCTAssertEqual(request.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
     }
 }
