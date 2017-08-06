@@ -19,29 +19,29 @@ public struct Amp {
         self.session = URLSession(configuration: configuration)
     }
 
-    init(storefront: Storefront, developerToken: String, configuration: URLSessionConfiguration = URLSessionConfiguration.default) {
+    public init(storefront: Storefront, developerToken: String, configuration: URLSessionConfiguration = URLSessionConfiguration.default) {
         let urlBuilder = AmpUrlBuilder(storefront: storefront, developerToken: developerToken)
         self.init(urlBuilder: urlBuilder, configuration: configuration)
     }
 
     // MARK: Requests
 
-    func search(term: String, limit: Int? = nil, types: [MediaType]? = nil, completion: ((SearchResults?, Error?) -> Void)?) {
+    public func search(term: String, limit: Int? = nil, types: [MediaType]? = nil, completion: ((SearchResults?, Error?) -> Void)?) {
         let request = urlBuilder.searchRequest(term: term, limit: limit, types: types)
         fetch(request, completion: completion)
     }
 
-    func artist(id: String, completion: ((Result<MediaResult<ArtistAttributes>>?, Error?) -> Void)?) {
+    public func artist(id: String, completion: ((Result<MediaResult<ArtistAttributes>>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .artists, id: id)
         fetch(request, completion: completion)
     }
 
-    func album(id: String, completion: ((Result<MediaResult<AlbumAttributes>>?, Error?) -> Void)?) {
+    public func album(id: String, completion: ((Result<MediaResult<AlbumAttributes>>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .albums, id: id)
         fetch(request, completion: completion)
     }
 
-    func aong(id: String, completion: ((Result<MediaResult<TrackAttributes>>?, Error?) -> Void)?) {
+    public func aong(id: String, completion: ((Result<MediaResult<TrackAttributes>>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .songs, id: id)
         fetch(request, completion: completion)
     }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Relationships: Codable {
+public struct Relationships: Codable {
     let albums: Result<MediaResult<AlbumAttributes>>?
     let artists: Result<MediaResult<ArtistAttributes>>?
     let tracks: Result<MediaResult<TrackAttributes>>?

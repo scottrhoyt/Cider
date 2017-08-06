@@ -8,12 +8,12 @@
 
 import Foundation
 
-enum PlayParamsKind: String, Codable {
+public enum PlayParamsKind: String, Codable {
     case album
     case song
 }
 
-struct PlayParams: Codable {
+public struct PlayParams: Codable {
     let id: String
     let kind: PlayParamsKind
 }

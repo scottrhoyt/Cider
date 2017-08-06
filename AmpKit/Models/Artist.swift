@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct ArtistAttributes: Codable {
+public struct ArtistAttributes: Codable {
     let genreNames: [String]
     let name: String
     let url: URL

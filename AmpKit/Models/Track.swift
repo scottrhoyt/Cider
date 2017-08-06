@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct TrackAttributes: Codable {
+public struct TrackAttributes: Codable {
     let artistName: String
     let artwork: Artwork
     let composerName: String

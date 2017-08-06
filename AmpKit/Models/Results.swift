@@ -9,24 +9,24 @@
 import Foundation
 
 // Might not need this
-struct SearchResults: Codable {
+public struct SearchResults: Codable {
     let results: Results
 }
 
-struct Results: Codable {
+public struct Results: Codable {
     let albums: Result<MediaResult<AlbumAttributes>>?
     let artists: Result<MediaResult<ArtistAttributes>>?
     let songs: Result<MediaResult<TrackAttributes>>?
 }
 
-struct Result<T: Codable>: Codable {
+public struct Result<T: Codable>: Codable {
     let data: [T]
 
     let href: String?
     let next: String?
 }
 
-struct MediaResult<T: Codable>: Codable {
+public struct MediaResult<T: Codable>: Codable {
     let id: String
     let attributes: T?
     let type: MediaType

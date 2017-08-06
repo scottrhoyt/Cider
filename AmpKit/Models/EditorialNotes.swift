@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct EditorialNotes: Codable {
+public struct EditorialNotes: Codable {
     let standard: String?
     let short: String?
 }

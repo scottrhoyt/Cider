@@ -13,7 +13,7 @@ protocol UrlBuilder {
     func fetchRequest(mediaType: MediaType, id: String) -> URLRequest
 }
 
-enum Storefront: String, Codable {
+public enum Storefront: String, Codable {
     case unitedStates = "us"
 }
 

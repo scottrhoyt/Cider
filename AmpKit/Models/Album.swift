@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AlbumAttributes: Codable {
+public struct AlbumAttributes: Codable {
     let artistName: String
     let artwork: Artwork
     let name: String
