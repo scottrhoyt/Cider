@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:AmpKit.xcodeproj">
+      location = "self:/Users/scottrhoyt/Development/AmpKit/Cider.xcodeproj">
    </FileRef>
 </Workspace>

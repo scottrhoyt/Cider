@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import AmpKit
+@testable import Cider
 
 class TrackTests: XCTestCase {
     func testTrackFromFetch() {

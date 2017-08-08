@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3BA048F71F313BC4009DABCB"
-               BuildableName = "AmpKit.framework"
-               BlueprintName = "AmpKit"
-               ReferencedContainer = "container:AmpKit.xcodeproj">
+               BuildableName = "Cider.framework"
+               BlueprintName = "Cider"
+               ReferencedContainer = "container:Cider.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3BA049001F313BC4009DABCB"
-               BuildableName = "AmpKitTests.xctest"
-               BlueprintName = "AmpKitTests"
-               ReferencedContainer = "container:AmpKit.xcodeproj">
+               BuildableName = "CiderTests.xctest"
+               BlueprintName = "CiderTests"
+               ReferencedContainer = "container:Cider.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BA048F71F313BC4009DABCB"
-            BuildableName = "AmpKit.framework"
-            BlueprintName = "AmpKit"
-            ReferencedContainer = "container:AmpKit.xcodeproj">
+            BuildableName = "Cider.framework"
+            BlueprintName = "Cider"
+            ReferencedContainer = "container:Cider.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BA048F71F313BC4009DABCB"
-            BuildableName = "AmpKit.framework"
-            BlueprintName = "AmpKit"
-            ReferencedContainer = "container:AmpKit.xcodeproj">
+            BuildableName = "Cider.framework"
+            BlueprintName = "Cider"
+            ReferencedContainer = "container:Cider.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -86,9 +86,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3BA048F71F313BC4009DABCB"
-            BuildableName = "AmpKit.framework"
-            BlueprintName = "AmpKit"
-            ReferencedContainer = "container:AmpKit.xcodeproj">
+            BuildableName = "Cider.framework"
+            BlueprintName = "Cider"
+            ReferencedContainer = "container:Cider.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

@@ -23,7 +23,7 @@
 		3B9B8CA31F32271C009ECADB /* EditorialNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8CA21F32271C009ECADB /* EditorialNotes.swift */; };
 		3B9B8CA51F322796009ECADB /* ArtistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8CA41F322796009ECADB /* ArtistTests.swift */; };
 		3B9E36821F3142930014CB60 /* AmpUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */; };
-		3BA049021F313BC4009DABCB /* AmpKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA048F81F313BC4009DABCB /* AmpKit.framework */; };
+		3BA049021F313BC4009DABCB /* Cider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA048F81F313BC4009DABCB /* Cider.framework */; };
 		3BA049091F313BC4009DABCB /* AmpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA048FB1F313BC4009DABCB /* AmpKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BA5B9631F37788100480149 /* ArtworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B9621F37788100480149 /* ArtworkTests.swift */; };
 		3BD1D15A1F319C83001E9705 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D1591F319C83001E9705 /* AlbumTests.swift */; };
@@ -58,10 +58,10 @@
 		3B9B8CA21F32271C009ECADB /* EditorialNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorialNotes.swift; sourceTree = "<group>"; };
 		3B9B8CA41F322796009ECADB /* ArtistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTests.swift; sourceTree = "<group>"; };
 		3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpUrlBuilder.swift; sourceTree = "<group>"; };
-		3BA048F81F313BC4009DABCB /* AmpKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AmpKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA048F81F313BC4009DABCB /* Cider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA048FB1F313BC4009DABCB /* AmpKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmpKit.h; sourceTree = "<group>"; };
 		3BA048FC1F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3BA049011F313BC4009DABCB /* AmpKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmpKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BA049011F313BC4009DABCB /* CiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA049081F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA5B9621F37788100480149 /* ArtworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTests.swift; sourceTree = "<group>"; };
 		3BD1D1591F319C83001E9705 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
@@ -81,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA049021F313BC4009DABCB /* AmpKit.framework in Frameworks */,
+				3BA049021F313BC4009DABCB /* Cider.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,8 +135,8 @@
 		3BA048F91F313BC4009DABCB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3BA048F81F313BC4009DABCB /* AmpKit.framework */,
-				3BA049011F313BC4009DABCB /* AmpKitTests.xctest */,
+				3BA048F81F313BC4009DABCB /* Cider.framework */,
+				3BA049011F313BC4009DABCB /* CiderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,9 +181,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		3BA048F71F313BC4009DABCB /* AmpKit */ = {
+		3BA048F71F313BC4009DABCB /* Cider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BA0490C1F313BC4009DABCB /* Build configuration list for PBXNativeTarget "AmpKit" */;
+			buildConfigurationList = 3BA0490C1F313BC4009DABCB /* Build configuration list for PBXNativeTarget "Cider" */;
 			buildPhases = (
 				3BA048F31F313BC4009DABCB /* Sources */,
 				3BA048F41F313BC4009DABCB /* Frameworks */,
@@ -194,14 +194,14 @@
 			);
 			dependencies = (
 			);
-			name = AmpKit;
+			name = Cider;
 			productName = AmpKit;
-			productReference = 3BA048F81F313BC4009DABCB /* AmpKit.framework */;
+			productReference = 3BA048F81F313BC4009DABCB /* Cider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		3BA049001F313BC4009DABCB /* AmpKitTests */ = {
+		3BA049001F313BC4009DABCB /* CiderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3BA0490F1F313BC4009DABCB /* Build configuration list for PBXNativeTarget "AmpKitTests" */;
+			buildConfigurationList = 3BA0490F1F313BC4009DABCB /* Build configuration list for PBXNativeTarget "CiderTests" */;
 			buildPhases = (
 				3BA048FD1F313BC4009DABCB /* Sources */,
 				3BA048FE1F313BC4009DABCB /* Frameworks */,
@@ -212,9 +212,9 @@
 			dependencies = (
 				3BA049041F313BC4009DABCB /* PBXTargetDependency */,
 			);
-			name = AmpKitTests;
+			name = CiderTests;
 			productName = AmpKitTests;
-			productReference = 3BA049011F313BC4009DABCB /* AmpKitTests.xctest */;
+			productReference = 3BA049011F313BC4009DABCB /* CiderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -236,7 +236,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3BA048F21F313BC4009DABCB /* Build configuration list for PBXProject "AmpKit" */;
+			buildConfigurationList = 3BA048F21F313BC4009DABCB /* Build configuration list for PBXProject "Cider" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -248,8 +248,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3BA048F71F313BC4009DABCB /* AmpKit */,
-				3BA049001F313BC4009DABCB /* AmpKitTests */,
+				3BA048F71F313BC4009DABCB /* Cider */,
+				3BA049001F313BC4009DABCB /* CiderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -311,7 +311,7 @@
 /* Begin PBXTargetDependency section */
 		3BA049041F313BC4009DABCB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3BA048F71F313BC4009DABCB /* AmpKit */;
+			target = 3BA048F71F313BC4009DABCB /* Cider */;
 			targetProxy = 3BA049031F313BC4009DABCB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -504,7 +504,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3BA048F21F313BC4009DABCB /* Build configuration list for PBXProject "AmpKit" */ = {
+		3BA048F21F313BC4009DABCB /* Build configuration list for PBXProject "Cider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BA0490A1F313BC4009DABCB /* Debug */,
@@ -513,7 +513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BA0490C1F313BC4009DABCB /* Build configuration list for PBXNativeTarget "AmpKit" */ = {
+		3BA0490C1F313BC4009DABCB /* Build configuration list for PBXNativeTarget "Cider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BA0490D1F313BC4009DABCB /* Debug */,
@@ -522,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3BA0490F1F313BC4009DABCB /* Build configuration list for PBXNativeTarget "AmpKitTests" */ = {
+		3BA0490F1F313BC4009DABCB /* Build configuration list for PBXNativeTarget "CiderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3BA049101F313BC4009DABCB /* Debug */,
