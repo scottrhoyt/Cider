@@ -24,7 +24,7 @@
 		3B9B8CA51F322796009ECADB /* ArtistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8CA41F322796009ECADB /* ArtistTests.swift */; };
 		3B9E36821F3142930014CB60 /* AmpUrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */; };
 		3BA049021F313BC4009DABCB /* Cider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA048F81F313BC4009DABCB /* Cider.framework */; };
-		3BA049091F313BC4009DABCB /* AmpKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA048FB1F313BC4009DABCB /* AmpKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BA049091F313BC4009DABCB /* Cider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA048FB1F313BC4009DABCB /* Cider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BA5B9631F37788100480149 /* ArtworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B9621F37788100480149 /* ArtworkTests.swift */; };
 		3BD1D15A1F319C83001E9705 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D1591F319C83001E9705 /* AlbumTests.swift */; };
 		3BD1D15C1F31A1D8001E9705 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15B1F31A1D8001E9705 /* Album.swift */; };
@@ -59,7 +59,7 @@
 		3B9B8CA41F322796009ECADB /* ArtistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistTests.swift; sourceTree = "<group>"; };
 		3B9E36811F3142930014CB60 /* AmpUrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmpUrlBuilder.swift; sourceTree = "<group>"; };
 		3BA048F81F313BC4009DABCB /* Cider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BA048FB1F313BC4009DABCB /* AmpKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AmpKit.h; sourceTree = "<group>"; };
+		3BA048FB1F313BC4009DABCB /* Cider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cider.h; sourceTree = "<group>"; };
 		3BA048FC1F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA049011F313BC4009DABCB /* CiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA049081F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 			children = (
 				3B58AC631F35314F006112EC /* Client */,
 				3B2DEA861F3198F500551AA2 /* Models */,
-				3BA048FB1F313BC4009DABCB /* AmpKit.h */,
+				3BA048FB1F313BC4009DABCB /* Cider.h */,
 				3BA048FC1F313BC4009DABCB /* Info.plist */,
 			);
 			path = Cider;
@@ -174,7 +174,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BA049091F313BC4009DABCB /* AmpKit.h in Headers */,
+				3BA049091F313BC4009DABCB /* Cider.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
