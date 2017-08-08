@@ -6,6 +6,20 @@
 
 ##### Enhancements
 
+* None
+
+##### Bug Fixes
+
+* None
+
+## 0.2.0
+
+##### Breaking
+
+* None
+
+##### Enhancements
+
 * Add stub documentation.
 * Add support for cocoapods.
 
