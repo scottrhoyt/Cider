@@ -6,7 +6,7 @@
 
 ##### Enhancements
 
-* None
+* Add stub documentation.
 
 ##### Bug Fixes
 
