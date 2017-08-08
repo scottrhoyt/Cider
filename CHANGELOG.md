@@ -7,6 +7,7 @@
 ##### Enhancements
 
 * Add stub documentation.
+* Add support for cocoapods.
 
 ##### Bug Fixes
 
