@@ -16,7 +16,7 @@ public struct TrackAttributes: Codable {
     let durationInMillis: Int
     let genreNames: [String]
     let name: String
-    let playParams: PlayParams
+    let playParams: PlayParameters
     let releaseDate: String
     let trackNumber: Int
     let url: URL

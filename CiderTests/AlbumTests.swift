@@ -41,7 +41,7 @@ class AlbumTests: XCTestCase {
         XCTAssertEqual(attributes.artwork.width, 1400)
 
         XCTAssertEqual(attributes.playParams?.id, "900721190")
-        XCTAssertEqual(attributes.playParams?.kind, .album)
+        XCTAssertEqual(attributes.playParams?.kind, "album")
 
         XCTAssertNil(attributes.editorialNotes)
     }
@@ -83,7 +83,7 @@ class AlbumTests: XCTestCase {
         XCTAssertEqual(attributes.artwork.width, 1500)
 
         XCTAssertEqual(attributes.playParams?.id, "310730204")
-        XCTAssertEqual(attributes.playParams?.kind, .album)
+        XCTAssertEqual(attributes.playParams?.kind, "album")
 
         XCTAssertEqual(attributes.editorialNotes?.standard, "Springsteen's third album was the one that broke it all open for him, planting his tales of Jersey girls, cars, and nights spent sleeping on the beach firmly in the Top Five. He shot for an unholy hybrid of Orbison, Dylan and Spector — and actually reached it. \"Come take my hand,\" he invited in the opening lines. \"We're ridin' out tonight to case the Promised Land.\" Soon after this album, he'd discover the limits of such dreams, but here, it's a wide-open road: Even the tales of petty crime (\"Meeting Across the River\") and teen-gang violence (\"Jungleland\") are invested with all the wit and charm you can handle. Bruce's catalog is filled with one-of-a-kind albums from <i>The Wild, The Innocent and the E Street Shuffle</i> to <i>The Ghost of Tom Joad</i>. Forty years on, <i>Born to Run</i> still sits near the very top of that stack.")
         XCTAssertEqual(attributes.editorialNotes?.short, "Springsteen's third album was the one that broke it all open for him.")

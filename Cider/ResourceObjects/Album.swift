@@ -19,7 +19,7 @@ public struct AlbumAttributes: Codable {
     let isSingle: Bool
     let name: String
     let releaseDate: String
-    let playParams: PlayParams?
+    let playParams: PlayParameters?
     let trackCount: Int
     let url: URL
 }

@@ -50,7 +50,7 @@ class TrackTests: XCTestCase {
 
         // Play params
         XCTAssertEqual(attributes.playParams.id, "900032829")
-        XCTAssertEqual(attributes.playParams.kind, .song)
+        XCTAssertEqual(attributes.playParams.kind, "song")
 
 
         XCTAssertEqual(attributes.releaseDate, "2014-07-11")
