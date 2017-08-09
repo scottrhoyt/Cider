@@ -26,6 +26,7 @@
 		3BA049021F313BC4009DABCB /* Cider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA048F81F313BC4009DABCB /* Cider.framework */; };
 		3BA049091F313BC4009DABCB /* Cider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA048FB1F313BC4009DABCB /* Cider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BA5B9631F37788100480149 /* ArtworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B9621F37788100480149 /* ArtworkTests.swift */; };
+		3BAF09A11F3BB7050018AA8B /* ContentRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF09A01F3BB7050018AA8B /* ContentRating.swift */; };
 		3BD1D15A1F319C83001E9705 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D1591F319C83001E9705 /* AlbumTests.swift */; };
 		3BD1D15C1F31A1D8001E9705 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15B1F31A1D8001E9705 /* Album.swift */; };
 		3BD1D15E1F31A462001E9705 /* PlayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15D1F31A462001E9705 /* PlayParameters.swift */; };
@@ -64,6 +65,7 @@
 		3BA049011F313BC4009DABCB /* CiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BA049081F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA5B9621F37788100480149 /* ArtworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTests.swift; sourceTree = "<group>"; };
+		3BAF09A01F3BB7050018AA8B /* ContentRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRating.swift; sourceTree = "<group>"; };
 		3BD1D1591F319C83001E9705 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
 		3BD1D15B1F31A1D8001E9705 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		3BD1D15D1F31A462001E9705 /* PlayParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayParameters.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				3BD1D15B1F31A1D8001E9705 /* Album.swift */,
 				3B9B8C9C1F31B3EE009ECADB /* Artist.swift */,
 				3B1C41691F322B210000AADB /* Artwork.swift */,
+				3BAF09A01F3BB7050018AA8B /* ContentRating.swift */,
 				3B9B8CA21F32271C009ECADB /* EditorialNotes.swift */,
 				3BD1D15D1F31A462001E9705 /* PlayParameters.swift */,
 				3B1C416D1F322BEB0000AADB /* Track.swift */,
@@ -293,6 +296,7 @@
 				3BD1D15E1F31A462001E9705 /* PlayParameters.swift in Sources */,
 				3B58AC651F353162006112EC /* Cider.swift in Sources */,
 				3B9B8CA31F32271C009ECADB /* EditorialNotes.swift in Sources */,
+				3BAF09A11F3BB7050018AA8B /* ContentRating.swift in Sources */,
 				3B1C416E1F322BEB0000AADB /* Track.swift in Sources */,
 				3B9E36821F3142930014CB60 /* CiderUrlBuilder.swift in Sources */,
 				3B58AC621F350899006112EC /* Relationships.swift in Sources */,

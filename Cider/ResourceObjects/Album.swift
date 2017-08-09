@@ -11,7 +11,7 @@ import Foundation
 public struct AlbumAttributes: Codable {
     let artistName: String
     let artwork: Artwork
-    let contentRating: String?
+    let contentRating: ContentRating?
     let copyright: String
     let editorialNotes: EditorialNotes?
     let genreNames: [String]
