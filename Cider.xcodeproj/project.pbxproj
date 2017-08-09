@@ -27,6 +27,7 @@
 		3BA049091F313BC4009DABCB /* Cider.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BA048FB1F313BC4009DABCB /* Cider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BA5B9631F37788100480149 /* ArtworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA5B9621F37788100480149 /* ArtworkTests.swift */; };
 		3BAF09A11F3BB7050018AA8B /* ContentRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF09A01F3BB7050018AA8B /* ContentRating.swift */; };
+		3BAF09A41F3BB7880018AA8B /* AppleMusicAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF09A31F3BB7880018AA8B /* AppleMusicAPIError.swift */; };
 		3BD1D15A1F319C83001E9705 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D1591F319C83001E9705 /* AlbumTests.swift */; };
 		3BD1D15C1F31A1D8001E9705 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15B1F31A1D8001E9705 /* Album.swift */; };
 		3BD1D15E1F31A462001E9705 /* PlayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15D1F31A462001E9705 /* PlayParameters.swift */; };
@@ -66,6 +67,7 @@
 		3BA049081F313BC4009DABCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA5B9621F37788100480149 /* ArtworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkTests.swift; sourceTree = "<group>"; };
 		3BAF09A01F3BB7050018AA8B /* ContentRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRating.swift; sourceTree = "<group>"; };
+		3BAF09A31F3BB7880018AA8B /* AppleMusicAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicAPIError.swift; sourceTree = "<group>"; };
 		3BD1D1591F319C83001E9705 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
 		3BD1D15B1F31A1D8001E9705 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		3BD1D15D1F31A462001E9705 /* PlayParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayParameters.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		3BA048FA1F313BC4009DABCB /* Cider */ = {
 			isa = PBXGroup;
 			children = (
+				3BAF09A21F3BB7650018AA8B /* CoreObjects */,
 				3B5B5C6D1F3BB40700B56BC2 /* ResourceObjects */,
 				3B58AC631F35314F006112EC /* Client */,
 				3B2DEA861F3198F500551AA2 /* Models */,
@@ -176,6 +179,14 @@
 				3BA5B9621F37788100480149 /* ArtworkTests.swift */,
 			);
 			path = CiderTests;
+			sourceTree = "<group>";
+		};
+		3BAF09A21F3BB7650018AA8B /* CoreObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3BAF09A31F3BB7880018AA8B /* AppleMusicAPIError.swift */,
+			);
+			path = CoreObjects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +310,7 @@
 				3BAF09A11F3BB7050018AA8B /* ContentRating.swift in Sources */,
 				3B1C416E1F322BEB0000AADB /* Track.swift in Sources */,
 				3B9E36821F3142930014CB60 /* CiderUrlBuilder.swift in Sources */,
+				3BAF09A41F3BB7880018AA8B /* AppleMusicAPIError.swift in Sources */,
 				3B58AC621F350899006112EC /* Relationships.swift in Sources */,
 				3B9B8C9D1F31B3EE009ECADB /* Artist.swift in Sources */,
 				3BD1D15C1F31A1D8001E9705 /* Album.swift in Sources */,
