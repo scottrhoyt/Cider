@@ -10,7 +10,7 @@ import Foundation
 
 struct AppleMusicAPIError: Error, Codable {
     let id: String
-    let about: String
+    let about: String?
     let status: String
     let code: String
     let title: String
