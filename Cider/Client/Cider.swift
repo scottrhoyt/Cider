@@ -41,7 +41,7 @@ public struct Cider {
         fetch(request, completion: completion)
     }
 
-    public func aong(id: String, completion: ((Result<MediaResult<TrackAttributes>>?, Error?) -> Void)?) {
+    public func song(id: String, completion: ((Result<MediaResult<TrackAttributes>>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .songs, id: id)
         fetch(request, completion: completion)
     }
