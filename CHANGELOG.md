@@ -2,7 +2,7 @@
 
 ##### Breaking
 
-* None
+* Rename Amp to Cider
 
 ##### Enhancements
 
