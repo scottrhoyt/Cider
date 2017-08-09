@@ -1,11 +1,11 @@
 env:
   global:
-    - FRAMEWORK_NAME=AmpKit
+    - FRAMEWORK_NAME=Cider
 
 script: placeholder # workaround for https://github.com/travis-ci/travis-ci/issues/4681
 matrix:
   include:
-    - script: set -o pipefail && xcodebuild -scheme AmpKit -project AmpKit.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 7,OS=latest' clean build test | xcpretty
+    - script: set -o pipefail && xcodebuild -scheme Cider -project Cider.xcodeproj -destination 'platform=iOS Simulator,name=iPhone 7,OS=latest' clean build test | xcpretty
       env: JOB=Xcode
       os: osx
       osx_image: xcode9
