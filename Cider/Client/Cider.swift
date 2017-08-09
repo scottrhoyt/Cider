@@ -1,5 +1,5 @@
 //
-//  Amp.swift
+//  Cider.swift
 //  Cider
 //
 //  Created by Scott Hoyt on 8/4/17.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Amp {
+public struct Cider {
     private let urlBuilder: UrlBuilder
     private let session: URLSession
 
@@ -20,7 +20,7 @@ public struct Amp {
     }
 
     public init(storefront: Storefront, developerToken: String, configuration: URLSessionConfiguration = URLSessionConfiguration.default) {
-        let urlBuilder = AmpUrlBuilder(storefront: storefront, developerToken: developerToken)
+        let urlBuilder = CiderUrlBuilder(storefront: storefront, developerToken: developerToken)
         self.init(urlBuilder: urlBuilder, configuration: configuration)
     }
 

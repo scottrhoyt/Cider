@@ -1,5 +1,5 @@
 //
-//  AmpUrlBuilder.swift
+//  CiderUrlBuilder.swift
 //  Cider
 //
 //  Created by Scott Hoyt on 8/1/17.
@@ -17,11 +17,11 @@ public enum Storefront: String, Codable {
     case unitedStates = "us"
 }
 
-public enum AmpUrlBuilderError: Error {
+public enum CiderUrlBuilderError: Error {
     case noUserToken
 }
 
-struct AmpUrlBuilder: UrlBuilder {
+struct CiderUrlBuilder: UrlBuilder {
 
     // MARK: Inputs
 
@@ -149,7 +149,7 @@ struct AmpUrlBuilder: UrlBuilder {
 
     private func addUserToken(request: URLRequest) throws -> URLRequest {
         guard let userToken = userToken else {
-            throw AmpUrlBuilderError.noUserToken
+            throw CiderUrlBuilderError.noUserToken
         }
 
         var request = request

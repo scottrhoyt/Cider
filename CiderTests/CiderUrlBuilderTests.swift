@@ -1,5 +1,5 @@
 //
-//  AmpUrlBuilderTests.swift
+//  CiderUrlBuilderTests.swift
 //  CiderTests
 //
 //  Created by Scott Hoyt on 8/1/17.
@@ -9,14 +9,14 @@
 import XCTest
 @testable import Cider
 
-class AmpUrlBuilderTests: XCTestCase {
+class CiderUrlBuilderTests: XCTestCase {
 
     let limit = 10
     let devToken = "devToken"
     let storefront = Storefront.unitedStates
 
-    var builder: AmpUrlBuilder {
-        return AmpUrlBuilder(storefront: storefront, developerToken: devToken)
+    var builder: CiderUrlBuilder {
+        return CiderUrlBuilder(storefront: storefront, developerToken: devToken)
     }
 
     // MARK: - Search
