@@ -1,203 +1,203 @@
 {
   "warnings": [
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Client/Amp.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Client/Amp.swift",
       "line": 11,
       "symbol": "Amp",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Client/Amp.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Client/Amp.swift",
       "line": 22,
       "symbol": "Amp.init(storefront:developerToken:configuration:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Client/Amp.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Client/Amp.swift",
       "line": 29,
       "symbol": "Amp.search(term:limit:types:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Client/Amp.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Client/Amp.swift",
       "line": 34,
       "symbol": "Amp.artist(id:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Client/Amp.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Client/Amp.swift",
       "line": 39,
       "symbol": "Amp.album(id:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Client/Amp.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Client/Amp.swift",
       "line": 44,
       "symbol": "Amp.aong(id:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Client/AmpUrlBuilder.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Client/AmpUrlBuilder.swift",
       "line": 16,
       "symbol": "Storefront",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Client/AmpUrlBuilder.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Client/AmpUrlBuilder.swift",
       "line": 17,
       "symbol": "Storefront.unitedStates",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Client/AmpUrlBuilder.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Client/AmpUrlBuilder.swift",
       "line": 20,
       "symbol": "AmpUrlBuilderError",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Client/AmpUrlBuilder.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Client/AmpUrlBuilder.swift",
       "line": 21,
       "symbol": "AmpUrlBuilderError.noUserToken",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/Album.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/Album.swift",
       "line": 11,
       "symbol": "AlbumAttributes",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/Artist.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/Artist.swift",
       "line": 11,
       "symbol": "ArtistAttributes",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/Artwork.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/Artwork.swift",
       "line": 11,
       "symbol": "Artwork",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/Artwork.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/Artwork.swift",
       "line": 23,
       "symbol": "Artwork.url(forWidth:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/EditorialNotes.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/EditorialNotes.swift",
       "line": 11,
       "symbol": "EditorialNotes",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/MediaType.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/MediaType.swift",
       "line": 11,
       "symbol": "MediaType",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/MediaType.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/MediaType.swift",
       "line": 12,
       "symbol": "MediaType.albums",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/MediaType.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/MediaType.swift",
       "line": 13,
       "symbol": "MediaType.songs",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/MediaType.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/MediaType.swift",
       "line": 14,
       "symbol": "MediaType.artists",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/PlayParams.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/PlayParams.swift",
       "line": 11,
       "symbol": "PlayParamsKind",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/PlayParams.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/PlayParams.swift",
       "line": 12,
       "symbol": "PlayParamsKind.album",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/PlayParams.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/PlayParams.swift",
       "line": 13,
       "symbol": "PlayParamsKind.song",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/PlayParams.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/PlayParams.swift",
       "line": 16,
       "symbol": "PlayParams",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/Relationships.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/Relationships.swift",
       "line": 11,
       "symbol": "Relationships",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/Results.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/Results.swift",
       "line": 12,
       "symbol": "SearchResults",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/Results.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/Results.swift",
       "line": 16,
       "symbol": "Results",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/Results.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/Results.swift",
       "line": 22,
       "symbol": "Result",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/Results.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/Results.swift",
       "line": 29,
       "symbol": "MediaResult",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/AmpKit/AmpKit/Models/Track.swift",
+      "file": "/Users/scottrhoyt/Development/AmpKit/Cider/Models/Track.swift",
       "line": 11,
       "symbol": "TrackAttributes",
       "symbol_kind": "source.lang.swift.decl.struct",

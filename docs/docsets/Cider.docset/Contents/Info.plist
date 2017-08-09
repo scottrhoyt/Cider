@@ -3,11 +3,11 @@
 <plist version="1.0">
   <dict>
     <key>CFBundleIdentifier</key>
-      <string>com.jazzy.</string>
+      <string>com.jazzy.cider</string>
     <key>CFBundleName</key>
-      <string></string>
+      <string>Cider</string>
     <key>DocSetPlatformFamily</key>
-      <string></string>
+      <string>cider</string>
     <key>isDashDocset</key>
       <true/>
     <key>dashIndexFilePath</key>
