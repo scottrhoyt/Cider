@@ -11,14 +11,15 @@ import Foundation
 public struct AlbumAttributes: Codable {
     let artistName: String
     let artwork: Artwork
-    let name: String
-    let playParams: PlayParams
+    let contentRating: String?
     let copyright: String
+    let editorialNotes: EditorialNotes?
     let genreNames: [String]
     let isComplete: Bool
     let isSingle: Bool
+    let name: String
     let releaseDate: String
+    let playParams: PlayParams?
     let trackCount: Int
     let url: URL
-    let editorialNotes: EditorialNotes?
 }
