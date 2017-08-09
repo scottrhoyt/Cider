@@ -101,14 +101,8 @@
 		3B2DEA861F3198F500551AA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3BD1D15B1F31A1D8001E9705 /* Album.swift */,
 				3B2DEA871F31991800551AA2 /* Results.swift */,
-				3BD1D15D1F31A462001E9705 /* PlayParams.swift */,
-				3B9B8C9C1F31B3EE009ECADB /* Artist.swift */,
 				3B9B8C9E1F31B473009ECADB /* MediaType.swift */,
-				3B9B8CA21F32271C009ECADB /* EditorialNotes.swift */,
-				3B1C41691F322B210000AADB /* Artwork.swift */,
-				3B1C416D1F322BEB0000AADB /* Track.swift */,
 				3B58AC611F350899006112EC /* Relationships.swift */,
 			);
 			path = Models;
@@ -121,6 +115,19 @@
 				3B9E36811F3142930014CB60 /* CiderUrlBuilder.swift */,
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		3B5B5C6D1F3BB40700B56BC2 /* ResourceObjects */ = {
+			isa = PBXGroup;
+			children = (
+				3BD1D15B1F31A1D8001E9705 /* Album.swift */,
+				3B9B8C9C1F31B3EE009ECADB /* Artist.swift */,
+				3B1C41691F322B210000AADB /* Artwork.swift */,
+				3B9B8CA21F32271C009ECADB /* EditorialNotes.swift */,
+				3BD1D15D1F31A462001E9705 /* PlayParams.swift */,
+				3B1C416D1F322BEB0000AADB /* Track.swift */,
+			);
+			path = ResourceObjects;
 			sourceTree = "<group>";
 		};
 		3BA048EE1F313BC4009DABCB = {
@@ -144,6 +151,7 @@
 		3BA048FA1F313BC4009DABCB /* Cider */ = {
 			isa = PBXGroup;
 			children = (
+				3B5B5C6D1F3BB40700B56BC2 /* ResourceObjects */,
 				3B58AC631F35314F006112EC /* Client */,
 				3B2DEA861F3198F500551AA2 /* Models */,
 				3BA048FB1F313BC4009DABCB /* Cider.h */,
