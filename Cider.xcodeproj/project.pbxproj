@@ -443,7 +443,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Cider/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.AmpKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.Cider;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -465,7 +465,7 @@
 				INFOPLIST_FILE = "$(SRCROOT)/Cider/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.AmpKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.Cider;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
@@ -480,7 +480,7 @@
 				DEVELOPMENT_TEAM = 6GXULLP7L9;
 				INFOPLIST_FILE = CiderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.AmpKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.CiderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -494,7 +494,7 @@
 				DEVELOPMENT_TEAM = 6GXULLP7L9;
 				INFOPLIST_FILE = CiderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.AmpKitTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.CiderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -1,6 +1,6 @@
 //
 //  AmpUrlBuilderTests.swift
-//  AmpKitTests
+//  CiderTests
 //
 //  Created by Scott Hoyt on 8/1/17.
 //  Copyright © 2017 Scott Hoyt. All rights reserved.
