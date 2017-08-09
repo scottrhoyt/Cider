@@ -14,9 +14,9 @@ public struct SearchResults: Codable {
 }
 
 public struct Results: Codable {
-    let albums: Result<MediaResult<AlbumAttributes>>?
-    let artists: Result<MediaResult<ArtistAttributes>>?
-    let songs: Result<MediaResult<TrackAttributes>>?
+    let albums: Result<Resource<AlbumAttributes>>?
+    let artists: Result<Resource<ArtistAttributes>>?
+    let songs: Result<Resource<TrackAttributes>>?
 }
 
 public struct Result<T: Codable>: Codable {
@@ -24,12 +24,4 @@ public struct Result<T: Codable>: Codable {
 
     let href: String?
     let next: String?
-}
-
-public struct MediaResult<T: Codable>: Codable {
-    let id: String
-    let attributes: T?
-    let type: MediaType
-    let href: String
-    let relationships: Relationships?
 }

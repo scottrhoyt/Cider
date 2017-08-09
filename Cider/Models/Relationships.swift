@@ -9,7 +9,7 @@
 import Foundation
 
 public struct Relationships: Codable {
-    let albums: Result<MediaResult<AlbumAttributes>>?
-    let artists: Result<MediaResult<ArtistAttributes>>?
-    let tracks: Result<MediaResult<TrackAttributes>>?
+    let albums: Result<Resource<AlbumAttributes>>?
+    let artists: Result<Resource<ArtistAttributes>>?
+    let tracks: Result<Resource<TrackAttributes>>?
 }

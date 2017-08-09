@@ -47,7 +47,7 @@ class AlbumTests: XCTestCase {
     }
 
     func testAlbumFromFetch() {
-        let fetch = fixture(Result<MediaResult<AlbumAttributes>>.self, name: "album")
+        let fetch = fixture(Result<Resource<AlbumAttributes>>.self, name: "album")
 
         let album = fetch.data[0]
 

@@ -31,17 +31,17 @@ public struct Cider {
         fetch(request, completion: completion)
     }
 
-    public func artist(id: String, completion: ((Result<MediaResult<ArtistAttributes>>?, Error?) -> Void)?) {
+    public func artist(id: String, completion: ((Result<Resource<ArtistAttributes>>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .artists, id: id)
         fetch(request, completion: completion)
     }
 
-    public func album(id: String, completion: ((Result<MediaResult<AlbumAttributes>>?, Error?) -> Void)?) {
+    public func album(id: String, completion: ((Result<Resource<AlbumAttributes>>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .albums, id: id)
         fetch(request, completion: completion)
     }
 
-    public func song(id: String, completion: ((Result<MediaResult<TrackAttributes>>?, Error?) -> Void)?) {
+    public func song(id: String, completion: ((Result<Resource<TrackAttributes>>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .songs, id: id)
         fetch(request, completion: completion)
     }

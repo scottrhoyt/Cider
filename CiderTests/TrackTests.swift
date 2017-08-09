@@ -11,7 +11,7 @@ import XCTest
 
 class TrackTests: XCTestCase {
     func testTrackFromFetch() {
-        let result = fixture(Result<MediaResult<TrackAttributes>>.self, name: "song")
+        let result = fixture(Result<Resource<TrackAttributes>>.self, name: "song")
 
         let track = result.data[0]
 
