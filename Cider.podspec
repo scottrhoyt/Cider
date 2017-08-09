@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "AmpKit"
+  s.name         = "Cider"
   s.version      = "0.2.0"
   s.summary      = "The missing Apple Music SDK."
 
@@ -25,13 +25,13 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-  AmpKit is an SDK for interacting with the Apple Music API. It can help you
+  Cider is an SDK for interacting with the Apple Music API. It can help you
   quickly search the catalog; retrive albums, artists, and songs; access
   the user's playback history and recommendations; and more.
                    DESC
 
-  s.homepage     = "https://github.com/scottrhoyt/AmpKit"
-  s.documentation_url = "http://scottrhoyt.github.io/AmpKit/"
+  s.homepage     = "https://github.com/scottrhoyt/Cider"
+  s.documentation_url = "http://scottrhoyt.github.io/Cider/"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/scottrhoyt/AmpKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/scottrhoyt/Cider.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -82,7 +82,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "AmpKit/**/*.swift"
+  s.source_files  = "Cider/**/*.swift"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
