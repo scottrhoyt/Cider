@@ -37,7 +37,7 @@
 			containerPortal = 3BA048EF1F313BC4009DABCB /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3BA048F71F313BC4009DABCB;
-			remoteInfo = AmpKit;
+			remoteInfo = Cider;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -195,7 +195,7 @@
 			dependencies = (
 			);
 			name = Cider;
-			productName = AmpKit;
+			productName = Cider;
 			productReference = 3BA048F81F313BC4009DABCB /* Cider.framework */;
 			productType = "com.apple.product-type.framework";
 		};
@@ -213,7 +213,7 @@
 				3BA049041F313BC4009DABCB /* PBXTargetDependency */,
 			);
 			name = CiderTests;
-			productName = AmpKitTests;
+			productName = CiderTests;
 			productReference = 3BA049011F313BC4009DABCB /* CiderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};

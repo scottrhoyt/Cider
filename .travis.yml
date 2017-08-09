@@ -45,6 +45,6 @@ matrix:
 #  file: $FRAMEWORK_NAME.framework.zip
 #  skip_cleanup: true
 #  on:
-#    repo: scottrhoyt/AmpKit
+#    repo: scottrhoyt/Cider
 #    tags: true
 #    condition: $JOB = Xcode
