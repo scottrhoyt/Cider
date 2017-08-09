@@ -10,7 +10,7 @@ import Foundation
 
 public struct ArtistAttributes: Codable {
     let genreNames: [String]
+    let editorialNotes: EditorialNotes?
     let name: String
     let url: URL
-    let editorialNotes: EditorialNotes?
 }
