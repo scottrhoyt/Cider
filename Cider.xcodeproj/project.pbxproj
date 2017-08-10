@@ -12,10 +12,8 @@
 		3B1C416E1F322BEB0000AADB /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1C416D1F322BEB0000AADB /* Track.swift */; };
 		3B2DEA821F31826100551AA2 /* CiderUrlBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2DEA811F31826100551AA2 /* CiderUrlBuilderTests.swift */; };
 		3B2DEA851F3193A600551AA2 /* search.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B2DEA841F3193A600551AA2 /* search.json */; };
-		3B2DEA881F31991800551AA2 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2DEA871F31991800551AA2 /* Results.swift */; };
 		3B58AC5C1F3503C3006112EC /* song.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B58AC5B1F3503C3006112EC /* song.json */; };
 		3B58AC601F350495006112EC /* TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58AC5F1F350495006112EC /* TrackTests.swift */; };
-		3B58AC621F350899006112EC /* Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58AC611F350899006112EC /* Relationships.swift */; };
 		3B58AC651F353162006112EC /* Cider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58AC641F353162006112EC /* Cider.swift */; };
 		3B9B8C9D1F31B3EE009ECADB /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8C9C1F31B3EE009ECADB /* Artist.swift */; };
 		3B9B8C9F1F31B473009ECADB /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8C9E1F31B473009ECADB /* MediaType.swift */; };
@@ -29,6 +27,9 @@
 		3BAF09A11F3BB7050018AA8B /* ContentRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF09A01F3BB7050018AA8B /* ContentRating.swift */; };
 		3BAF09A41F3BB7880018AA8B /* AppleMusicAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF09A31F3BB7880018AA8B /* AppleMusicAPIError.swift */; };
 		3BAF09A61F3BB8FC0018AA8B /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF09A51F3BB8FC0018AA8B /* Resource.swift */; };
+		3BAF09A81F3BBACC0018AA8B /* ResponseRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF09A71F3BBACC0018AA8B /* ResponseRoot.swift */; };
+		3BAF09AA1F3BC06F0018AA8B /* Relationship.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF09A91F3BC06F0018AA8B /* Relationship.swift */; };
+		3BAF09AC1F3C10D10018AA8B /* SearchResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAF09AB1F3C10D10018AA8B /* SearchResults.swift */; };
 		3BD1D15A1F319C83001E9705 /* AlbumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D1591F319C83001E9705 /* AlbumTests.swift */; };
 		3BD1D15C1F31A1D8001E9705 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15B1F31A1D8001E9705 /* Album.swift */; };
 		3BD1D15E1F31A462001E9705 /* PlayParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD1D15D1F31A462001E9705 /* PlayParameters.swift */; };
@@ -50,10 +51,8 @@
 		3B1C416D1F322BEB0000AADB /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
 		3B2DEA811F31826100551AA2 /* CiderUrlBuilderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CiderUrlBuilderTests.swift; sourceTree = "<group>"; };
 		3B2DEA841F3193A600551AA2 /* search.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = search.json; sourceTree = "<group>"; };
-		3B2DEA871F31991800551AA2 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		3B58AC5B1F3503C3006112EC /* song.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = song.json; sourceTree = "<group>"; };
 		3B58AC5F1F350495006112EC /* TrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTests.swift; sourceTree = "<group>"; };
-		3B58AC611F350899006112EC /* Relationships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationships.swift; sourceTree = "<group>"; };
 		3B58AC641F353162006112EC /* Cider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cider.swift; sourceTree = "<group>"; };
 		3B9B8C9C1F31B3EE009ECADB /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		3B9B8C9E1F31B473009ECADB /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
@@ -70,6 +69,9 @@
 		3BAF09A01F3BB7050018AA8B /* ContentRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRating.swift; sourceTree = "<group>"; };
 		3BAF09A31F3BB7880018AA8B /* AppleMusicAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicAPIError.swift; sourceTree = "<group>"; };
 		3BAF09A51F3BB8FC0018AA8B /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
+		3BAF09A71F3BBACC0018AA8B /* ResponseRoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseRoot.swift; sourceTree = "<group>"; };
+		3BAF09A91F3BC06F0018AA8B /* Relationship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Relationship.swift; sourceTree = "<group>"; };
+		3BAF09AB1F3C10D10018AA8B /* SearchResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResults.swift; sourceTree = "<group>"; };
 		3BD1D1591F319C83001E9705 /* AlbumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTests.swift; sourceTree = "<group>"; };
 		3BD1D15B1F31A1D8001E9705 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		3BD1D15D1F31A462001E9705 /* PlayParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayParameters.swift; sourceTree = "<group>"; };
@@ -107,9 +109,7 @@
 		3B2DEA861F3198F500551AA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3B2DEA871F31991800551AA2 /* Results.swift */,
 				3B9B8C9E1F31B473009ECADB /* MediaType.swift */,
-				3B58AC611F350899006112EC /* Relationships.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -187,7 +187,10 @@
 			isa = PBXGroup;
 			children = (
 				3BAF09A31F3BB7880018AA8B /* AppleMusicAPIError.swift */,
+				3BAF09A91F3BC06F0018AA8B /* Relationship.swift */,
 				3BAF09A51F3BB8FC0018AA8B /* Resource.swift */,
+				3BAF09A71F3BBACC0018AA8B /* ResponseRoot.swift */,
+				3BAF09AB1F3C10D10018AA8B /* SearchResults.swift */,
 			);
 			path = CoreObjects;
 			sourceTree = "<group>";
@@ -305,7 +308,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B9B8C9F1F31B473009ECADB /* MediaType.swift in Sources */,
-				3B2DEA881F31991800551AA2 /* Results.swift in Sources */,
 				3B1C416A1F322B210000AADB /* Artwork.swift in Sources */,
 				3BD1D15E1F31A462001E9705 /* PlayParameters.swift in Sources */,
 				3B58AC651F353162006112EC /* Cider.swift in Sources */,
@@ -314,10 +316,12 @@
 				3B1C416E1F322BEB0000AADB /* Track.swift in Sources */,
 				3B9E36821F3142930014CB60 /* CiderUrlBuilder.swift in Sources */,
 				3BAF09A41F3BB7880018AA8B /* AppleMusicAPIError.swift in Sources */,
-				3B58AC621F350899006112EC /* Relationships.swift in Sources */,
+				3BAF09AC1F3C10D10018AA8B /* SearchResults.swift in Sources */,
 				3B9B8C9D1F31B3EE009ECADB /* Artist.swift in Sources */,
 				3BD1D15C1F31A1D8001E9705 /* Album.swift in Sources */,
 				3BAF09A61F3BB8FC0018AA8B /* Resource.swift in Sources */,
+				3BAF09A81F3BBACC0018AA8B /* ResponseRoot.swift in Sources */,
+				3BAF09AA1F3BC06F0018AA8B /* Relationship.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

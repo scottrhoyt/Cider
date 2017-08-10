@@ -26,22 +26,22 @@ public struct Cider {
 
     // MARK: Requests
 
-    public func search(term: String, limit: Int? = nil, types: [MediaType]? = nil, completion: ((SearchResults?, Error?) -> Void)?) {
+    public func search(term: String, limit: Int? = nil, types: [MediaType]? = nil, completion: ((SearchResponseRoot?, Error?) -> Void)?) {
         let request = urlBuilder.searchRequest(term: term, limit: limit, types: types)
         fetch(request, completion: completion)
     }
 
-    public func artist(id: String, completion: ((Result<Resource<ArtistAttributes>>?, Error?) -> Void)?) {
+    public func artist(id: String, completion: ((ResponseRoot<Artist>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .artists, id: id)
         fetch(request, completion: completion)
     }
 
-    public func album(id: String, completion: ((Result<Resource<AlbumAttributes>>?, Error?) -> Void)?) {
+    public func album(id: String, completion: ((ResponseRoot<Album>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .albums, id: id)
         fetch(request, completion: completion)
     }
 
-    public func song(id: String, completion: ((Result<Resource<TrackAttributes>>?, Error?) -> Void)?) {
+    public func song(id: String, completion: ((ResponseRoot<Track>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .songs, id: id)
         fetch(request, completion: completion)
     }
