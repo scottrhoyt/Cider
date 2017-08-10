@@ -106,14 +106,6 @@
 			path = Fixtures;
 			sourceTree = "<group>";
 		};
-		3B2DEA861F3198F500551AA2 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3B9B8C9E1F31B473009ECADB /* MediaType.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		3B58AC631F35314F006112EC /* Client */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +123,7 @@
 				3B1C41691F322B210000AADB /* Artwork.swift */,
 				3BAF09A01F3BB7050018AA8B /* ContentRating.swift */,
 				3B9B8CA21F32271C009ECADB /* EditorialNotes.swift */,
+				3B9B8C9E1F31B473009ECADB /* MediaType.swift */,
 				3BD1D15D1F31A462001E9705 /* PlayParameters.swift */,
 				3B1C416D1F322BEB0000AADB /* Track.swift */,
 			);
@@ -161,7 +154,6 @@
 				3BAF09A21F3BB7650018AA8B /* CoreObjects */,
 				3B5B5C6D1F3BB40700B56BC2 /* ResourceObjects */,
 				3B58AC631F35314F006112EC /* Client */,
-				3B2DEA861F3198F500551AA2 /* Models */,
 				3BA048FB1F313BC4009DABCB /* Cider.h */,
 				3BA048FC1F313BC4009DABCB /* Info.plist */,
 			);
