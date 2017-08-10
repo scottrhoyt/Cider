@@ -1,5 +1,9 @@
 import XCTest
-@testable import TestCiderSPMTests
+@testable import AlbumTests
+@testable import ArtistTests
+@testable import ArtworkTests
+@testable import CiderUrlBuilderTests
+@testable import TrackTests
 
 XCTMain([
     testCase(AlbumTests.allTests),
