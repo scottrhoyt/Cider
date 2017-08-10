@@ -2,7 +2,7 @@
 
 ##### Breaking
 
-* None
+* Rename `Cider` to `CiderClient`
 
 ##### Enhancements
 

@@ -1,5 +1,5 @@
 //
-//  Cider.swift
+//  CiderClient.swift
 //  Cider
 //
 //  Created by Scott Hoyt on 8/4/17.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Cider {
+public struct CiderClient {
     private let urlBuilder: UrlBuilder
     private let session: URLSession
 
