@@ -22,17 +22,19 @@ extension XCTestCase {
     }
 
     private func urlForFixture(name: String, ofType fileType: String) throws -> URL {
-        if let url = Bundle(for: AlbumTests.self).url(forResource: name, withExtension: fileType) { // Xcode
-            return url
-        } else { // SPM
-            let workingDirectory = FileManager.default.currentDirectoryPath
-            let fixturesPath = workingDirectory + "/Tests/CiderTests/fixtures"
-            let fixturePath = fixturesPath + "/\(name).\(fileType)"
-            if FileManager.default.fileExists(atPath: fixturePath) {
-                return URL(fileURLWithPath: fixturePath)
-            } else {
-                throw TestingError.cannotLoadFixture
+        #if os(macOS) || os(iOS)
+            if let url = Bundle(for: AlbumTests.self).url(forResource: name, withExtension: fileType) { // Xcode
+                return url
             }
+        #endif
+
+        let workingDirectory = FileManager.default.currentDirectoryPath
+        let fixturesPath = workingDirectory + "/Tests/CiderTests/fixtures"
+        let fixturePath = fixturesPath + "/\(name).\(fileType)"
+        if FileManager.default.fileExists(atPath: fixturePath) {
+            return URL(fileURLWithPath: fixturePath)
+        } else {
+            throw TestingError.cannotLoadFixture
         }
     }
 }
