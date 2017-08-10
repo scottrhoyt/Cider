@@ -59,4 +59,11 @@ class CiderUrlBuilderTests: XCTestCase {
         XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/songs/id123")!)
         XCTAssertEqual(request.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
     }
+
+    func testFetchAlbumRequestWithInclude() {
+        var request = builder.fetchRequest(mediaType: .albums, id: "id123", include: ["artists", "songs"])
+        XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/albums/id123?include=artists,songs")!)
+        XCTAssertEqual(request.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
+    }
+
 }

@@ -32,17 +32,17 @@ public struct CiderClient {
     }
 
     public func artist(id: String, completion: ((ResponseRoot<Artist>?, Error?) -> Void)?) {
-        let request = urlBuilder.fetchRequest(mediaType: .artists, id: id)
+        let request = urlBuilder.fetchRequest(mediaType: .artists, id: id, include: nil)
         fetch(request, completion: completion)
     }
 
     public func album(id: String, completion: ((ResponseRoot<Album>?, Error?) -> Void)?) {
-        let request = urlBuilder.fetchRequest(mediaType: .albums, id: id)
+        let request = urlBuilder.fetchRequest(mediaType: .albums, id: id, include: nil)
         fetch(request, completion: completion)
     }
 
     public func song(id: String, completion: ((ResponseRoot<Track>?, Error?) -> Void)?) {
-        let request = urlBuilder.fetchRequest(mediaType: .songs, id: id)
+        let request = urlBuilder.fetchRequest(mediaType: .songs, id: id, include: nil)
         fetch(request, completion: completion)
     }
 

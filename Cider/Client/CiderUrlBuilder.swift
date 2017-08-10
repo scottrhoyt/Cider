@@ -10,7 +10,7 @@ import Foundation
 
 protocol UrlBuilder {
     func searchRequest(term: String, limit: Int?, types: [MediaType]?) -> URLRequest
-    func fetchRequest(mediaType: MediaType, id: String) -> URLRequest
+    func fetchRequest(mediaType: MediaType, id: String, include: [String]?) -> URLRequest
 }
 
 public enum Storefront: String, Codable {
@@ -98,7 +98,7 @@ struct CiderUrlBuilder: UrlBuilder {
         return components.url(relativeTo: baseApiUrl)!
     }
 
-    private func fetchURL(mediaType: MediaType, id: String) -> URL {
+    private func fetchURL(mediaType: MediaType, id: String, include: [String]? = nil) -> URL {
         var components = URLComponents()
         var fetchPath: String
 
@@ -106,6 +106,12 @@ struct CiderUrlBuilder: UrlBuilder {
         case .artists: fetchPath = AppleMusicApi.artistPath
         case .albums: fetchPath = AppleMusicApi.albumsPath
         case .songs: fetchPath = AppleMusicApi.songsPath
+        }
+
+        // Include
+        if let include = include {
+            let query = URLQueryItem(name: "include", value: include.joined(separator: ","))
+            components.queryItems = [query]
         }
 
         components.path = addStorefront(urlString: fetchPath).replacingOccurrences(of: "{id}", with: id)
@@ -124,8 +130,8 @@ struct CiderUrlBuilder: UrlBuilder {
         return constructRequest(url: url)
     }
 
-    func fetchRequest(mediaType: MediaType, id: String) -> URLRequest {
-        let url = fetchURL(mediaType: mediaType, id: id)
+    func fetchRequest(mediaType: MediaType, id: String, include: [String]? = nil) -> URLRequest {
+        let url = fetchURL(mediaType: mediaType, id: id, include: include)
         return constructRequest(url: url)
     }
 
