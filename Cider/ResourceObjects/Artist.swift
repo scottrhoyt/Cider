@@ -11,10 +11,10 @@ import Foundation
 public typealias Artist = Resource<ArtistAttributes, ArtistRelationships>
 
 public struct ArtistAttributes: Codable {
-    let genreNames: [String]
-    let editorialNotes: EditorialNotes?
-    let name: String
-    let url: URL
+    public let genreNames: [String]
+    public let editorialNotes: EditorialNotes?
+    public let name: String
+    public let url: URL
 }
 
 public struct ArtistRelationships: Codable {

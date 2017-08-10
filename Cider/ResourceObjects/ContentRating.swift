@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum ContentRating: String, Codable {
+public enum ContentRating: String, Codable {
     case clean
     case explicit
 }

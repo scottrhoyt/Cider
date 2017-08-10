@@ -9,7 +9,7 @@
 import Foundation
 
 public struct SearchResults: Codable {
-    let albums: ResponseRoot<Album>?
-    let artists: ResponseRoot<Artist>?
-    let songs: ResponseRoot<Track>?
+    public let albums: ResponseRoot<Album>?
+    public let artists: ResponseRoot<Artist>?
+    public let songs: ResponseRoot<Track>?
 }

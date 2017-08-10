@@ -7,6 +7,7 @@
 ##### Enhancements
 
 * Add include functionality to fetches.
+* Increase access level of many fields to `public`
 
 ##### Bug Fixes
 

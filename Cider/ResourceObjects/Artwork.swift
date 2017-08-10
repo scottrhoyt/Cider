@@ -9,15 +9,15 @@
 import Foundation
 
 public struct Artwork: Codable {
-    let width: Int
-    let height: Int
-    let url: String
-    let bgColor: String
+    public let width: Int
+    public let height: Int
+    public let url: String
+    public let bgColor: String
 
-    let textColor1: String
-    let textColor2: String
-    let textColor3: String
-    let textColor4: String
+    public let textColor1: String
+    public let textColor2: String
+    public let textColor3: String
+    public let textColor4: String
 
     public func url(forWidth width: Int) -> URL? {
         let urlString = url.replacingOccurrences(of: "{w}", with: "\(width)").replacingOccurrences(of: "{h}", with: "\(width)")

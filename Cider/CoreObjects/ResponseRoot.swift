@@ -9,15 +9,15 @@
 import Foundation
 
 public struct ResponseRoot<T: Codable>: Codable {
-    let data: [T]?
-    let results: T?
-    let errors: [AppleMusicAPIError]?
+    public let data: [T]?
+    public let results: T?
+    public let errors: [AppleMusicAPIError]?
     // let meta: Meta?
-    let next: String?
-    let href: String?
+    public let next: String?
+    public let href: String?
 }
 
 // Might not need this
 public struct SearchResponseRoot: Codable {
-    let results: SearchResults
+    public let results: SearchResults
 }

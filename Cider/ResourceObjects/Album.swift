@@ -11,19 +11,19 @@ import Foundation
 public typealias Album = Resource<AlbumAttributes, AlbumRelationships>
 
 public struct AlbumAttributes: Codable {
-    let artistName: String
-    let artwork: Artwork
-    let contentRating: ContentRating?
-    let copyright: String
-    let editorialNotes: EditorialNotes?
-    let genreNames: [String]
-    let isComplete: Bool
-    let isSingle: Bool
-    let name: String
-    let releaseDate: String
-    let playParams: PlayParameters?
-    let trackCount: Int
-    let url: URL
+    public let artistName: String
+    public let artwork: Artwork
+    public let contentRating: ContentRating?
+    public let copyright: String
+    public let editorialNotes: EditorialNotes?
+    public let genreNames: [String]
+    public let isComplete: Bool
+    public let isSingle: Bool
+    public let name: String
+    public let releaseDate: String
+    public let playParams: PlayParameters?
+    public let trackCount: Int
+    public let url: URL
 }
 
 public struct AlbumRelationships: Codable {

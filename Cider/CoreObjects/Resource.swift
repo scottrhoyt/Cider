@@ -9,10 +9,10 @@
 import Foundation
 
 public struct Resource<T: Codable, U: Codable>: Codable {
-    let id: String
-    let type: MediaType
-    let href: String
-    let attributes: T?
-    let relationships: U?
+    public let id: String
+    public let type: MediaType
+    public let href: String
+    public let attributes: T?
+    public let relationships: U?
     // let meta: Meta
 }

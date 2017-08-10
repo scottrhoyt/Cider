@@ -9,6 +9,6 @@
 import Foundation
 
 public struct PlayParameters: Codable {
-    let id: String
-    let kind: String
+    public let id: String
+    public let kind: String
 }
