@@ -10,7 +10,7 @@ import Foundation
 
 protocol UrlBuilder {
     func searchRequest(term: String, limit: Int?, types: [MediaType]?) -> URLRequest
-    func fetchRequest(mediaType: MediaType, id: String, include: [String]?) -> URLRequest
+    func fetchRequest(mediaType: MediaType, id: String, include: [Include]?) -> URLRequest
 }
 
 public enum Storefront: String, Codable {
@@ -98,7 +98,7 @@ struct CiderUrlBuilder: UrlBuilder {
         return components.url(relativeTo: baseApiUrl)!
     }
 
-    private func fetchURL(mediaType: MediaType, id: String, include: [String]? = nil) -> URL {
+    private func fetchURL(mediaType: MediaType, id: String, include: [Include]? = nil) -> URL {
         var components = URLComponents()
         var fetchPath: String
 
@@ -110,7 +110,7 @@ struct CiderUrlBuilder: UrlBuilder {
 
         // Include
         if let include = include {
-            let query = URLQueryItem(name: "include", value: include.joined(separator: ","))
+            let query = URLQueryItem(name: "include", value: include.map { $0.rawValue }.joined(separator: ","))
             components.queryItems = [query]
         }
 
@@ -130,7 +130,7 @@ struct CiderUrlBuilder: UrlBuilder {
         return constructRequest(url: url)
     }
 
-    func fetchRequest(mediaType: MediaType, id: String, include: [String]? = nil) -> URLRequest {
+    func fetchRequest(mediaType: MediaType, id: String, include: [Include]? = nil) -> URLRequest {
         let url = fetchURL(mediaType: mediaType, id: id, include: include)
         return constructRequest(url: url)
     }
