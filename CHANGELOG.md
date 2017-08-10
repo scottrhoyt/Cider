@@ -11,6 +11,7 @@
 ##### Bug Fixes
 
 * Fixed typo in `Cider.artist`
+* Add `Genre`
 
 ## 0.3.0
 

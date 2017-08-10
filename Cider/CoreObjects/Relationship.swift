@@ -14,3 +14,5 @@ public struct Relationship<T: Codable>: Codable {
     public let next: String?
     // let meta: Meta
 }
+
+public struct VoidRelationship: Codable { }
