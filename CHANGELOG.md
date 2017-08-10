@@ -7,6 +7,7 @@
 ##### Enhancements
 
 * SPM Compatible
+* Linux Compatible
 
 ##### Bug Fixes
 
