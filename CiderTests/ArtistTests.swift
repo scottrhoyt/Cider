@@ -11,9 +11,9 @@ import XCTest
 
 class ArtistTests: XCTestCase {
     func testArtistFromSearch() {
-        let search = fixture(SearchResults.self, name: "search")
+        let search = fixture(SearchResponseRoot.self, name: "search")
 
-        let artist = search.results.artists!.data[0]
+        let artist = search.results.artists!.data![0]
 
         XCTAssertEqual(artist.id, "117118")
         XCTAssertEqual(artist.type, .artists)

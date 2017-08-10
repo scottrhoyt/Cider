@@ -11,9 +11,9 @@ import XCTest
 
 class AlbumTests: XCTestCase {
     func testAlbumFromSearch() {
-        let search = fixture(SearchResults.self, name: "search")
+        let search = fixture(SearchResponseRoot.self, name: "search")
 
-        let album = search.results.albums!.data[0]
+        let album = search.results.albums!.data![0]
 
         XCTAssertEqual(album.id, "900721190")
         XCTAssertEqual(album.type, .albums)
@@ -47,9 +47,9 @@ class AlbumTests: XCTestCase {
     }
 
     func testAlbumFromFetch() {
-        let fetch = fixture(Result<Resource<AlbumAttributes>>.self, name: "album")
+        let fetch = fixture(ResponseRoot<Album>.self, name: "album")
 
-        let album = fetch.data[0]
+        let album = fetch.data![0]
 
         XCTAssertEqual(album.id, "310730204")
         XCTAssertEqual(album.type, .albums)

@@ -11,9 +11,9 @@ import XCTest
 
 class TrackTests: XCTestCase {
     func testTrackFromFetch() {
-        let result = fixture(Result<Resource<TrackAttributes>>.self, name: "song")
+        let result = fixture(ResponseRoot<Track>.self, name: "song")
 
-        let track = result.data[0]
+        let track = result.data![0]
 
         XCTAssertEqual(track.id, "900032829")
         XCTAssertEqual(track.type, .songs)
@@ -21,17 +21,17 @@ class TrackTests: XCTestCase {
         XCTAssertNotNil(track.relationships)
 
         // album relationship
-        XCTAssertEqual(track.relationships?.albums?.data[0].href, "/v1/catalog/us/albums/900032785")
-        XCTAssertEqual(track.relationships?.albums?.data[0].id, "900032785")
-        XCTAssertEqual(track.relationships?.albums?.data[0].type, .albums)
+        XCTAssertEqual(track.relationships?.albums.data?[0].href, "/v1/catalog/us/albums/900032785")
+        XCTAssertEqual(track.relationships?.albums.data?[0].id, "900032785")
+        XCTAssertEqual(track.relationships?.albums.data?[0].type, .albums)
 
         let attributes = track.attributes!
         XCTAssertEqual(attributes.artistName, "Michael de Jong")
 
         // artist relationships
-        XCTAssertEqual(track.relationships?.artists?.data[0].href, "/v1/catalog/us/artists/6671250")
-        XCTAssertEqual(track.relationships?.artists?.data[0].id, "6671250")
-        XCTAssertEqual(track.relationships?.artists?.data[0].type, .artists)
+        XCTAssertEqual(track.relationships?.artists.data?[0].href, "/v1/catalog/us/artists/6671250")
+        XCTAssertEqual(track.relationships?.artists.data?[0].id, "6671250")
+        XCTAssertEqual(track.relationships?.artists.data?[0].type, .artists)
 
         // artwork
         let artwork = attributes.artwork
