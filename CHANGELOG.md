@@ -6,7 +6,7 @@
 
 ##### Enhancements
 
-* None
+* SPM Compatible
 
 ##### Bug Fixes
 
