@@ -2,15 +2,15 @@
 
 ##### Breaking
 
-* None
+* Renamed objects to closer match their names in the API spec
 
 ##### Enhancements
 
-* None
+* Rework API to more closely match Apple Music API Spec
 
 ##### Bug Fixes
 
-* None
+* Fixed typo in `Cider.artist`
 
 ## 0.3.0
 
