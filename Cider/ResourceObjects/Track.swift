@@ -8,6 +8,8 @@
 
 import Foundation
 
+public typealias Track = Resource<TrackAttributes, TrackRelationships>
+
 public struct TrackAttributes: Codable {
     let artistName: String
     let artwork: Artwork
@@ -25,4 +27,10 @@ public struct TrackAttributes: Codable {
     let trackNumber: Int
     let url: URL
     let workName: String? // Classical music only
+}
+
+public struct TrackRelationships: Codable {
+    public let albums: Relationship<Album>
+    public let artists: Relationship<Artist>
+    // public let genres: Relationship<Genre>?
 }
