@@ -10,8 +10,8 @@ import XCTest
 @testable import Cider
 
 class ArtistTests: XCTestCase {
-    func testArtistFromSearch() {
-        let search = fixture(SearchResponseRoot.self, name: "search")
+    func testArtistFromSearch() throws {
+        let search = try fixture(SearchResponseRoot.self, name: "search")
 
         let artist = search.results.artists!.data![0]
 

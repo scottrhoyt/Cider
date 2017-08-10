@@ -8,12 +8,31 @@
 
 import XCTest
 
+enum TestingError: Error {
+    case cannotLoadFixture
+}
+
 extension XCTestCase {
-    func fixture<T: Decodable>(_ type: T.Type, name: String, fileType: String = "json") -> T {
-        let url = Bundle(for: AlbumTests.self).url(forResource: name, withExtension: fileType)!
-        let data = try! Data(contentsOf: url)
+    func fixture<T: Decodable>(_ type: T.Type, name: String, fileType: String = "json") throws -> T {
+        let url = try urlForFixture(name: name, ofType: fileType)
+        let data = try Data(contentsOf: url)
 
         let decoder = JSONDecoder()
-        return try! decoder.decode(T.self, from: data)
+        return try decoder.decode(T.self, from: data)
+    }
+
+    private func urlForFixture(name: String, ofType fileType: String) throws -> URL {
+        if let url = Bundle(for: AlbumTests.self).url(forResource: name, withExtension: fileType) { // Xcode
+            return url
+        } else { // SPM
+            let workingDirectory = FileManager.default.currentDirectoryPath
+            let fixturesPath = workingDirectory + "/Tests/CiderTests/fixtures"
+            let fixturePath = fixturesPath + "/\(name).\(fileType)"
+            if FileManager.default.fileExists(atPath: fixturePath) {
+                return URL(fileURLWithPath: fixturePath)
+            } else {
+                throw TestingError.cannotLoadFixture
+            }
+        }
     }
 }

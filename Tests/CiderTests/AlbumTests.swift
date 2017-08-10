@@ -10,8 +10,8 @@ import XCTest
 @testable import Cider
 
 class AlbumTests: XCTestCase {
-    func testAlbumFromSearch() {
-        let search = fixture(SearchResponseRoot.self, name: "search")
+    func testAlbumFromSearch() throws {
+        let search = try fixture(SearchResponseRoot.self, name: "search")
 
         let album = search.results.albums!.data![0]
 
@@ -46,8 +46,8 @@ class AlbumTests: XCTestCase {
         XCTAssertNil(attributes.editorialNotes)
     }
 
-    func testAlbumFromFetch() {
-        let fetch = fixture(ResponseRoot<Album>.self, name: "album")
+    func testAlbumFromFetch() throws {
+        let fetch = try fixture(ResponseRoot<Album>.self, name: "album")
 
         let album = fetch.data![0]
 

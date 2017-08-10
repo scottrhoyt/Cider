@@ -10,8 +10,8 @@ import XCTest
 @testable import Cider
 
 class TrackTests: XCTestCase {
-    func testTrackFromFetch() {
-        let result = fixture(ResponseRoot<Track>.self, name: "song")
+    func testTrackFromFetch() throws {
+        let result = try fixture(ResponseRoot<Track>.self, name: "song")
 
         let track = result.data![0]
 
