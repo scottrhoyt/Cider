@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Include: String {
+public enum Include: String {
     case albums
     case artists
     case genres
