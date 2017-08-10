@@ -163,7 +163,8 @@
 				3BA048FB1F313BC4009DABCB /* Cider.h */,
 				3BA048FC1F313BC4009DABCB /* Info.plist */,
 			);
-			path = Cider;
+			name = Cider;
+			path = Sources/Cider;
 			sourceTree = "<group>";
 		};
 		3BA049051F313BC4009DABCB /* CiderTests */ = {
@@ -178,7 +179,8 @@
 				3B58AC5F1F350495006112EC /* TrackTests.swift */,
 				3BA5B9621F37788100480149 /* ArtworkTests.swift */,
 			);
-			path = CiderTests;
+			name = CiderTests;
+			path = Tests/CiderTests;
 			sourceTree = "<group>";
 		};
 		3BAF09A21F3BB7650018AA8B /* CoreObjects */ = {
@@ -472,7 +474,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Cider/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Cider/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.Cider;
@@ -494,7 +496,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Cider/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Cider/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.Cider;
@@ -510,7 +512,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6GXULLP7L9;
-				INFOPLIST_FILE = CiderTests/Info.plist;
+				INFOPLIST_FILE = Tests/CiderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.CiderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -524,7 +526,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 6GXULLP7L9;
-				INFOPLIST_FILE = CiderTests/Info.plist;
+				INFOPLIST_FILE = Tests/CiderTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.scotthoyt.CiderTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
