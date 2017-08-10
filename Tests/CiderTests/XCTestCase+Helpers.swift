@@ -29,7 +29,7 @@ extension XCTestCase {
         #endif
 
         let workingDirectory = FileManager.default.currentDirectoryPath
-        let fixturesPath = workingDirectory + "/Tests/CiderTests/fixtures"
+        let fixturesPath = workingDirectory + "/Tests/CiderTests/Fixtures"
         let fixturePath = fixturesPath + "/\(name).\(fileType)"
         if FileManager.default.fileExists(atPath: fixturePath) {
             return URL(fileURLWithPath: fixturePath)
