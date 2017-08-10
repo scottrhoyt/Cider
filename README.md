@@ -37,7 +37,7 @@ import PackageDescription
 let package = Package(
     name: "<YOUR_PROJECT_NAME>",
     dependencies: [
-        .Package(url: "https://github.com/scottrhoyt/Cider.git", "0.5.0")
+        .package(url: "https://github.com/scottrhoyt/Cider.git", from: "0.6.0")
     ]
 )
 ```
