@@ -2,6 +2,20 @@
 
 ##### Breaking
 
+* None
+
+##### Enhancements
+
+* None
+
+##### Bug Fixes
+
+* None
+
+## 0.4.0
+
+##### Breaking
+
 * Renamed objects to closer match their names in the API spec
 
 ##### Enhancements
