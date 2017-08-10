@@ -6,6 +6,20 @@
 
 ##### Enhancements
 
+* None
+
+##### Bug Fixes
+
+* None
+
+## 0.6.0
+
+##### Breaking
+
+* None
+
+##### Enhancements
+
 * SPM Compatible
 * Linux Compatible
 
