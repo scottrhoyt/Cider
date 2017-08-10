@@ -6,7 +6,7 @@
 
 ##### Enhancements
 
-* None
+* Add include functionality to fetches.
 
 ##### Bug Fixes
 
