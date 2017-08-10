@@ -27,7 +27,7 @@ class CiderUrlBuilderTests: XCTestCase {
     var searchRequest: URLRequest {
         return builder.searchRequest(term: term, limit: limit, types: types)
     }
-    
+
     func testSearchRequestUrl() {
         XCTAssertEqual(searchRequest.url?.absoluteString, "https://api.music.apple.com/v1/catalog/us/search?term=search+term&limit=10&types=albums,songs")
     }
@@ -67,3 +67,19 @@ class CiderUrlBuilderTests: XCTestCase {
     }
 
 }
+
+#if os(Linux)
+    extension CiderUrlBuilderTests {
+        static var allTests: [(String, (CiderUrlBuilderTests) -> () throws -> Void)] {
+            return [
+                ("testSearchRequestUrl", testSearchRequestUrl),
+                ("testSearchRequestHeaders", testSearchRequestHeaders),
+                ("testSearchRequestMethod", testSearchRequestMethod),
+                ("testFetchArtistRequest", testFetchArtistRequest),
+                ("testFetchAlbumRequest", testFetchAlbumRequest),
+                ("testFetchSongRequest", testFetchSongRequest),
+                ("testFetchAlbumRequestWithInclude", testFetchAlbumRequestWithInclude),
+            ]
+        }
+    }
+#endif

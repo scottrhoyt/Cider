@@ -27,3 +27,13 @@ class ArtistTests: XCTestCase {
         XCTAssertEqual(attributes.url, URL(string: "https://itunes.apple.com/us/artist/james-brown/id117118")!)
     }
 }
+
+#if os(Linux)
+    extension ArtistTests {
+        static var allTests: [(String, (ArtistTests) -> () throws -> Void)] {
+            return [
+                ("testArtistFromSearch", testArtistFromSearch),
+            ]
+        }
+    }
+#endif

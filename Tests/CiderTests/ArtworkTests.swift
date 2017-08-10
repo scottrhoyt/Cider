@@ -17,3 +17,13 @@ class ArtworkTests: XCTestCase {
         XCTAssertEqual(album.attributes?.artwork.url(forWidth: 123), URL(string: "https://example.mzstatic.com/image/thumb/Music3/v4/2d/02/4a/2d024aaa-4547-ca71-7ba1-b8f5e1d98256/source/123x123bb.jpg")!)
     }
 }
+
+#if os(Linux)
+    extension ArtworkTests {
+        static var allTests: [(String, (ArtworkTests) -> () throws -> Void)] {
+            return [
+                ("testURL", testURL),
+            ]
+        }
+    }
+#endif

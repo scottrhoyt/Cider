@@ -89,3 +89,14 @@ class AlbumTests: XCTestCase {
         XCTAssertEqual(attributes.editorialNotes?.short, "Springsteen's third album was the one that broke it all open for him.")
     }
 }
+
+#if os(Linux)
+    extension AlbumTests {
+        static var allTests: [(String, (AlbumTests) -> () throws -> Void)] {
+            return [
+                ("testAlbumFromSearch", testAlbumFromSearch),
+                ("testAlbumFromFetch", testAlbumFromFetch),
+            ]
+        }
+    }
+#endif

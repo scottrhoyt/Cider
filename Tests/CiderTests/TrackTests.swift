@@ -58,3 +58,13 @@ class TrackTests: XCTestCase {
         XCTAssertEqual(attributes.url, URL(string: "https://itunes.apple.com/us/album/something-for-the-pain/id900032785?i=900032829")!)
     }
 }
+
+#if os(Linux)
+    extension TrackTests {
+        static var allTests: [(String, (TrackTests) -> () throws -> Void)] {
+            return [
+                ("testTrackFromFetch", testTrackFromFetch),
+            ]
+        }
+    }
+#endif
