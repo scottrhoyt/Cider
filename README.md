@@ -42,6 +42,42 @@ let package = Package(
 )
 ```
 
+### Usage
+
+#### Developer Token
+
+To use the Apple Music API, you will need to generate a developer token.
+Instructions for how to do this can be found in the Apple Music API
+[reference](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/AppleMusicWebServicesReference/SetUpWebServices.html#//apple_ref/doc/uid/TP40017625-CH2-SW1).
+
+Once you have an Apple Music Key you can use a 3rd party library/tool to
+generate your token. I created a Node.js library and CLI tool that you can find
+[here](https://github.com/scottrhoyt/apple-music-jwt).
+
+#### Create a Client
+
+```swift
+let developerToken = "<developer_token>"
+let cider = CiderClient(storefront: .unitedStates, developerToken: developerToken)
+```
+
+#### Search the Catalog
+
+```swift
+cider.search(term: "Michael Jackson", types: [.albums, .songs]) { results, error in
+  // Process the results or error
+}
+```
+
+#### Lookup an Artist/Album/Song
+
+```swift
+let songId = "<song_id>"
+cider.song(id: songId) { result, error in
+  // Process the results or error
+}
+```
+
 ### API Reference
 
 The full API reference can be found [here](https://scottrhoyt.github.io/Cider).
