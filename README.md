@@ -16,7 +16,7 @@ The Missing Apple Music SDK
 Add the following to your Cartfile:
 
 ```sh
-github "scottrhoyt/Cider" ~> 0.3
+github "scottrhoyt/Cider" ~> 0.6
 ```
 
 #### CocoaPods
@@ -24,7 +24,7 @@ github "scottrhoyt/Cider" ~> 0.3
 Add the following to your Podfile:
 
 ```sh
-pod 'Cider', '~> 0.3'
+pod 'Cider', '~> 0.6'
 ```
 
 #### SPM
