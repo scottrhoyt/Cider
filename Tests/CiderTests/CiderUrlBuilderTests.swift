@@ -66,6 +66,24 @@ class CiderUrlBuilderTests: XCTestCase {
         XCTAssertEqual(request.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
     }
 
+    func testAddUserToken() {
+        var myBuilder = builder
+        myBuilder.userToken = "user_token"
+        var request = URLRequest(url: URL(string: "http://example.com")!)
+        request = try! myBuilder.addUserToken(request: request)
+        XCTAssertEqual(request.allHTTPHeaderFields!, ["Music-User-Token": "user_token"])
+    }
+
+    func testAddUserTokenThrowsWithNoToken() {
+        var request = URLRequest(url: URL(string: "http://example.com")!)
+        do {
+            request = try builder.addUserToken(request: request)
+        } catch(CiderUrlBuilderError.noUserToken) {
+            return
+        } catch {
+            XCTFail("Threw the wrong error.")
+        }
+    }
 }
 
 #if os(Linux)

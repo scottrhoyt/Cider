@@ -153,7 +153,7 @@ struct CiderUrlBuilder: UrlBuilder {
         return request
     }
 
-    private func addUserToken(request: URLRequest) throws -> URLRequest {
+    func addUserToken(request: URLRequest) throws -> URLRequest {
         guard let userToken = userToken else {
             throw CiderUrlBuilderError.noUserToken
         }
