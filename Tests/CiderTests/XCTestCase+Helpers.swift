@@ -37,4 +37,16 @@ extension XCTestCase {
             throw TestingError.cannotLoadFixture
         }
     }
+
+    func expect<T: Error & Equatable>(error expectedError: T, op: () throws -> Void) {
+        do {
+            try op()
+        } catch {
+            if let error = error as? T {
+                XCTAssertEqual(error, expectedError)
+            } else {
+                XCTFail("Expected error \(expectedError) and received \(error)")
+            }
+        }
+    }
 }

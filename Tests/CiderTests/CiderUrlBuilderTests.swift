@@ -76,12 +76,8 @@ class CiderUrlBuilderTests: XCTestCase {
 
     func testAddUserTokenThrowsWithNoToken() {
         var request = URLRequest(url: URL(string: "http://example.com")!)
-        do {
+        expect(error: CiderUrlBuilderError.noUserToken) {
             request = try builder.addUserToken(request: request)
-        } catch(CiderUrlBuilderError.noUserToken) {
-            return
-        } catch {
-            XCTFail("Threw the wrong error.")
         }
     }
 }
