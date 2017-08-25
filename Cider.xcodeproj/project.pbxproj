@@ -16,6 +16,7 @@
 		3B58AC601F350495006112EC /* TrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58AC5F1F350495006112EC /* TrackTests.swift */; };
 		3B7042681F50AC6200479B2A /* MusicVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7042671F50AC6200479B2A /* MusicVideo.swift */; };
 		3B70426A1F50AD6500479B2A /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7042691F50AD6500479B2A /* Playlist.swift */; };
+		3B70426C1F50B12F00479B2A /* Curator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B70426B1F50B12F00479B2A /* Curator.swift */; };
 		3B9B8C9D1F31B3EE009ECADB /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8C9C1F31B3EE009ECADB /* Artist.swift */; };
 		3B9B8C9F1F31B473009ECADB /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8C9E1F31B473009ECADB /* MediaType.swift */; };
 		3B9B8CA11F31B4A5009ECADB /* XCTestCase+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9B8CA01F31B4A5009ECADB /* XCTestCase+Helpers.swift */; };
@@ -59,6 +60,7 @@
 		3B58AC5F1F350495006112EC /* TrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackTests.swift; sourceTree = "<group>"; };
 		3B7042671F50AC6200479B2A /* MusicVideo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVideo.swift; sourceTree = "<group>"; };
 		3B7042691F50AD6500479B2A /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		3B70426B1F50B12F00479B2A /* Curator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curator.swift; sourceTree = "<group>"; };
 		3B9B8C9C1F31B3EE009ECADB /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		3B9B8C9E1F31B473009ECADB /* MediaType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaType.swift; sourceTree = "<group>"; };
 		3B9B8CA01F31B4A5009ECADB /* XCTestCase+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Helpers.swift"; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				3B9B8C9C1F31B3EE009ECADB /* Artist.swift */,
 				3B1C41691F322B210000AADB /* Artwork.swift */,
 				3BAF09A01F3BB7050018AA8B /* ContentRating.swift */,
+				3B70426B1F50B12F00479B2A /* Curator.swift */,
 				3B9B8CA21F32271C009ECADB /* EditorialNotes.swift */,
 				3BAF09AD1F3C17670018AA8B /* Genre.swift */,
 				3B9B8C9E1F31B473009ECADB /* MediaType.swift */,
@@ -329,6 +332,7 @@
 				3B9B8C9D1F31B3EE009ECADB /* Artist.swift in Sources */,
 				3BD1D15C1F31A1D8001E9705 /* Album.swift in Sources */,
 				3BAF09A61F3BB8FC0018AA8B /* Resource.swift in Sources */,
+				3B70426C1F50B12F00479B2A /* Curator.swift in Sources */,
 				3BAF09B01F3C1D0C0018AA8B /* CiderClient.swift in Sources */,
 				3BAF09A81F3BBACC0018AA8B /* ResponseRoot.swift in Sources */,
 				3BAF09AA1F3BC06F0018AA8B /* Relationship.swift in Sources */,

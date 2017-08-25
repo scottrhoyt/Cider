@@ -29,6 +29,6 @@ public struct PlaylistAttributes: Codable {
 }
 
 public struct PlaylistRelationships: Codable {
-    //public let curator: Relationship<Curator>
+    public let curator: Relationship<Curator>
     public let tracks: Relationship<Track>
 }
