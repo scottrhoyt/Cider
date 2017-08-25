@@ -6,6 +6,20 @@
 
 ##### Enhancements
 
+* None
+
+##### Bug Fixes
+
+* None
+
+## 0.8.0
+
+##### Breaking
+
+* None
+
+##### Enhancements
+
 * Add functionality to get related resources.
 * Add pagination capability to search and relationship requests.
 * Add `Playlist`, `MusicVideo`, and `Curator` resources.
