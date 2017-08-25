@@ -43,7 +43,7 @@ class CiderUrlBuilderTests: XCTestCase {
 
     func testSearchWithDefaults() {
         let request = builder.searchRequest(term: term, limit: nil, offset: nil, types: nil)
-        XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/search?term=search+term")!)
+        XCTAssertEqual(request.url?.absoluteString, "https://api.music.apple.com/v1/catalog/us/search?term=search+term")
     }
 
     // MARK: Fetch
