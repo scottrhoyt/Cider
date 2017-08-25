@@ -6,7 +6,7 @@
 
 ##### Enhancements
 
-* None
+* Add functionality to get related resources.
 
 ##### Bug Fixes
 
