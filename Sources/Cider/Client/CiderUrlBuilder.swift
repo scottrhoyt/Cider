@@ -72,7 +72,7 @@ struct CiderUrlBuilder: UrlBuilder {
 
     // MARK: Construct urls
 
-    private func seachUrl(term: String, limit: Int? = nil, offset: Int? = nil, types: [MediaType]? = nil) -> URL {
+    private func seachUrl(term: String, limit: Int?, offset: Int?, types: [MediaType]?) -> URL {
 
         // Construct url path
 
@@ -90,7 +90,7 @@ struct CiderUrlBuilder: UrlBuilder {
         return components.url(relativeTo: baseApiUrl)!
     }
 
-    private func fetchURL(mediaType: MediaType, id: String, include: [Include]? = nil) -> URL {
+    private func fetchURL(mediaType: MediaType, id: String, include: [Include]?) -> URL {
         var components = URLComponents()
 
         components.path = AppleMusicApi.fetchPath.addStorefront(storefront).addMediaType(mediaType).addId(id)
@@ -99,7 +99,7 @@ struct CiderUrlBuilder: UrlBuilder {
         return components.url(relativeTo: baseApiUrl)!.absoluteURL
     }
 
-    private func relationshipURL(path: String, limit: Int? = nil, offset: Int? = nil) -> URL {
+    private func relationshipURL(path: String, limit: Int?, offset: Int?) -> URL {
         var components = URLComponents()
 
         components.path = path
@@ -111,17 +111,17 @@ struct CiderUrlBuilder: UrlBuilder {
 
     // MARK: Construct requests
 
-    func searchRequest(term: String, limit: Int? = nil, offset: Int? = nil, types: [MediaType]? = nil) -> URLRequest {
+    func searchRequest(term: String, limit: Int?, offset: Int?, types: [MediaType]?) -> URLRequest {
         let url = seachUrl(term: term, limit: limit, offset: offset, types: types)
         return constructRequest(url: url)
     }
 
-    func fetchRequest(mediaType: MediaType, id: String, include: [Include]? = nil) -> URLRequest {
+    func fetchRequest(mediaType: MediaType, id: String, include: [Include]?) -> URLRequest {
         let url = fetchURL(mediaType: mediaType, id: id, include: include)
         return constructRequest(url: url)
     }
 
-    func relationshipRequest(path: String, limit: Int? = nil, offset: Int? = nil) -> URLRequest {
+    func relationshipRequest(path: String, limit: Int?, offset: Int?) -> URLRequest {
         let url = relationshipURL(path: path, limit: limit, offset: offset)
         return constructRequest(url: url)
     }
