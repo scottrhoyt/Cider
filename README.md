@@ -16,7 +16,7 @@ The Missing Apple Music SDK
 Add the following to your Cartfile:
 
 ```sh
-github "scottrhoyt/Cider" ~> 0.6
+github "scottrhoyt/Cider" ~> 0.7
 ```
 
 #### CocoaPods
@@ -24,7 +24,7 @@ github "scottrhoyt/Cider" ~> 0.6
 Add the following to your Podfile:
 
 ```sh
-pod 'Cider', '~> 0.6'
+pod 'Cider', '~> 0.7'
 ```
 
 #### SPM
@@ -37,7 +37,7 @@ import PackageDescription
 let package = Package(
     name: "<YOUR_PROJECT_NAME>",
     dependencies: [
-        .package(url: "https://github.com/scottrhoyt/Cider.git", from: "0.6.0")
+        .package(url: "https://github.com/scottrhoyt/Cider.git", from: "0.7.0")
     ]
 )
 ```
