@@ -53,12 +53,7 @@ struct CiderUrlBuilder: UrlBuilder {
         static let searchTypes = "types"
 
         // Fetch
-        // TODO: Construct this from the media type
-        static let artistPath = "v1/catalog/{storefront}/artists/{id}"
-        static let albumsPath = "v1/catalog/{storefront}/albums/{id}"
-        static let songsPath = "v1/catalog/{storefront}/songs/{id}"
-        static let playlistsPath = "v1/catalog/{storefront}/playlists/{id}"
-        static let musicVideosPath = "v1/catalog/{storefront}/music-videos/{id}"
+        static let fetchPath = "v1/catalog/{storefront}/{mediaType}/{id}"
     }
 
     private var baseApiUrl: URL {
@@ -78,7 +73,7 @@ struct CiderUrlBuilder: UrlBuilder {
 
         var components = URLComponents()
 
-        components.path = addStorefront(urlString: AppleMusicApi.searchPath)
+        components.path = AppleMusicApi.searchPath.addStorefront(storefront)
 
         // Construct query items
 
@@ -103,15 +98,6 @@ struct CiderUrlBuilder: UrlBuilder {
 
     private func fetchURL(mediaType: MediaType, id: String, include: [Include]? = nil) -> URL {
         var components = URLComponents()
-        var fetchPath: String
-
-        switch mediaType {
-        case .artists: fetchPath = AppleMusicApi.artistPath
-        case .albums: fetchPath = AppleMusicApi.albumsPath
-        case .songs: fetchPath = AppleMusicApi.songsPath
-        case .playlists: fetchPath = AppleMusicApi.playlistsPath
-        case .musicVideos: fetchPath = AppleMusicApi.musicVideosPath
-        }
 
         // Include
         if let include = include {
@@ -119,13 +105,9 @@ struct CiderUrlBuilder: UrlBuilder {
             components.queryItems = [query]
         }
 
-        components.path = addStorefront(urlString: fetchPath).replacingOccurrences(of: "{id}", with: id)
+        components.path = AppleMusicApi.fetchPath.addStorefront(storefront).addMediaType(mediaType).addId(id)
 
         return components.url(relativeTo: baseApiUrl)!.absoluteURL
-    }
-
-    private func addStorefront(urlString: String) -> String {
-        return urlString.replacingOccurrences(of: "{storefront}", with: storefront.rawValue)
     }
 
     // MARK: Construct requests
@@ -174,6 +156,18 @@ struct CiderUrlBuilder: UrlBuilder {
 
 private extension String {
     func replaceSpacesWithPluses() -> String {
-        return self.replacingOccurrences(of: " ", with: "+")
+        return replacingOccurrences(of: " ", with: "+")
+    }
+
+    func addStorefront(_ storefront: Storefront) -> String {
+        return replacingOccurrences(of: "{storefront}", with: storefront.rawValue)
+    }
+
+    func addId(_ id: String) -> String {
+        return replacingOccurrences(of: "{id}", with: id)
+    }
+
+    func addMediaType(_ mediaType: MediaType) -> String {
+        return replacingOccurrences(of: "{mediaType}", with: mediaType.rawValue)
     }
 }
