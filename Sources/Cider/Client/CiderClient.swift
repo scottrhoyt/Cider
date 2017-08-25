@@ -46,6 +46,14 @@ public struct CiderClient {
         fetch(request, completion: completion)
     }
 
+    // MARK: Relationships
+
+    public func get<T>(related: Relationship<T>, limit: Int? = nil, completion: ((ResponseRoot<T>?, Error?) -> Void)?) {
+        let path = related.href
+        let request = urlBuilder.relationshipRequest(path: path, limit: limit)
+        fetch(request, completion: completion)
+    }
+
     // MARK: Helpers
 
     private func fetch<T: Decodable>(_ request: URLRequest, completion: ((T?, Error?) -> Void)?) {

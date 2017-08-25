@@ -19,7 +19,7 @@ class CiderUrlBuilderTests: XCTestCase {
         return CiderUrlBuilder(storefront: storefront, developerToken: devToken)
     }
 
-    // MARK: - Search
+    // MARK: Search
 
     let term = "search term"
     let types = [MediaType.albums, MediaType.songs]
@@ -40,7 +40,12 @@ class CiderUrlBuilderTests: XCTestCase {
         XCTAssertEqual(searchRequest.httpMethod, "GET")
     }
 
-    // MARK: - Fetch
+    func testSearchWithDefaults() {
+        let request = builder.searchRequest(term: term)
+        XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/search?term=search+term")!)
+    }
+
+    // MARK: Fetch
 
     func testFetchArtistRequest() {
         var request = builder.fetchRequest(mediaType: .artists, id: "id123")
@@ -77,6 +82,16 @@ class CiderUrlBuilderTests: XCTestCase {
         XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/albums/id123?include=artists,tracks")!)
         XCTAssertEqual(request.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
     }
+
+    // MARK: Relationships
+
+    func testRelationshipRequestWithLimit() {
+        let path = "/v1/catalog/us/artists/id123/albums"
+        var request = builder.relationshipRequest(path: path, limit: 25)
+        XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/artists/id123/albums?limit=25")!)
+        XCTAssertEqual(request.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
+    }
+
 
     func testAddUserToken() {
         var myBuilder = builder

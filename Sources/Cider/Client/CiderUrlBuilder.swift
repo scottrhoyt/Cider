@@ -11,6 +11,7 @@ import Foundation
 protocol UrlBuilder {
     func searchRequest(term: String, limit: Int?, types: [MediaType]?) -> URLRequest
     func fetchRequest(mediaType: MediaType, id: String, include: [Include]?) -> URLRequest
+    func relationshipRequest(path: String, limit: Int?) -> URLRequest
 }
 
 public enum Storefront: String, Codable {
@@ -96,6 +97,15 @@ struct CiderUrlBuilder: UrlBuilder {
         return components.url(relativeTo: baseApiUrl)!.absoluteURL
     }
 
+    private func relationshipURL(path: String, limit: Int? = nil) -> URL {
+        var components = URLComponents()
+
+        components.path = path
+        components.apply(limit: limit)
+
+        return components.url(relativeTo: baseApiUrl)!.absoluteURL
+    }
+
     // MARK: Construct requests
 
     func searchRequest(term: String, limit: Int? = nil, types: [MediaType]? = nil) -> URLRequest {
@@ -105,6 +115,11 @@ struct CiderUrlBuilder: UrlBuilder {
 
     func fetchRequest(mediaType: MediaType, id: String, include: [Include]? = nil) -> URLRequest {
         let url = fetchURL(mediaType: mediaType, id: id, include: include)
+        return constructRequest(url: url)
+    }
+
+    func relationshipRequest(path: String, limit: Int? = nil) -> URLRequest {
+        let url = relationshipURL(path: path, limit: limit)
         return constructRequest(url: url)
     }
 
@@ -165,9 +180,7 @@ private extension URLComponents {
         }
     }
 
-    mutating func apply(searchTerm: String?) {
-        guard let searchTerm = searchTerm else { return }
-
+    mutating func apply(searchTerm: String) {
         createQueryItemsIfNeeded()
         queryItems?.append(URLQueryItem(name: AppleMusicApi.searchTerm, value: searchTerm.replaceSpacesWithPluses()))
     }
