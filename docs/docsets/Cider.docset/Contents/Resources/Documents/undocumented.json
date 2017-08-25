@@ -43,29 +43,36 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
+      "line": 51,
+      "symbol": "CiderClient.get(related:limit:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderUrlBuilder.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "Storefront",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderUrlBuilder.swift",
-      "line": 17,
+      "line": 18,
       "symbol": "Storefront.unitedStates",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderUrlBuilder.swift",
-      "line": 20,
+      "line": 21,
       "symbol": "CiderUrlBuilderError",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderUrlBuilder.swift",
-      "line": 21,
+      "line": 22,
       "symbol": "CiderUrlBuilderError.noUserToken",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
