@@ -26,8 +26,8 @@ public struct CiderClient {
 
     // MARK: Requests
 
-    public func search(term: String, limit: Int? = nil, types: [MediaType]? = nil, completion: ((SearchResponseRoot?, Error?) -> Void)?) {
-        let request = urlBuilder.searchRequest(term: term, limit: limit, types: types)
+    public func search(term: String, limit: Int? = nil, offset: Int? = nil, types: [MediaType]? = nil, completion: ((SearchResponseRoot?, Error?) -> Void)?) {
+        let request = urlBuilder.searchRequest(term: term, limit: limit, offset: offset, types: types)
         fetch(request, completion: completion)
     }
 
@@ -48,9 +48,9 @@ public struct CiderClient {
 
     // MARK: Relationships
 
-    public func get<T>(related: Relationship<T>, limit: Int? = nil, completion: ((ResponseRoot<T>?, Error?) -> Void)?) {
+    public func get<T>(related: Relationship<T>, limit: Int? = nil, offset: Int? = nil, completion: ((ResponseRoot<T>?, Error?) -> Void)?) {
         let path = related.href
-        let request = urlBuilder.relationshipRequest(path: path, limit: limit)
+        let request = urlBuilder.relationshipRequest(path: path, limit: limit, offset: offset)
         fetch(request, completion: completion)
     }
 

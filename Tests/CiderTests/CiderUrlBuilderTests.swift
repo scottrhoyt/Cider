@@ -12,6 +12,7 @@ import XCTest
 class CiderUrlBuilderTests: XCTestCase {
 
     let limit = 10
+    let offset = 30
     let devToken = "devToken"
     let storefront = Storefront.unitedStates
 
@@ -25,11 +26,11 @@ class CiderUrlBuilderTests: XCTestCase {
     let types = [MediaType.albums, MediaType.songs]
 
     var searchRequest: URLRequest {
-        return builder.searchRequest(term: term, limit: limit, types: types)
+        return builder.searchRequest(term: term, limit: limit, offset: offset, types: types)
     }
 
     func testSearchRequestUrl() {
-        XCTAssertEqual(searchRequest.url?.absoluteString, "https://api.music.apple.com/v1/catalog/us/search?term=search+term&limit=10&types=albums,songs")
+        XCTAssertEqual(searchRequest.url?.absoluteString, "https://api.music.apple.com/v1/catalog/us/search?term=search+term&limit=10&offset=30&types=albums,songs")
     }
 
     func testSearchRequestHeaders() {
@@ -85,10 +86,10 @@ class CiderUrlBuilderTests: XCTestCase {
 
     // MARK: Relationships
 
-    func testRelationshipRequestWithLimit() {
+    func testRelationshipRequestWithLimitAndOffset() {
         let path = "/v1/catalog/us/artists/id123/albums"
-        var request = builder.relationshipRequest(path: path, limit: 25)
-        XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/artists/id123/albums?limit=25")!)
+        var request = builder.relationshipRequest(path: path, limit: 25, offset: 50)
+        XCTAssertEqual(request.url, URL(string: "https://api.music.apple.com/v1/catalog/us/artists/id123/albums?limit=25&offset=50")!)
         XCTAssertEqual(request.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
     }
 

@@ -9,9 +9,9 @@
 import Foundation
 
 protocol UrlBuilder {
-    func searchRequest(term: String, limit: Int?, types: [MediaType]?) -> URLRequest
+    func searchRequest(term: String, limit: Int?, offset: Int?, types: [MediaType]?) -> URLRequest
     func fetchRequest(mediaType: MediaType, id: String, include: [Include]?) -> URLRequest
-    func relationshipRequest(path: String, limit: Int?) -> URLRequest
+    func relationshipRequest(path: String, limit: Int?, offset: Int?) -> URLRequest
 }
 
 public enum Storefront: String, Codable {
@@ -34,6 +34,7 @@ private struct AppleMusicApi {
     static let searchPath = "v1/catalog/{storefront}/search"
     static let searchTerm = "term"
     static let searchLimit = "limit"
+    static let searchOffset = "offset"
     static let searchTypes = "types"
 
     // Fetch
@@ -71,7 +72,7 @@ struct CiderUrlBuilder: UrlBuilder {
 
     // MARK: Construct urls
 
-    private func seachUrl(term: String, limit: Int? = nil, types: [MediaType]? = nil) -> URL {
+    private func seachUrl(term: String, limit: Int? = nil, offset: Int? = nil, types: [MediaType]? = nil) -> URL {
 
         // Construct url path
 
@@ -82,6 +83,7 @@ struct CiderUrlBuilder: UrlBuilder {
         // Construct Query
         components.apply(searchTerm: term)
         components.apply(limit: limit)
+        components.apply(offset: offset)
         components.apply(mediaTypes: types)
 
         // Construct final url
@@ -97,19 +99,20 @@ struct CiderUrlBuilder: UrlBuilder {
         return components.url(relativeTo: baseApiUrl)!.absoluteURL
     }
 
-    private func relationshipURL(path: String, limit: Int? = nil) -> URL {
+    private func relationshipURL(path: String, limit: Int? = nil, offset: Int? = nil) -> URL {
         var components = URLComponents()
 
         components.path = path
         components.apply(limit: limit)
+        components.apply(offset: offset)
 
         return components.url(relativeTo: baseApiUrl)!.absoluteURL
     }
 
     // MARK: Construct requests
 
-    func searchRequest(term: String, limit: Int? = nil, types: [MediaType]? = nil) -> URLRequest {
-        let url = seachUrl(term: term, limit: limit, types: types)
+    func searchRequest(term: String, limit: Int? = nil, offset: Int? = nil, types: [MediaType]? = nil) -> URLRequest {
+        let url = seachUrl(term: term, limit: limit, offset: offset, types: types)
         return constructRequest(url: url)
     }
 
@@ -118,8 +121,8 @@ struct CiderUrlBuilder: UrlBuilder {
         return constructRequest(url: url)
     }
 
-    func relationshipRequest(path: String, limit: Int? = nil) -> URLRequest {
-        let url = relationshipURL(path: path, limit: limit)
+    func relationshipRequest(path: String, limit: Int? = nil, offset: Int? = nil) -> URLRequest {
+        let url = relationshipURL(path: path, limit: limit, offset: offset)
         return constructRequest(url: url)
     }
 
@@ -197,6 +200,13 @@ private extension URLComponents {
 
         createQueryItemsIfNeeded()
         queryItems?.append(URLQueryItem(name: AppleMusicApi.searchLimit, value: "\(limit)"))
+    }
+
+    mutating func apply(offset: Int?) {
+        guard let offset = offset else { return }
+
+        createQueryItemsIfNeeded()
+        queryItems?.append(URLQueryItem(name: AppleMusicApi.searchOffset, value: "\(offset)"))
     }
 
     mutating func apply(include: [Include]?) {
