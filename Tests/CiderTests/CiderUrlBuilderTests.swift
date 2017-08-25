@@ -125,7 +125,7 @@ class CiderUrlBuilderTests: XCTestCase {
                 ("testFetchPlaylistRequest", testFetchPlaylistRequest),
                 ("testFetchMusicVideosRequest", testFetchMusicVideosRequest),
                 ("testFetchAlbumRequestWithInclude", testFetchAlbumRequestWithInclude),
-                ("testRelationshipRequestWithLimit", testRelationshipRequestWithLimit),
+                ("testRelationshipRequestWithLimitAndOffset", testRelationshipRequestWithLimitAndOffset),
                 ("testAddUserToken", testAddUserToken),
                 ("testAddUserTokenThrowsWithNoToken", testAddUserTokenThrowsWithNoToken)
             ]
