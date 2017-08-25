@@ -17,7 +17,7 @@
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
       "line": 29,
-      "symbol": "CiderClient.search(term:limit:types:completion:)",
+      "symbol": "CiderClient.search(term:limit:offset:types:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
@@ -45,7 +45,7 @@
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
       "line": 51,
-      "symbol": "CiderClient.get(related:limit:completion:)",
+      "symbol": "CiderClient.get(related:limit:offset:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
