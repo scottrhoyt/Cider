@@ -7,6 +7,7 @@
 ##### Enhancements
 
 * Add functionality to get related resources.
+* Add pagination capability to search and relationship requests.
 
 ##### Bug Fixes
 
