@@ -6,11 +6,11 @@
 
 ##### Enhancements
 
-* None
+* Add `musicVideos` and `playlists` types.
 
 ##### Bug Fixes
 
-* None
+* Fix client not initiating network call.
 
 ## 0.6.0
 
