@@ -18,8 +18,15 @@ public struct ArtistAttributes: Codable {
 }
 
 public struct ArtistRelationships: Codable {
+    enum CodingKeys: String, CodingKey {
+        case albums
+        case genres
+        case musicVideos = "music-videos"
+        case playlists
+    }
+
     public let albums: Relationship<Album>
     public let genres: Relationship<Genre>?
-    // public let music-videos: [Relationship<MusicVideo>?
-    // public let playlists: Relationship<Playlist>?
+    public let musicVideos: Relationship<MusicVideo>?
+    public let playlists: Relationship<Playlist>?
 }
