@@ -21,6 +21,27 @@ public enum CiderUrlBuilderError: Error {
     case noUserToken
 }
 
+// MARK: - Constants
+
+private struct AppleMusicApi {
+    // Base
+    static let baseURLScheme = "https"
+    static let baseURLString = "api.music.apple.com"
+    static let baseURLApiVersion = "/v1"
+
+    // Search
+    static let searchPath = "v1/catalog/{storefront}/search"
+    static let searchTerm = "term"
+    static let searchLimit = "limit"
+    static let searchTypes = "types"
+
+    // Fetch
+    static let fetchPath = "v1/catalog/{storefront}/{mediaType}/{id}"
+    static let fetchInclude = "include"
+}
+
+// MARK: - UrlBuilder
+
 struct CiderUrlBuilder: UrlBuilder {
 
     // MARK: Inputs
@@ -36,24 +57,6 @@ struct CiderUrlBuilder: UrlBuilder {
     init(storefront: Storefront, developerToken: String) {
         self.storefront = storefront
         self.developerToken = developerToken
-    }
-
-    // MARK: Constants
-
-    private struct AppleMusicApi {
-        // Base
-        static let baseURLScheme = "https"
-        static let baseURLString = "api.music.apple.com"
-        static let baseURLApiVersion = "/v1"
-
-        // Search
-        static let searchPath = "v1/catalog/{storefront}/search"
-        static let searchTerm = "term"
-        static let searchLimit = "limit"
-        static let searchTypes = "types"
-
-        // Fetch
-        static let fetchPath = "v1/catalog/{storefront}/{mediaType}/{id}"
     }
 
     private var baseApiUrl: URL {
@@ -75,37 +78,20 @@ struct CiderUrlBuilder: UrlBuilder {
 
         components.path = AppleMusicApi.searchPath.addStorefront(storefront)
 
-        // Construct query items
-
-        var queryItems = [URLQueryItem]()
-        queryItems.append(URLQueryItem(name: AppleMusicApi.searchTerm, value: term.replaceSpacesWithPluses()))
-
-        if let limit = limit {
-            queryItems.append(URLQueryItem(name: AppleMusicApi.searchLimit, value: String(limit)))
-        }
-
-        if let types = types {
-            let typesString = types.map { $0.rawValue }.joined(separator: ",")
-            queryItems.append(URLQueryItem(name: AppleMusicApi.searchTypes, value: typesString))
-        }
-
-        components.queryItems = queryItems
+        // Construct Query
+        components.apply(searchTerm: term)
+        components.apply(limit: limit)
+        components.apply(mediaTypes: types)
 
         // Construct final url
-
         return components.url(relativeTo: baseApiUrl)!
     }
 
     private func fetchURL(mediaType: MediaType, id: String, include: [Include]? = nil) -> URL {
         var components = URLComponents()
 
-        // Include
-        if let include = include {
-            let query = URLQueryItem(name: "include", value: include.map { $0.rawValue }.joined(separator: ","))
-            components.queryItems = [query]
-        }
-
         components.path = AppleMusicApi.fetchPath.addStorefront(storefront).addMediaType(mediaType).addId(id)
+        components.apply(include: include)
 
         return components.url(relativeTo: baseApiUrl)!.absoluteURL
     }
@@ -169,5 +155,41 @@ private extension String {
 
     func addMediaType(_ mediaType: MediaType) -> String {
         return replacingOccurrences(of: "{mediaType}", with: mediaType.rawValue)
+    }
+}
+
+private extension URLComponents {
+    mutating func createQueryItemsIfNeeded() {
+        if queryItems == nil {
+            queryItems = []
+        }
+    }
+
+    mutating func apply(searchTerm: String?) {
+        guard let searchTerm = searchTerm else { return }
+
+        createQueryItemsIfNeeded()
+        queryItems?.append(URLQueryItem(name: AppleMusicApi.searchTerm, value: searchTerm.replaceSpacesWithPluses()))
+    }
+
+    mutating func apply(mediaTypes: [MediaType]?) {
+        guard let mediaTypes = mediaTypes else { return }
+
+        createQueryItemsIfNeeded()
+        queryItems?.append(URLQueryItem(name: AppleMusicApi.searchTypes, value: mediaTypes.map { $0.rawValue }.joined(separator: ",")))
+    }
+
+    mutating func apply(limit: Int?) {
+        guard let limit = limit else { return }
+
+        createQueryItemsIfNeeded()
+        queryItems?.append(URLQueryItem(name: AppleMusicApi.searchLimit, value: "\(limit)"))
+    }
+
+    mutating func apply(include: [Include]?) {
+        guard let include = include else { return }
+
+        createQueryItemsIfNeeded()
+        queryItems?.append(URLQueryItem(name: AppleMusicApi.fetchInclude, value: include.map { $0.rawValue }.joined(separator: ",")))
     }
 }
