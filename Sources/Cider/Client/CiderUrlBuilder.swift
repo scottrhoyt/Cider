@@ -53,9 +53,12 @@ struct CiderUrlBuilder: UrlBuilder {
         static let searchTypes = "types"
 
         // Fetch
+        // TODO: Construct this from the media type
         static let artistPath = "v1/catalog/{storefront}/artists/{id}"
         static let albumsPath = "v1/catalog/{storefront}/albums/{id}"
         static let songsPath = "v1/catalog/{storefront}/songs/{id}"
+        static let playlistsPath = "v1/catalog/{storefront}/playlists/{id}"
+        static let musicVideosPath = "v1/catalog/{storefront}/music-videos/{id}"
     }
 
     private var baseApiUrl: URL {
@@ -106,6 +109,8 @@ struct CiderUrlBuilder: UrlBuilder {
         case .artists: fetchPath = AppleMusicApi.artistPath
         case .albums: fetchPath = AppleMusicApi.albumsPath
         case .songs: fetchPath = AppleMusicApi.songsPath
+        case .playlists: fetchPath = AppleMusicApi.playlistsPath
+        case .musicVideos: fetchPath = AppleMusicApi.musicVideosPath
         }
 
         // Include
