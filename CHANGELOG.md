@@ -9,6 +9,7 @@
 * Add functionality to get related resources.
 * Add pagination capability to search and relationship requests.
 * Add `Playlist`, `MusicVideo`, and `Curator` resources.
+* Set caching policy to protocol-defined.
 
 ##### Bug Fixes
 
