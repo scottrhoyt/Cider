@@ -44,7 +44,28 @@
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 51,
+      "line": 49,
+      "symbol": "CiderClient.playlist(id:include:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
+      "line": 54,
+      "symbol": "CiderClient.musicVideo(id:include:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
+      "line": 59,
+      "symbol": "CiderClient.curator(id:include:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
+      "line": 66,
       "symbol": "CiderClient.get(related:limit:offset:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -746,6 +767,13 @@
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MediaType.swift",
       "line": 16,
       "symbol": "MediaType.musicVideos",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MediaType.swift",
+      "line": 17,
+      "symbol": "MediaType.curators",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
