@@ -14,4 +14,5 @@ public enum MediaType: String, Codable {
     case artists
     case playlists
     case musicVideos = "music-videos"
+    case curators
 }

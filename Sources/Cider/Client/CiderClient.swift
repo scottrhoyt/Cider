@@ -46,6 +46,21 @@ public struct CiderClient {
         fetch(request, completion: completion)
     }
 
+    public func playlist(id: String, include: [Include]? = nil, completion: ((ResponseRoot<Playlist>?, Error?) -> Void)?) {
+        let request = urlBuilder.fetchRequest(mediaType: .playlists, id: id, include: include)
+        fetch(request, completion: completion)
+    }
+
+    public func musicVideo(id: String, include: [Include]? = nil, completion: ((ResponseRoot<MusicVideo>?, Error?) -> Void)?) {
+        let request = urlBuilder.fetchRequest(mediaType: .musicVideos, id: id, include: include)
+        fetch(request, completion: completion)
+    }
+
+    public func curator(id: String, include: [Include]? = nil, completion: ((ResponseRoot<Curator>?, Error?) -> Void)?) {
+        let request = urlBuilder.fetchRequest(mediaType: .curators, id: id, include: include)
+        fetch(request, completion: completion)
+    }
+
     // MARK: Relationships
 
     public func get<T>(related: Relationship<T>, limit: Int? = nil, offset: Int? = nil, completion: ((ResponseRoot<T>?, Error?) -> Void)?) {
