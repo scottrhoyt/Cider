@@ -303,21 +303,35 @@
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/SearchResults.swift",
-      "line": 12,
+      "line": 20,
       "symbol": "SearchResults.albums",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/SearchResults.swift",
-      "line": 13,
+      "line": 21,
       "symbol": "SearchResults.artists",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/SearchResults.swift",
-      "line": 14,
+      "line": 22,
+      "symbol": "SearchResults.musicVideos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/SearchResults.swift",
+      "line": 23,
+      "symbol": "SearchResults.playlists",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/SearchResults.swift",
+      "line": 24,
       "symbol": "SearchResults.songs",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
@@ -492,15 +506,29 @@
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artist.swift",
-      "line": 21,
+      "line": 28,
       "symbol": "ArtistRelationships.albums",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artist.swift",
-      "line": 22,
+      "line": 29,
       "symbol": "ArtistRelationships.genres",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artist.swift",
+      "line": 30,
+      "symbol": "ArtistRelationships.musicVideos",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artist.swift",
+      "line": 31,
+      "symbol": "ArtistRelationships.playlists",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
@@ -596,6 +624,55 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Curator.swift",
+      "line": 13,
+      "symbol": "CuratorAttributes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Curator.swift",
+      "line": 14,
+      "symbol": "CuratorAttributes.artwork",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Curator.swift",
+      "line": 15,
+      "symbol": "CuratorAttributes.editorialNotes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Curator.swift",
+      "line": 16,
+      "symbol": "CuratorAttributes.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Curator.swift",
+      "line": 17,
+      "symbol": "CuratorAttributes.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Curator.swift",
+      "line": 20,
+      "symbol": "CuratorRelationships",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Curator.swift",
+      "line": 21,
+      "symbol": "CuratorRelationships.playlists",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/EditorialNotes.swift",
       "line": 11,
       "symbol": "EditorialNotes",
@@ -673,6 +750,125 @@
       "warning": "undocumented"
     },
     {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 13,
+      "symbol": "MusicVideoAttributes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 14,
+      "symbol": "MusicVideoAttributes.artistName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 15,
+      "symbol": "MusicVideoAttributes.artwork",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 16,
+      "symbol": "MusicVideoAttributes.contentRating",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 17,
+      "symbol": "MusicVideoAttributes.durationInMillis",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 18,
+      "symbol": "MusicVideoAttributes.editorialNotes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 19,
+      "symbol": "MusicVideoAttributes.genreNames",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 20,
+      "symbol": "MusicVideoAttributes.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 21,
+      "symbol": "MusicVideoAttributes.playParams",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 22,
+      "symbol": "MusicVideoAttributes.releaseDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 23,
+      "symbol": "MusicVideoAttributes.trackNumber",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 24,
+      "symbol": "MusicVideoAttributes.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 25,
+      "symbol": "MusicVideoAttributes.videoSubType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 28,
+      "symbol": "MusicVideoRelationships",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 29,
+      "symbol": "MusicVideoRelationships.albums",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 30,
+      "symbol": "MusicVideoRelationships.artists",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MusicVideo.swift",
+      "line": 31,
+      "symbol": "MusicVideoRelationships.genres",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/PlayParameters.swift",
       "line": 11,
       "symbol": "PlayParameters",
@@ -690,6 +886,125 @@
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/PlayParameters.swift",
       "line": 13,
       "symbol": "PlayParameters.kind",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 13,
+      "symbol": "PlaylistType",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 14,
+      "symbol": "PlaylistType.userShared",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 15,
+      "symbol": "PlaylistType.editorial",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 16,
+      "symbol": "PlaylistType.external",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 17,
+      "symbol": "PlaylistType.personalMix",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 20,
+      "symbol": "PlaylistAttributes",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 21,
+      "symbol": "PlaylistAttributes.artwork",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 22,
+      "symbol": "PlaylistAttributes.curatorName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 23,
+      "symbol": "PlaylistAttributes.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 24,
+      "symbol": "PlaylistAttributes.lastModifiedDate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 25,
+      "symbol": "PlaylistAttributes.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 26,
+      "symbol": "PlaylistAttributes.playlistType",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 27,
+      "symbol": "PlaylistAttributes.playParams",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 28,
+      "symbol": "PlaylistAttributes.url",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 31,
+      "symbol": "PlaylistRelationships",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 32,
+      "symbol": "PlaylistRelationships.curator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
+      "line": 33,
+      "symbol": "PlaylistRelationships.tracks",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
