@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "Cider"
-  s.version      = "0.7.0"
+  s.version      = "0.8.0"
   s.summary      = "The missing Apple Music SDK."
 
   # This description is used to generate tags and improve search results.
