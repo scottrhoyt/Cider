@@ -92,6 +92,7 @@ class CiderUrlBuilderTests: XCTestCase {
         XCTAssertEqual(request.allHTTPHeaderFields!, ["Authorization": "Bearer devToken"])
     }
 
+    // MARK: User Token
 
     func testAddUserToken() {
         var myBuilder = builder
@@ -116,10 +117,16 @@ class CiderUrlBuilderTests: XCTestCase {
                 ("testSearchRequestUrl", testSearchRequestUrl),
                 ("testSearchRequestHeaders", testSearchRequestHeaders),
                 ("testSearchRequestMethod", testSearchRequestMethod),
+                ("testSearchWithDefaults", testSearchWithDefaults),
                 ("testFetchArtistRequest", testFetchArtistRequest),
                 ("testFetchAlbumRequest", testFetchAlbumRequest),
                 ("testFetchSongRequest", testFetchSongRequest),
+                ("testFetchPlaylistRequest", testFetchPlaylistRequest),
+                ("testFetchMusicVideosRequest", testFetchMusicVideosRequest),
                 ("testFetchAlbumRequestWithInclude", testFetchAlbumRequestWithInclude),
+                ("testRelationshipRequestWithLimit", testRelationshipRequestWithLimit),
+                ("testAddUserToken", testAddUserToken),
+                ("testAddUserTokenThrowsWithNoToken", testAddUserTokenThrowsWithNoToken)
             ]
         }
     }
