@@ -49,7 +49,7 @@ public struct CiderClient {
     // MARK: Helpers
 
     private func fetch<T: Decodable>(_ request: URLRequest, completion: ((T?, Error?) -> Void)?) {
-        session.dataTask(with: request) { (data, response, error) in
+        let task = session.dataTask(with: request) { (data, response, error) in
             guard let data = data else {
                 completion?(nil, error)
                 return
@@ -63,5 +63,7 @@ public struct CiderClient {
                 completion?(nil, error)
             }
         }
+
+        task.resume()
     }
 }
