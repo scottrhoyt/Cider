@@ -6,6 +6,20 @@
 
 ##### Enhancements
 
+* None
+
+##### Bug Fixes
+
+* None
+
+## 0.7.0
+
+##### Breaking
+
+* None
+
+##### Enhancements
+
 * Add `musicVideos` and `playlists` types.
 
 ##### Bug Fixes
