@@ -10,6 +10,7 @@ import Foundation
 
 protocol UrlBuilder {
     func searchRequest(term: String, limit: Int?, offset: Int?, types: [MediaType]?) -> URLRequest
+    func searchHintsRequest(term: String, limit: Int?, types: [MediaType]?) -> URLRequest
     func fetchRequest(mediaType: MediaType, id: String, include: [Include]?) -> URLRequest
     func relationshipRequest(path: String, limit: Int?, offset: Int?) -> URLRequest
 }
@@ -32,10 +33,13 @@ private struct AppleMusicApi {
 
     // Search
     static let searchPath = "v1/catalog/{storefront}/search"
-    static let searchTerm = "term"
-    static let searchLimit = "limit"
-    static let searchOffset = "offset"
-    static let searchTypes = "types"
+    static let searchHintPath = "v1/catalog/{storefront}/search/hints"
+
+    // Parameteres
+    static let termParameter = "term"
+    static let limitParameter = "limit"
+    static let offsetParameter = "offset"
+    static let typesParameter = "types"
 
     // Fetch
     static let fetchPath = "v1/catalog/{storefront}/{mediaType}/{id}"
@@ -90,7 +94,24 @@ struct CiderUrlBuilder: UrlBuilder {
         return components.url(relativeTo: baseApiUrl)!
     }
 
-    private func fetchURL(mediaType: MediaType, id: String, include: [Include]?) -> URL {
+    private func searchHintsUrl(term: String, limit: Int?, types: [MediaType]?) -> URL {
+
+        // Construct url path
+
+        var components = URLComponents()
+
+        components.path = AppleMusicApi.searchHintPath.addStorefront(storefront)
+
+        // Construct Query
+        components.apply(searchTerm: term)
+        components.apply(limit: limit)
+        components.apply(mediaTypes: types)
+
+        // Construct final url
+        return components.url(relativeTo: baseApiUrl)!
+    }
+
+    private func fetchUrl(mediaType: MediaType, id: String, include: [Include]?) -> URL {
         var components = URLComponents()
 
         components.path = AppleMusicApi.fetchPath.addStorefront(storefront).addMediaType(mediaType).addId(id)
@@ -99,7 +120,7 @@ struct CiderUrlBuilder: UrlBuilder {
         return components.url(relativeTo: baseApiUrl)!.absoluteURL
     }
 
-    private func relationshipURL(path: String, limit: Int?, offset: Int?) -> URL {
+    private func relationshipUrl(path: String, limit: Int?, offset: Int?) -> URL {
         var components = URLComponents()
 
         components.path = path
@@ -116,13 +137,18 @@ struct CiderUrlBuilder: UrlBuilder {
         return constructRequest(url: url)
     }
 
+    func searchHintsRequest(term: String, limit: Int?, types: [MediaType]?) -> URLRequest {
+        let url = searchHintsUrl(term: term, limit: limit, types: types)
+        return constructRequest(url: url)
+    }
+
     func fetchRequest(mediaType: MediaType, id: String, include: [Include]?) -> URLRequest {
-        let url = fetchURL(mediaType: mediaType, id: id, include: include)
+        let url = fetchUrl(mediaType: mediaType, id: id, include: include)
         return constructRequest(url: url)
     }
 
     func relationshipRequest(path: String, limit: Int?, offset: Int?) -> URLRequest {
-        let url = relationshipURL(path: path, limit: limit, offset: offset)
+        let url = relationshipUrl(path: path, limit: limit, offset: offset)
         return constructRequest(url: url)
     }
 
@@ -144,6 +170,7 @@ struct CiderUrlBuilder: UrlBuilder {
         return request
     }
 
+    // TODO: Make this private once we add a request that needs it and can test via that vector.
     func addUserToken(request: URLRequest) throws -> URLRequest {
         guard let userToken = userToken else {
             throw CiderUrlBuilderError.noUserToken
@@ -185,28 +212,28 @@ private extension URLComponents {
 
     mutating func apply(searchTerm: String) {
         createQueryItemsIfNeeded()
-        queryItems?.append(URLQueryItem(name: AppleMusicApi.searchTerm, value: searchTerm.replaceSpacesWithPluses()))
+        queryItems?.append(URLQueryItem(name: AppleMusicApi.termParameter, value: searchTerm.replaceSpacesWithPluses()))
     }
 
     mutating func apply(mediaTypes: [MediaType]?) {
         guard let mediaTypes = mediaTypes else { return }
 
         createQueryItemsIfNeeded()
-        queryItems?.append(URLQueryItem(name: AppleMusicApi.searchTypes, value: mediaTypes.map { $0.rawValue }.joined(separator: ",")))
+        queryItems?.append(URLQueryItem(name: AppleMusicApi.typesParameter, value: mediaTypes.map { $0.rawValue }.joined(separator: ",")))
     }
 
     mutating func apply(limit: Int?) {
         guard let limit = limit else { return }
 
         createQueryItemsIfNeeded()
-        queryItems?.append(URLQueryItem(name: AppleMusicApi.searchLimit, value: "\(limit)"))
+        queryItems?.append(URLQueryItem(name: AppleMusicApi.limitParameter, value: "\(limit)"))
     }
 
     mutating func apply(offset: Int?) {
         guard let offset = offset else { return }
 
         createQueryItemsIfNeeded()
-        queryItems?.append(URLQueryItem(name: AppleMusicApi.searchOffset, value: "\(offset)"))
+        queryItems?.append(URLQueryItem(name: AppleMusicApi.offsetParameter, value: "\(offset)"))
     }
 
     mutating func apply(include: [Include]?) {

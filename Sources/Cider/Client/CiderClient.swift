@@ -31,6 +31,11 @@ public struct CiderClient {
         fetch(request, completion: completion)
     }
 
+    public func searchHints(term: String, limit: Int? = nil, types: [MediaType]? = nil, completion: ((ResponseRoot<SearchHints>?, Error?) -> Void)?) {
+        let request = urlBuilder.searchHintsRequest(term: term, limit: limit, types: types)
+        fetch(request, completion: completion)
+    }
+
     public func artist(id: String, include: [Include]? = nil, completion: ((ResponseRoot<Artist>?, Error?) -> Void)?) {
         let request = urlBuilder.fetchRequest(mediaType: .artists, id: id, include: include)
         fetch(request, completion: completion)

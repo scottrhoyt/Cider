@@ -23,3 +23,7 @@ public struct SearchResults: Codable {
     public let playlists: ResponseRoot<Playlist>?
     public let songs: ResponseRoot<Track>?
 }
+
+public struct SearchHints: Codable {
+    public let terms: [String]
+}

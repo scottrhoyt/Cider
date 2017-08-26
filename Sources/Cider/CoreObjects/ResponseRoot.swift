@@ -17,7 +17,7 @@ public struct ResponseRoot<T: Codable>: Codable {
     public let href: String?
 }
 
-// Might not need this
+// TODO: Might not need this
 public struct SearchResponseRoot: Codable {
     public let results: SearchResults
 }
