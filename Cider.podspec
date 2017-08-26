@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "Cider"
   s.version      = "0.8.0"
-  s.summary      = "The missing Apple Music SDK."
+  s.summary      = "The missing Apple Music SDK. Written in Swift."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
