@@ -8,20 +8,37 @@
 
 import Foundation
 
+public protocol URLFetcher {
+    func fetch(request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void)
+}
+
+extension URLSession: URLFetcher {
+    public func fetch(request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
+        let task = dataTask(with: request, completionHandler: completion)
+        task.resume()
+    }
+}
+
 public struct CiderClient {
     private let urlBuilder: UrlBuilder
-    private let session: URLSession
+    private let fetcher: URLFetcher
+
+    // MARK: URLFetcher
+
+    public static var defaultURLFetcher: URLFetcher {
+        return URLSession(configuration: URLSessionConfiguration.default)
+    }
 
     // MARK: Initialization
 
-    init(urlBuilder: UrlBuilder, configuration: URLSessionConfiguration = URLSessionConfiguration.default) {
+    init(urlBuilder: UrlBuilder, urlFetcher: URLFetcher = CiderClient.defaultURLFetcher) {
         self.urlBuilder = urlBuilder
-        self.session = URLSession(configuration: configuration)
+        self.fetcher = urlFetcher
     }
 
-    public init(storefront: Storefront, developerToken: String, configuration: URLSessionConfiguration = URLSessionConfiguration.default) {
+    public init(storefront: Storefront, developerToken: String, urlFetcher: URLFetcher = CiderClient.defaultURLFetcher) {
         let urlBuilder = CiderUrlBuilder(storefront: storefront, developerToken: developerToken)
-        self.init(urlBuilder: urlBuilder, configuration: configuration)
+        self.init(urlBuilder: urlBuilder, urlFetcher: urlFetcher)
     }
 
     // MARK: Requests
@@ -77,7 +94,7 @@ public struct CiderClient {
     // MARK: Helpers
 
     private func fetch<T: Decodable>(_ request: URLRequest, completion: ((T?, Error?) -> Void)?) {
-        let task = session.dataTask(with: request) { (data, response, error) in
+        fetcher.fetch(request: request) { (data, response, error) in
             guard let data = data else {
                 completion?(nil, error)
                 return
@@ -91,7 +108,5 @@ public struct CiderClient {
                 completion?(nil, error)
             }
         }
-
-        task.resume()
     }
 }
