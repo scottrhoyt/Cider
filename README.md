@@ -1,5 +1,5 @@
 # Cider
-The Missing Apple Music SDK
+The Missing Apple Music SDK. Written in Swift.
 
 [![Build Status](https://travis-ci.org/scottrhoyt/Cider.svg?branch=master)](https://travis-ci.org/scottrhoyt/Cider)
 [![codecov.io](https://codecov.io/github/scottrhoyt/Cider/coverage.svg?branch=master)](https://codecov.io/github/scottrhoyt/Cider?branch=master)
