@@ -10,22 +10,22 @@ import Foundation
 
 public struct CiderClient {
     private let urlBuilder: UrlBuilder
-    private let fetcher: URLFetcher
+    private let fetcher: UrlFetcher
 
     // MARK: URLFetcher
 
-    public static var defaultURLFetcher: URLFetcher {
+    public static var defaultURLFetcher: UrlFetcher {
         return URLSession(configuration: URLSessionConfiguration.default)
     }
 
     // MARK: Initialization
 
-    init(urlBuilder: UrlBuilder, urlFetcher: URLFetcher = CiderClient.defaultURLFetcher) {
+    init(urlBuilder: UrlBuilder, urlFetcher: UrlFetcher = CiderClient.defaultURLFetcher) {
         self.urlBuilder = urlBuilder
         self.fetcher = urlFetcher
     }
 
-    public init(storefront: Storefront, developerToken: String, urlFetcher: URLFetcher = CiderClient.defaultURLFetcher) {
+    public init(storefront: Storefront, developerToken: String, urlFetcher: UrlFetcher = CiderClient.defaultURLFetcher) {
         let urlBuilder = CiderUrlBuilder(storefront: storefront, developerToken: developerToken)
         self.init(urlBuilder: urlBuilder, urlFetcher: urlFetcher)
     }

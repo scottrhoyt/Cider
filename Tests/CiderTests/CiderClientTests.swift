@@ -11,7 +11,7 @@ import XCTest
 
 // MARK: - MockUrlFetcher
 
-struct MockUrlFetcher: URLFetcher {
+struct MockUrlFetcher: UrlFetcher {
     var data: Data?
     var error: Error?
     let expectedRequest: URLRequest

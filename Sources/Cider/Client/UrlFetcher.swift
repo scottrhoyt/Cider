@@ -1,5 +1,5 @@
 //
-//  URLFetcher.swift
+//  UrlFetcher.swift
 //  Cider
 //
 //  Created by Scott Hoyt on 8/27/17.
@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol URLFetcher {
+public protocol UrlFetcher {
     func fetch(request: URLRequest, completion: @escaping (Data?, Error?) -> Void)
 }
 
-extension URLSession: URLFetcher {
+extension URLSession: UrlFetcher {
     public func fetch(request: URLRequest, completion: @escaping (Data?, Error?) -> Void) {
         let task = dataTask(with: request) { data, response, error in
             completion(data, error)
