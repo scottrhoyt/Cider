@@ -2,11 +2,13 @@
 
 ##### Breaking
 
-* None
+* `CiderClient` now is initialized with an optional `UrlFetcher` instead of a
+  `URLSessionConfiguration`.
 
 ##### Enhancements
 
-* None
+* `UrlFetcher` provides an abstraction for URL loading so that users can choose
+  their own mechanism: `URLSession` (default) or another (e.g. Alamofire).
 
 ##### Bug Fixes
 
