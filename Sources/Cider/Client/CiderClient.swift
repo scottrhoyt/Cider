@@ -8,19 +8,6 @@
 
 import Foundation
 
-public protocol URLFetcher {
-    func fetch(request: URLRequest, completion: @escaping (Data?, Error?) -> Void)
-}
-
-extension URLSession: URLFetcher {
-    public func fetch(request: URLRequest, completion: @escaping (Data?, Error?) -> Void) {
-        let task = dataTask(with: request) { data, response, error in
-            completion(data, error)
-        }
-        task.resume()
-    }
-}
-
 public struct CiderClient {
     private let urlBuilder: UrlBuilder
     private let fetcher: URLFetcher
