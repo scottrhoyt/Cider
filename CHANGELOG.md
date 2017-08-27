@@ -9,6 +9,7 @@
 
 * `UrlFetcher` provides an abstraction for URL loading so that users can choose
   their own mechanism: `URLSession` (default) or another (e.g. Alamofire).
+* Add all current `Storefront`s.
 
 ##### Bug Fixes
 
