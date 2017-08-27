@@ -15,10 +15,6 @@ protocol UrlBuilder {
     func relationshipRequest(path: String, limit: Int?, offset: Int?) -> URLRequest
 }
 
-public enum Storefront: String, Codable {
-    case unitedStates = "us"
-}
-
 public enum CiderUrlBuilderError: Error {
     case noUserToken
 }
