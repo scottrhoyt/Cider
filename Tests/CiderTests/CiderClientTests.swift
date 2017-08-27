@@ -16,9 +16,9 @@ struct MockUrlFetcher: URLFetcher {
     var error: Error?
     let expectedRequest: URLRequest
 
-    func fetch(request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
+    func fetch(request: URLRequest, completion: @escaping (Data?, Error?) -> Void) {
         XCTAssertEqual(request, expectedRequest)
-        completion(data, nil, error)
+        completion(data, error)
     }
 }
 

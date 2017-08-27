@@ -9,12 +9,14 @@
 import Foundation
 
 public protocol URLFetcher {
-    func fetch(request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void)
+    func fetch(request: URLRequest, completion: @escaping (Data?, Error?) -> Void)
 }
 
 extension URLSession: URLFetcher {
-    public func fetch(request: URLRequest, completion: @escaping (Data?, URLResponse?, Error?) -> Void) {
-        let task = dataTask(with: request, completionHandler: completion)
+    public func fetch(request: URLRequest, completion: @escaping (Data?, Error?) -> Void) {
+        let task = dataTask(with: request) { data, response, error in
+            completion(data, error)
+        }
         task.resume()
     }
 }
@@ -94,7 +96,7 @@ public struct CiderClient {
     // MARK: Helpers
 
     private func fetch<T: Decodable>(_ request: URLRequest, completion: ((T?, Error?) -> Void)?) {
-        fetcher.fetch(request: request) { (data, response, error) in
+        fetcher.fetch(request: request) { (data, error) in
             guard let data = data else {
                 completion?(nil, error)
                 return
