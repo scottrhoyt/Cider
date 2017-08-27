@@ -9,91 +9,91 @@
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 22,
-      "symbol": "CiderClient.init(storefront:developerToken:configuration:)",
+      "line": 17,
+      "symbol": "CiderClient.defaultURLFetcher",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
+      "line": 28,
+      "symbol": "CiderClient.init(storefront:developerToken:urlFetcher:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 29,
+      "line": 35,
       "symbol": "CiderClient.search(term:limit:offset:types:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 34,
+      "line": 40,
+      "symbol": "CiderClient.searchHints(term:limit:types:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
+      "line": 45,
       "symbol": "CiderClient.artist(id:include:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 39,
+      "line": 50,
       "symbol": "CiderClient.album(id:include:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 44,
+      "line": 55,
       "symbol": "CiderClient.song(id:include:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 49,
+      "line": 60,
       "symbol": "CiderClient.playlist(id:include:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 54,
+      "line": 65,
       "symbol": "CiderClient.musicVideo(id:include:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 59,
+      "line": 70,
       "symbol": "CiderClient.curator(id:include:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 66,
+      "line": 77,
       "symbol": "CiderClient.get(related:limit:offset:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderUrlBuilder.swift",
-      "line": 17,
-      "symbol": "Storefront",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderUrlBuilder.swift",
       "line": 18,
-      "symbol": "Storefront.unitedStates",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderUrlBuilder.swift",
-      "line": 21,
       "symbol": "CiderUrlBuilderError",
       "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderUrlBuilder.swift",
-      "line": 22,
+      "line": 19,
       "symbol": "CiderUrlBuilderError.noUserToken",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
@@ -131,6 +131,27 @@
       "line": 15,
       "symbol": "Include.tracks",
       "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/UrlFetcher.swift",
+      "line": 11,
+      "symbol": "UrlFetcher",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/UrlFetcher.swift",
+      "line": 12,
+      "symbol": "UrlFetcher.fetch(request:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/UrlFetcher.swift",
+      "line": 16,
+      "symbol": "URLSession.fetch(request:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
@@ -354,6 +375,20 @@
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/SearchResults.swift",
       "line": 24,
       "symbol": "SearchResults.songs",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/SearchResults.swift",
+      "line": 29,
+      "symbol": "SearchHints",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/SearchResults.swift",
+      "line": 30,
+      "symbol": "SearchHints.terms",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
@@ -1034,6 +1069,13 @@
       "line": 33,
       "symbol": "PlaylistRelationships.tracks",
       "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Storefront.swift",
+      "line": 11,
+      "symbol": "Storefront",
+      "symbol_kind": "source.lang.swift.decl.enum",
       "warning": "undocumented"
     },
     {
