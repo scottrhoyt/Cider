@@ -24,6 +24,8 @@ public struct SearchResults: Codable {
     public let songs: ResponseRoot<Track>?
 }
 
+// MARK: - SearchHints
+
 public struct SearchHints: Codable {
     public let terms: [String]
 }

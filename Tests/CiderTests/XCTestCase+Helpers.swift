@@ -14,11 +14,14 @@ enum TestingError: Error {
 
 extension XCTestCase {
     func fixture<T: Decodable>(_ type: T.Type, name: String, fileType: String = "json") throws -> T {
-        let url = try urlForFixture(name: name, ofType: fileType)
-        let data = try Data(contentsOf: url)
-
+        let data = try fixtureData(name: name, fileType: fileType)
         let decoder = JSONDecoder()
         return try decoder.decode(T.self, from: data)
+    }
+
+    func fixtureData(name: String, fileType: String = "json") throws -> Data {
+        let url = try urlForFixture(name: name, ofType: fileType)
+        return try Data(contentsOf: url)
     }
 
     private func urlForFixture(name: String, ofType fileType: String) throws -> URL {
