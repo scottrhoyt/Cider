@@ -10,10 +10,18 @@ import Foundation
 
 public typealias Playlist = Resource<PlaylistAttributes, PlaylistRelationships>
 
+/// A type describing the kind of playlist
 public enum PlaylistType: String, Codable {
+    /// A playlist created and shared by an Apple Music user
     case userShared = "user-shared"
+
+    /// A playlist created by an Apple Music curator
     case editorial
+
+    /// A playlist created by an non-Apple curator or brand
     case external
+
+    /// A personalized playlist for an Apple Music user
     case personalMix = "personal-mix"
 }
 
