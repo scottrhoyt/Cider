@@ -225,20 +225,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/ResponseRoot.swift",
-      "line": 21,
-      "symbol": "SearchResponseRoot",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/ResponseRoot.swift",
-      "line": 22,
-      "symbol": "SearchResponseRoot.results",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/CoreObjects/SearchResults.swift",
       "line": 11,
       "symbol": "SearchResults",
@@ -620,6 +606,13 @@
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MediaType.swift",
       "line": 17,
       "symbol": "MediaType.curators",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/MediaType.swift",
+      "line": 18,
+      "symbol": "MediaType.appleCurators",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
