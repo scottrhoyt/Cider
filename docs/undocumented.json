@@ -491,97 +491,6 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artwork.swift",
-      "line": 11,
-      "symbol": "Artwork",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artwork.swift",
-      "line": 12,
-      "symbol": "Artwork.width",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artwork.swift",
-      "line": 13,
-      "symbol": "Artwork.height",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artwork.swift",
-      "line": 14,
-      "symbol": "Artwork.url",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artwork.swift",
-      "line": 15,
-      "symbol": "Artwork.bgColor",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artwork.swift",
-      "line": 17,
-      "symbol": "Artwork.textColor1",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artwork.swift",
-      "line": 18,
-      "symbol": "Artwork.textColor2",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artwork.swift",
-      "line": 19,
-      "symbol": "Artwork.textColor3",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artwork.swift",
-      "line": 20,
-      "symbol": "Artwork.textColor4",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Artwork.swift",
-      "line": 22,
-      "symbol": "Artwork.url(forWidth:)",
-      "symbol_kind": "source.lang.swift.decl.function.method.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/ContentRating.swift",
-      "line": 11,
-      "symbol": "ContentRating",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/ContentRating.swift",
-      "line": 12,
-      "symbol": "ContentRating.clean",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/ContentRating.swift",
-      "line": 13,
-      "symbol": "ContentRating.explicit",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Curator.swift",
       "line": 13,
       "symbol": "CuratorAttributes",
@@ -834,141 +743,85 @@
       "warning": "undocumented"
     },
     {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/PlayParameters.swift",
-      "line": 11,
-      "symbol": "PlayParameters",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/PlayParameters.swift",
-      "line": 12,
-      "symbol": "PlayParameters.id",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/PlayParameters.swift",
-      "line": 13,
-      "symbol": "PlayParameters.kind",
-      "symbol_kind": "source.lang.swift.decl.var.instance",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 13,
-      "symbol": "PlaylistType",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 14,
-      "symbol": "PlaylistType.userShared",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 15,
-      "symbol": "PlaylistType.editorial",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 16,
-      "symbol": "PlaylistType.external",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 17,
-      "symbol": "PlaylistType.personalMix",
-      "symbol_kind": "source.lang.swift.decl.enumelement",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 20,
+      "line": 28,
       "symbol": "PlaylistAttributes",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 21,
+      "line": 29,
       "symbol": "PlaylistAttributes.artwork",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 22,
+      "line": 30,
       "symbol": "PlaylistAttributes.curatorName",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 23,
+      "line": 31,
       "symbol": "PlaylistAttributes.description",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 24,
+      "line": 32,
       "symbol": "PlaylistAttributes.lastModifiedDate",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 25,
+      "line": 33,
       "symbol": "PlaylistAttributes.name",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 26,
+      "line": 34,
       "symbol": "PlaylistAttributes.playlistType",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 27,
+      "line": 35,
       "symbol": "PlaylistAttributes.playParams",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 28,
+      "line": 36,
       "symbol": "PlaylistAttributes.url",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 31,
+      "line": 39,
       "symbol": "PlaylistRelationships",
       "symbol_kind": "source.lang.swift.decl.struct",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 32,
+      "line": 40,
       "symbol": "PlaylistRelationships.curator",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/ResourceObjects/Playlist.swift",
-      "line": 33,
+      "line": 41,
       "symbol": "PlaylistRelationships.tracks",
       "symbol_kind": "source.lang.swift.decl.var.instance",
       "warning": "undocumented"
