@@ -1,13 +1,6 @@
 {
   "warnings": [
     {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderClient.swift",
-      "line": 11,
-      "symbol": "CiderClient",
-      "symbol_kind": "source.lang.swift.decl.struct",
-      "warning": "undocumented"
-    },
-    {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/CiderUrlBuilder.swift",
       "line": 18,
       "symbol": "CiderUrlBuilderError",
@@ -23,56 +16,42 @@
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/Include.swift",
-      "line": 11,
-      "symbol": "Include",
-      "symbol_kind": "source.lang.swift.decl.enum",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/Include.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "Include.albums",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/Include.swift",
-      "line": 13,
+      "line": 14,
       "symbol": "Include.artists",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/Include.swift",
-      "line": 14,
+      "line": 15,
       "symbol": "Include.genres",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/Include.swift",
-      "line": 15,
+      "line": 16,
       "symbol": "Include.tracks",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/UrlFetcher.swift",
-      "line": 11,
-      "symbol": "UrlFetcher",
-      "symbol_kind": "source.lang.swift.decl.protocol",
-      "warning": "undocumented"
-    },
-    {
-      "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/UrlFetcher.swift",
-      "line": 12,
+      "line": 13,
       "symbol": "UrlFetcher.fetch(request:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/scottrhoyt/Development/Cider/Sources/Cider/Client/UrlFetcher.swift",
-      "line": 16,
+      "line": 17,
       "symbol": "URLSession.fetch(request:completion:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
