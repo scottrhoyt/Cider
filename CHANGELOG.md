@@ -8,7 +8,7 @@
 
 ##### Enhancements
 
-* None
+* Pass errors decoded in `ResponseRoot` as errors in request callback.
 
 ##### Bug Fixes
 

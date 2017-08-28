@@ -174,7 +174,7 @@ public struct CiderClient {
 
     // MARK: Helpers
 
-    private func fetch<T: Decodable>(_ request: URLRequest, completion: ((T?, Error?) -> Void)?) {
+    private func fetch<T>(_ request: URLRequest, completion: ((ResponseRoot<T>?, Error?) -> Void)?) {
         fetcher.fetch(request: request) { (data, error) in
             guard let data = data else {
                 completion?(nil, error)
@@ -183,8 +183,14 @@ public struct CiderClient {
 
             do {
                 let decoder = JSONDecoder()
-                let results = try decoder.decode(T.self, from: data)
-                completion?(results, nil)
+                let results = try decoder.decode(ResponseRoot<T>.self, from: data)
+
+                // If we have any errors, callback with the first error. Otherwise callback with the results
+                if let error = results.errors?.first {
+                    completion?(nil, error)
+                } else {
+                    completion?(results, nil)
+                }
             } catch {
                 completion?(nil, error)
             }
