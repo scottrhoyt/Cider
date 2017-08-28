@@ -109,6 +109,17 @@ class CiderClientTests: XCTestCase {
             XCTAssertEqual(result?.data?.first?.id, "310730204")
         }
     }
+
+    func testSongLookup() throws {
+        let data = try fixtureData(name: "song")
+        let expectedRequest = MockUrlBuilder.fetchRequest
+        let client = CiderClient(urlBuilder: MockUrlBuilder(), urlFetcher: MockUrlFetcher(data: data, error: nil, expectedRequest: expectedRequest))
+
+        client.song(id: "") { (result, error) in
+            XCTAssertNil(error)
+            XCTAssertEqual(result?.data?.first?.id, "900032829")
+        }
+    }
 }
 
 #if os(Linux)
@@ -119,6 +130,7 @@ class CiderClientTests: XCTestCase {
                 ("testSearchHints", testSearchHints),
                 ("testArtistLookup", testArtistLookup),
                 ("testAlbumLookup", testAlbumLookup),
+                ("testSongLookup", testSongLookup),
             ]
         }
     }
