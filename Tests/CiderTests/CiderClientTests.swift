@@ -86,7 +86,7 @@ class CiderClientTests: XCTestCase {
 
 #if os(Linux)
     extension CiderClientTests {
-        static var allTests: [(String, (AlbumTests) -> () throws -> Void)] {
+        static var allTests: [(String, (CiderClientTests) -> () throws -> Void)] {
             return [
                 ("testSearch", testSearch),
                 ("testSearchHints", testSearchHints),
