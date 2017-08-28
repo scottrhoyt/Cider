@@ -10,7 +10,7 @@
 
 ##### Bug Fixes
 
-* None
+* Fix loading playlists with `apple-curators` curator type.
 
 ## 0.9.0
 
