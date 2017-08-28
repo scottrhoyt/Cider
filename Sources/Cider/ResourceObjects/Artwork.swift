@@ -20,19 +20,19 @@ public struct Artwork: Codable {
     public let url: String
 
     /// The average background color of the image
-    public let bgColor: String
+    public let bgColor: String?
 
     /// The primary text color that may be used if the background color is displayed
-    public let textColor1: String
+    public let textColor1: String?
 
     /// The secondary text color that may be used if the background color is displayed
-    public let textColor2: String
+    public let textColor2: String?
 
     /// The tertiary text color that may be used if the background color is displayed
-    public let textColor3: String
+    public let textColor3: String?
 
     /// The final post-tertiary text color that maybe be used if the background color is displayed
-    public let textColor4: String
+    public let textColor4: String?
 
     /**
      Returns a `URL` to retrieve the artwork image at a specific width (artwork images are square).

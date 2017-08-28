@@ -2,7 +2,8 @@
 
 ##### Breaking
 
-* None
+* Most properties of `Artwork` are now optional since music video artwork does
+  not contain them.
 
 ##### Enhancements
 
