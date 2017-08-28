@@ -1,0 +1,57 @@
+{
+  "data": [
+    {
+      "id": "405410806",
+      "type": "music-videos",
+      "href": "/v1/catalog/us/music-videos/405410806",
+      "attributes": {
+        "url": "https://itunes.apple.com/us/music-video/smooth-criminal-michael-jacksons-vision/id405410806",
+        "name": "Smooth Criminal (Michael Jackson's Vision)",
+        "genreNames": [
+          "Pop"
+        ],
+        "trackNumber": 11,
+        "artistName": "Michael Jackson",
+        "releaseDate": "2013-06-11",
+        "artwork": {
+          "width": 640,
+          "height": 344,
+          "url": "https://is1-ssl.mzstatic.com/image/thumb/Video/v4/c3/6f/a5/c36fa518-3336-94e7-dfe9-b47696a8282c/source/{w}x{h}bb.jpg"
+        },
+        "isrc": "USSM21001909",
+        "previews": [
+          {
+            "url": "https://video-ssl.itunes.apple.com/apple-assets-us-std-000001/Video20/v4/7a/9b/f3/7a9bf3ef-3388-b6f4-917d-f1e61b404f9e/mzvf_989447621752329408.640x344.h264lc.U.p.m4v",
+            "artwork": {
+              "width": 640,
+              "height": 344,
+              "url": "https://is1-ssl.mzstatic.com/image/thumb/Video/v4/c3/6f/a5/c36fa518-3336-94e7-dfe9-b47696a8282c/source/{w}x{h}bb.jpg"
+            }
+          }
+        ]
+      },
+      "relationships": {
+        "artists": {
+          "data": [
+            {
+              "id": "32940",
+              "type": "artists",
+              "href": "/v1/catalog/us/artists/32940"
+            }
+          ],
+          "href": "/v1/catalog/us/music-videos/405410806/artists"
+        },
+        "albums": {
+          "data": [
+            {
+              "id": "405410751",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/405410751"
+            }
+          ],
+          "href": "/v1/catalog/us/music-videos/405410806/albums"
+        }
+      }
+    }
+  ]
+}

@@ -22,7 +22,7 @@ public struct MusicVideoAttributes: Codable {
     public let releaseDate: String
     public let trackNumber: Int?
     public let url: URL
-    public let videoSubType: String
+    public let videoSubType: String?
 }
 
 public struct MusicVideoRelationships: Codable {
