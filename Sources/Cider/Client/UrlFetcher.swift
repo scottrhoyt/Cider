@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// An abstraction for `URL` loading. `URLSession` conforms and other mechanisms for `URL` loading (e.g. Alamofire) can be used by providing conformance.
 public protocol UrlFetcher {
     func fetch(request: URLRequest, completion: @escaping (Data?, Error?) -> Void)
 }

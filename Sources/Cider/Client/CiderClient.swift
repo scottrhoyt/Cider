@@ -8,6 +8,7 @@
 
 import Foundation
 
+/// A client for submitting requests to the Apple Music API.
 public struct CiderClient {
     private let urlBuilder: UrlBuilder
     private let fetcher: UrlFetcher
