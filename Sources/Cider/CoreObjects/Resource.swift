@@ -8,11 +8,11 @@
 
 import Foundation
 
-public struct Resource<T: Codable, U: Codable>: Codable {
+public struct Resource<AttributesType: Codable, RelationshipsType: Codable>: Codable {
     public let id: String
     public let type: MediaType
     public let href: String
-    public let attributes: T?
-    public let relationships: U?
+    public let attributes: AttributesType?
+    public let relationships: RelationshipsType?
     // let meta: Meta
 }
