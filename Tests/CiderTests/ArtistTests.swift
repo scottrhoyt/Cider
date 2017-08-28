@@ -41,6 +41,8 @@ class ArtistTests: XCTestCase {
         XCTAssertEqual(attributes?.url, URL(string: "https://itunes.apple.com/us/artist/michael-jackson/id32940"))
         XCTAssertEqual(attributes?.name, "Michael Jackson")
         XCTAssertEqual(attributes!.genreNames, ["Pop"])
+
+        XCTAssertNotNil(artist?.relationships)
     }
 }
 
