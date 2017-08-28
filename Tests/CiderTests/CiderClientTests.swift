@@ -60,7 +60,7 @@ class CiderClientTests: XCTestCase {
         
         client.search(term: "") { (result, error) in
             XCTAssertNil(error)
-            XCTAssertEqual(result?.results?.albums?.data?[0].id, "900721190")
+            XCTAssertEqual(result?.albums?.data?[0].id, "900721190")
         }
     }
 
@@ -82,7 +82,7 @@ class CiderClientTests: XCTestCase {
 
         client.searchHints(term: "") { (result, error) in
             XCTAssertNil(error)
-            XCTAssertEqual(result!.results!.terms, ["love on the brain", "love me now"])
+            XCTAssertEqual(result!.terms, ["love on the brain", "love me now"])
         }
     }
 
@@ -95,7 +95,7 @@ class CiderClientTests: XCTestCase {
 
         client.artist(id: "") { (result, error) in
             XCTAssertNil(error)
-            XCTAssertEqual(result?.data?.first?.id, "32940")
+            XCTAssertEqual(result?.id, "32940")
         }
     }
 
@@ -106,7 +106,7 @@ class CiderClientTests: XCTestCase {
 
         client.album(id: "") { (result, error) in
             XCTAssertNil(error)
-            XCTAssertEqual(result?.data?.first?.id, "310730204")
+            XCTAssertEqual(result?.id, "310730204")
         }
     }
 
@@ -117,7 +117,7 @@ class CiderClientTests: XCTestCase {
 
         client.song(id: "") { (result, error) in
             XCTAssertNil(error)
-            XCTAssertEqual(result?.data?.first?.id, "900032829")
+            XCTAssertEqual(result?.id, "900032829")
         }
     }
 
@@ -128,7 +128,7 @@ class CiderClientTests: XCTestCase {
 
         client.playlist(id: "") { (result, error) in
             XCTAssertNil(error)
-            XCTAssertEqual(result?.data?.first?.id, "pl.f475b81eaf7546ffb8ffd20889f37032")
+            XCTAssertEqual(result?.id, "pl.f475b81eaf7546ffb8ffd20889f37032")
         }
     }
 
@@ -139,7 +139,7 @@ class CiderClientTests: XCTestCase {
 
         client.musicVideo(id: "") { (result, error) in
             XCTAssertNil(error)
-            XCTAssertEqual(result?.data?.first?.id, "405410806")
+            XCTAssertEqual(result?.id, "405410806")
         }
     }
 }

@@ -4,6 +4,7 @@
 
 * Most properties of `Artwork` are now optional since music video artwork does
   not contain them.
+* Return one level more specific instead of `ResponseRoot` for most requests.
 
 ##### Enhancements
 
