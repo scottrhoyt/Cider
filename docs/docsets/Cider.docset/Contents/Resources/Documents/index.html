@@ -22,7 +22,7 @@
         <a class="header-link" href="index.html">
           Cider Docs
         </a>
-         (39% documented)
+         (43% documented)
       </p>
     
       <p class="header-col--secondary">
@@ -169,7 +169,7 @@
         <section class="section">
           <div class="section-content">
             
-            <a href='#cider' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='cider'>Cider</h1>
+            <h1 id='cider' class='heading'>Cider</h1>
 
 <p>The Missing Apple Music SDK. Written in Swift.</p>
 
@@ -180,18 +180,18 @@
 <a href="https://github.com/apple/swift-package-manager"><img src="https://img.shields.io/badge/SPM-compatible-brightgreen.svg" alt="SPM compatible"></a>
 <img src="https://img.shields.io/badge/Platform-iOS-blue.svg" alt="Platform iOS">
 <a href="https://swift.org"><img src="https://img.shields.io/badge/Language-Swift%204.0-orange.svg" alt="Language Swift 4.0"></a></p>
-<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='installation'>Installation</h3>
-<a href='#carthage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='carthage'>Carthage</h4>
+<h3 id='installation' class='heading'>Installation</h3>
+<h4 id='carthage' class='heading'>Carthage</h4>
 
 <p>Add the following to your Cartfile:</p>
 <pre class="highlight shell"><code>github <span class="s2">"scottrhoyt/Cider"</span> ~&gt; 0.7
 </code></pre>
-<a href='#cocoapods' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='cocoapods'>CocoaPods</h4>
+<h4 id='cocoapods' class='heading'>CocoaPods</h4>
 
 <p>Add the following to your Podfile:</p>
 <pre class="highlight shell"><code>pod <span class="s1">'Cider'</span>, <span class="s1">'~&gt; 0.7'</span>
 </code></pre>
-<a href='#spm' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='spm'>SPM</h4>
+<h4 id='spm' class='heading'>SPM</h4>
 
 <p>Add to your <code>Package.swift</code> file like so:</p>
 <pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">PackageDescription</span>
@@ -203,8 +203,8 @@
     <span class="p">]</span>
 <span class="p">)</span>
 </code></pre>
-<a href='#usage' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='usage'>Usage</h3>
-<a href='#developer-token' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='developer-token'>Developer Token</h4>
+<h3 id='usage' class='heading'>Usage</h3>
+<h4 id='developer-token' class='heading'>Developer Token</h4>
 
 <p>To use the Apple Music API, you will need to generate a developer token.
 Instructions for how to do this can be found in the Apple Music API
@@ -213,25 +213,25 @@ Instructions for how to do this can be found in the Apple Music API
 <p>Once you have an Apple Music Key you can use a 3rd party library/tool to
 generate your token. I created a Node.js library and CLI tool that you can find
 <a href="https://github.com/scottrhoyt/apple-music-jwt">here</a>.</p>
-<a href='#create-a-client' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='create-a-client'>Create a Client</h4>
+<h4 id='create-a-client' class='heading'>Create a Client</h4>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">developerToken</span> <span class="o">=</span> <span class="s">"&lt;developer_token&gt;"</span>
 <span class="k">let</span> <span class="nv">cider</span> <span class="o">=</span> <span class="kt">CiderClient</span><span class="p">(</span><span class="nv">storefront</span><span class="p">:</span> <span class="o">.</span><span class="n">unitedStates</span><span class="p">,</span> <span class="nv">developerToken</span><span class="p">:</span> <span class="n">developerToken</span><span class="p">)</span>
 </code></pre>
-<a href='#search-the-catalog' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='search-the-catalog'>Search the Catalog</h4>
+<h4 id='search-the-catalog' class='heading'>Search the Catalog</h4>
 <pre class="highlight swift"><code><span class="n">cider</span><span class="o">.</span><span class="nf">search</span><span class="p">(</span><span class="nv">term</span><span class="p">:</span> <span class="s">"Michael Jackson"</span><span class="p">,</span> <span class="nv">types</span><span class="p">:</span> <span class="p">[</span><span class="o">.</span><span class="n">albums</span><span class="p">,</span> <span class="o">.</span><span class="n">songs</span><span class="p">])</span> <span class="p">{</span> <span class="n">results</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
   <span class="c1">// Process the results or error</span>
 <span class="p">}</span>
 </code></pre>
-<a href='#lookup-an-artist-album-song' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='lookup-an-artist-album-song'>Lookup an Artist/Album/Song</h4>
+<h4 id='lookup-an-artist-album-song' class='heading'>Lookup an Artist/Album/Song</h4>
 <pre class="highlight swift"><code><span class="k">let</span> <span class="nv">songId</span> <span class="o">=</span> <span class="s">"&lt;song_id&gt;"</span>
 <span class="n">cider</span><span class="o">.</span><span class="nf">song</span><span class="p">(</span><span class="nv">id</span><span class="p">:</span> <span class="n">songId</span><span class="p">)</span> <span class="p">{</span> <span class="n">result</span><span class="p">,</span> <span class="n">error</span> <span class="k">in</span>
   <span class="c1">// Process the results or error</span>
 <span class="p">}</span>
 </code></pre>
-<a href='#api-reference' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='api-reference'>API Reference</h3>
+<h3 id='api-reference' class='heading'>API Reference</h3>
 
 <p>The full API reference can be found <a href="https://scottrhoyt.github.io/Cider">here</a>.</p>
-<a href='#license' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h3 id='license'>License</h3>
+<h3 id='license' class='heading'>License</h3>
 
 <p>MIT</p>
 
@@ -243,7 +243,7 @@ generate your token. I created a Node.js library and CLI tool that you can find
     </div>
     <section class="footer">
       <p>&copy; 2017 <a class="link" href="https://github.com/scottrhoyt/Cider" target="_blank" rel="external">Scott Hoyt</a>. All rights reserved. (Last updated: 2017-08-27)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.4</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
