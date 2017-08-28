@@ -1,0 +1,1118 @@
+{
+  "data": [
+    {
+      "id": "pl.f475b81eaf7546ffb8ffd20889f37032",
+      "type": "playlists",
+      "href": "/v1/catalog/us/playlists/pl.f475b81eaf7546ffb8ffd20889f37032",
+      "attributes": {
+        "description": {
+          "standard": "A child prodigy who became a global superstar, Michael Jackson transformed pop culture with his groundbreaking music and spectacular performances. After first scoring with the Jackson 5, he embarked on his solo career in the early '70s. He teamed with producer Quincy Jones on two beyond-massive hits—1979's disco-meets-funk smash Off the Wall and 1982's genre-busting Thriller—and became The King of Pop. Four more chart-topping albums followed before his tragic death in 2009, but thanks to a catalog packed with classics, Jackson's music continues to thrill fans around the world.",
+          "short": "Epic hits from the once and future King of Pop."
+        },
+        "url": "https://itunes.apple.com/us/playlist/michael-jackson-essentials/idpl.f475b81eaf7546ffb8ffd20889f37032",
+        "name": "Michael Jackson Essentials",
+        "playlistType": "editorial",
+        "lastModifiedDate": "2016-12-02T22:06:54Z",
+        "curatorName": "Apple Music Pop",
+        "artwork": {
+          "width": 4320,
+          "height": 1080,
+          "url": "https://is3-ssl.mzstatic.com/image/thumb/Features118/v4/99/53/8e/99538e27-0abe-b466-b53f-8d01f6e3c07a/source/{w}x{h}cc.jpg",
+          "bgColor": "121212",
+          "textColor1": "fffce9",
+          "textColor2": "fafafa",
+          "textColor3": "cfcdbd",
+          "textColor4": "cccccc",
+          "isMosaic": true
+        },
+        "playParams": {
+          "id": "pl.f475b81eaf7546ffb8ffd20889f37032",
+          "kind": "playlist"
+        }
+      },
+      "relationships": {
+        "curator": {
+          "data": [
+            {
+              "id": "976439548",
+              "type": "apple-curators",
+              "href": "/v1/catalog/us/apple-curators/976439548"
+            }
+          ],
+          "href": "/v1/catalog/us/playlists/pl.f475b81eaf7546ffb8ffd20889f37032/curator"
+        },
+        "tracks": {
+          "data": [
+            {
+              "id": "269573364",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/269573364",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview19/v4/41/cb/e3/41cbe381-2991-071b-7985-76afbbabab6a/mzaf_5021382539648526963.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1399,
+                  "height": 1399,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/ec/2b/17/ec2b170d-2ecb-50af-02eb-39f0decc2847/source/{w}x{h}bb.jpg",
+                  "bgColor": "faf1ec",
+                  "textColor1": "060105",
+                  "textColor2": "2a2021",
+                  "textColor3": "373133",
+                  "textColor4": "534a4a"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/billie-jean/id269572838?i=269573364",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 294188,
+                "releaseDate": "1982-11-30",
+                "name": "Billie Jean",
+                "isrc": "USSM19902991",
+                "playParams": {
+                  "id": "269573364",
+                  "kind": "song"
+                },
+                "trackNumber": 6,
+                "composerName": "Michael J. Jackson"
+              }
+            },
+            {
+              "id": "269573341",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/269573341",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/eb/95/f8/eb95f867-ecd5-35d0-f92c-c9154134f5eb/mzaf_2082474707674950716.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1399,
+                  "height": 1399,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/ec/2b/17/ec2b170d-2ecb-50af-02eb-39f0decc2847/source/{w}x{h}bb.jpg",
+                  "bgColor": "faf1ec",
+                  "textColor1": "060105",
+                  "textColor2": "2a2021",
+                  "textColor3": "373133",
+                  "textColor4": "534a4a"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/beat-it/id269572838?i=269573341",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 258152,
+                "releaseDate": "1982-11-30",
+                "name": "Beat It",
+                "isrc": "USSM19902990",
+                "playParams": {
+                  "id": "269573341",
+                  "kind": "song"
+                },
+                "trackNumber": 5,
+                "composerName": "M. J. Jackson"
+              }
+            },
+            {
+              "id": "186166292",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/186166292",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/82/a1/e5/82a1e522-3377-77ef-dd38-6a201074501b/mzaf_4951100877899256140.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/b1/32/51/b13251ab-ea80-3d5c-0f42-5875fe006dcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "262521",
+                  "textColor1": "fffbf8",
+                  "textColor2": "ddc39d",
+                  "textColor3": "d3d0cc",
+                  "textColor4": "b8a384"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/dont-stop-til-you-get-enough/id186166282?i=186166292",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Quiet Storm",
+                  "Rock",
+                  "Soul",
+                  "Dance",
+                  "Disco",
+                  "Funk",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 364442,
+                "releaseDate": "1979-07-10",
+                "name": "Don't Stop 'Til You Get Enough",
+                "isrc": "USSM17900816",
+                "playParams": {
+                  "id": "186166292",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "Michael J. Jackson"
+              }
+            },
+            {
+              "id": "269573303",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/269573303",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/d3/14/22/d3142293-0b9a-babc-9e3b-d304b7ff6012/mzaf_4648147054405747980.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1399,
+                  "height": 1399,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/ec/2b/17/ec2b170d-2ecb-50af-02eb-39f0decc2847/source/{w}x{h}bb.jpg",
+                  "bgColor": "faf1ec",
+                  "textColor1": "060105",
+                  "textColor2": "2a2021",
+                  "textColor3": "373133",
+                  "textColor4": "534a4a"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/thriller/id269572838?i=269573303",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 357753,
+                "releaseDate": "1982-11-30",
+                "name": "Thriller",
+                "isrc": "USSM19902989",
+                "playParams": {
+                  "id": "269573303",
+                  "kind": "song"
+                },
+                "trackNumber": 4,
+                "composerName": "Rod Temperton"
+              }
+            },
+            {
+              "id": "551515751",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/551515751",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "http://a787.phobos.apple.com/us/r30/Music/d5/fe/f1/mzi.fqdjkwzc.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/bd/79/62/bd796236-72ef-c51b-9453-40115db23bcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0a0909",
+                  "textColor2": "0f0e0d",
+                  "textColor3": "3b3a3a",
+                  "textColor4": "3f3e3d"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/the-way-you-make-me-feel/id551515699?i=551515751",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "Pop/Rock",
+                  "Dance",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Rock"
+                ],
+                "durationInMillis": 298122,
+                "releaseDate": "1987-08-31",
+                "name": "The Way You Make Me Feel",
+                "isrc": "USSM11204981",
+                "playParams": {
+                  "id": "551515751",
+                  "kind": "song"
+                },
+                "trackNumber": 2,
+                "composerName": "M. J. Jackson"
+              }
+            },
+            {
+              "id": "186166358",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/186166358",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/37/c8/27/37c827ab-580f-64c2-b9f4-2764ac9ef205/mzaf_4578374615381219194.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/b1/32/51/b13251ab-ea80-3d5c-0f42-5875fe006dcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "262521",
+                  "textColor1": "fffbf8",
+                  "textColor2": "ddc39d",
+                  "textColor3": "d3d0cc",
+                  "textColor4": "b8a384"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/rock-with-you/id186166282?i=186166358",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Quiet Storm",
+                  "Rock",
+                  "Soul",
+                  "Dance",
+                  "Disco",
+                  "Funk",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 219926,
+                "releaseDate": "1979-08-10",
+                "name": "Rock With You",
+                "isrc": "USSM17900817",
+                "playParams": {
+                  "id": "186166358",
+                  "kind": "song"
+                },
+                "trackNumber": 2,
+                "composerName": "R. Temperton"
+              }
+            },
+            {
+              "id": "551515763",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/551515763",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "http://a1924.phobos.apple.com/us/r30/Music/c5/6d/7e/mzi.piqxriuj.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/bd/79/62/bd796236-72ef-c51b-9453-40115db23bcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0a0909",
+                  "textColor2": "0f0e0d",
+                  "textColor3": "3b3a3a",
+                  "textColor4": "3f3e3d"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/smooth-criminal/id551515699?i=551515763",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "Pop/Rock",
+                  "Dance",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Rock"
+                ],
+                "durationInMillis": 257766,
+                "releaseDate": "1987-08-31",
+                "name": "Smooth Criminal",
+                "isrc": "USSM11204989",
+                "playParams": {
+                  "id": "551515763",
+                  "kind": "song"
+                },
+                "trackNumber": 10,
+                "composerName": "Michael J. Jackson"
+              }
+            },
+            {
+              "id": "322847191",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/322847191",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/d5/bc/01/d5bc0179-a8f6-46b1-0d89-8ae7c447e979/mzaf_1143087627064753517.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/a5/9f/08/a59f08ca-fcfe-3692-de2f-c19168de7bc9/source/{w}x{h}bb.jpg",
+                  "bgColor": "010104",
+                  "textColor1": "c6e1f9",
+                  "textColor2": "db9069",
+                  "textColor3": "9fb4c8",
+                  "textColor4": "b07355"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/black-or-white/id322847038?i=322847191",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 256018,
+                "releaseDate": "1991-11-11",
+                "name": "Black or White",
+                "isrc": "USSM19000733",
+                "playParams": {
+                  "id": "322847191",
+                  "kind": "song"
+                },
+                "trackNumber": 8,
+                "composerName": "M. J. Jackson"
+              }
+            },
+            {
+              "id": "551515758",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/551515758",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "http://a629.phobos.apple.com/us/r30/Music/5b/93/98/mzi.iioimycz.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/bd/79/62/bd796236-72ef-c51b-9453-40115db23bcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0a0909",
+                  "textColor2": "0f0e0d",
+                  "textColor3": "3b3a3a",
+                  "textColor4": "3f3e3d"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/man-in-the-mirror/id551515699?i=551515758",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "Pop/Rock",
+                  "Dance",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Rock"
+                ],
+                "durationInMillis": 318688,
+                "releaseDate": "1987-08-31",
+                "name": "Man In the Mirror",
+                "isrc": "USSM11204986",
+                "playParams": {
+                  "id": "551515758",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "Glen Ballard & Siedah Garrett"
+              }
+            },
+            {
+              "id": "186166433",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/186166433",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/b3/6c/4c/b36c4c9e-a7ed-e42d-5e52-723eed27a769/mzaf_6493174166893057282.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/b1/32/51/b13251ab-ea80-3d5c-0f42-5875fe006dcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "262521",
+                  "textColor1": "fffbf8",
+                  "textColor2": "ddc39d",
+                  "textColor3": "d3d0cc",
+                  "textColor4": "b8a384"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/off-the-wall/id186166282?i=186166433",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Quiet Storm",
+                  "Rock",
+                  "Soul",
+                  "Dance",
+                  "Disco",
+                  "Funk",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 245779,
+                "releaseDate": "1979-08-10",
+                "name": "Off the Wall",
+                "isrc": "USSM17900820",
+                "playParams": {
+                  "id": "186166433",
+                  "kind": "song"
+                },
+                "trackNumber": 5,
+                "composerName": "R. Temperton"
+              }
+            },
+            {
+              "id": "551515708",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/551515708",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "http://a837.phobos.apple.com/us/r30/Music/5e/93/ca/mzi.yddwzryb.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/bd/79/62/bd796236-72ef-c51b-9453-40115db23bcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0a0909",
+                  "textColor2": "0f0e0d",
+                  "textColor3": "3b3a3a",
+                  "textColor4": "3f3e3d"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/bad/id551515699?i=551515708",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "Pop/Rock",
+                  "Dance",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Rock"
+                ],
+                "durationInMillis": 247369,
+                "releaseDate": "1987-08-31",
+                "name": "Bad",
+                "isrc": "USSM11204980",
+                "playParams": {
+                  "id": "551515708",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "Michael J. Jackson"
+              }
+            },
+            {
+              "id": "269572927",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/269572927",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview19/v4/87/c7/75/87c77580-cb38-9fb7-796c-3ad3c8d8fece/mzaf_5181978251704465476.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1399,
+                  "height": 1399,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/ec/2b/17/ec2b170d-2ecb-50af-02eb-39f0decc2847/source/{w}x{h}bb.jpg",
+                  "bgColor": "faf1ec",
+                  "textColor1": "060105",
+                  "textColor2": "2a2021",
+                  "textColor3": "373133",
+                  "textColor4": "534a4a"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/wanna-be-startin-somethin/id269572838?i=269572927",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 362900,
+                "releaseDate": "1982-11-30",
+                "name": "Wanna Be Startin' Somethin'",
+                "isrc": "USSM19902986",
+                "playParams": {
+                  "id": "269572927",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "Michael J. Jackson"
+              }
+            },
+            {
+              "id": "322847119",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/322847119",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/e0/0d/1e/e00d1ecf-85a2-9421-46b9-90325f0bd434/mzaf_3253437146407867199.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/a5/9f/08/a59f08ca-fcfe-3692-de2f-c19168de7bc9/source/{w}x{h}bb.jpg",
+                  "bgColor": "010104",
+                  "textColor1": "c6e1f9",
+                  "textColor2": "db9069",
+                  "textColor3": "9fb4c8",
+                  "textColor4": "b07355"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/jam/id322847038?i=322847119",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 339515,
+                "releaseDate": "1991-11-26",
+                "name": "Jam",
+                "isrc": "USSM10407525",
+                "playParams": {
+                  "id": "322847119",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "Michael Jackson, Bruce Swedien, Rene Moore & Teddy Riley"
+              }
+            },
+            {
+              "id": "551515762",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/551515762",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "http://a1973.phobos.apple.com/us/r30/Music/78/45/14/mzi.khhenson.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/bd/79/62/bd796236-72ef-c51b-9453-40115db23bcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0a0909",
+                  "textColor2": "0f0e0d",
+                  "textColor3": "3b3a3a",
+                  "textColor4": "3f3e3d"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/dirty-diana/id551515699?i=551515762",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "Pop/Rock",
+                  "Dance",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Rock"
+                ],
+                "durationInMillis": 280753,
+                "releaseDate": "1987-08-31",
+                "name": "Dirty Diana",
+                "isrc": "USSM11204988",
+                "playParams": {
+                  "id": "551515762",
+                  "kind": "song"
+                },
+                "trackNumber": 9,
+                "composerName": "Jerry Hey & Michael J. Jackson"
+              }
+            },
+            {
+              "id": "648513739",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/648513739",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "http://a1783.phobos.apple.com/us/r30/Music6/v4/c6/79/37/c67937b3-84d0-26a9-93ba-00e4ad889634/mzaf_2938058646534478020.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1423,
+                  "height": 1411,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music2/v4/22/0e/77/220e7766-41fb-4aad-d856-4af51d08ddfd/source/{w}x{h}bb.jpg",
+                  "bgColor": "4d341e",
+                  "textColor1": "ddd5c8",
+                  "textColor2": "d9c4c6",
+                  "textColor3": "c0b4a6",
+                  "textColor4": "bda7a4"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/ben/id648513730?i=648513739",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 166527,
+                "releaseDate": "1972-07-12",
+                "name": "Ben",
+                "isrc": "USMO17282631",
+                "playParams": {
+                  "id": "648513739",
+                  "kind": "song"
+                },
+                "trackNumber": 1,
+                "composerName": "Walter Scharf & Don Black"
+              }
+            },
+            {
+              "id": "362979920",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/362979920",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "http://a1729.phobos.apple.com/us/r30/Music/51/1b/12/mzm.foijytas.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/c6/cd/fa/c6cdfa73-caa7-acab-dae4-890c482771df/source/{w}x{h}bb.jpg",
+                  "bgColor": "191b16",
+                  "textColor1": "d0dbda",
+                  "textColor2": "c4d1cf",
+                  "textColor3": "abb5b3",
+                  "textColor4": "a2acaa"
+                },
+                "artistName": "Paul McCartney & Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/say-say-say/id362979900?i=362979920",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "Rock",
+                  "Arena Rock",
+                  "Pop/Rock",
+                  "Soft Rock"
+                ],
+                "durationInMillis": 234077,
+                "releaseDate": "1983-10-03",
+                "name": "Say Say Say",
+                "isrc": "GBCCS8300875",
+                "playParams": {
+                  "id": "362979920",
+                  "kind": "song"
+                },
+                "trackNumber": 8,
+                "composerName": "Paul McCartney & Michael Jackson"
+              }
+            },
+            {
+              "id": "551515764",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/551515764",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "http://a750.phobos.apple.com/us/r30/Music/21/bf/2c/mzi.sgrxnbas.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/bd/79/62/bd796236-72ef-c51b-9453-40115db23bcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0a0909",
+                  "textColor2": "0f0e0d",
+                  "textColor3": "3b3a3a",
+                  "textColor4": "3f3e3d"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/leave-me-alone/id551515699?i=551515764",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "Pop/Rock",
+                  "Dance",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Rock"
+                ],
+                "durationInMillis": 280359,
+                "releaseDate": "1987-08-31",
+                "name": "Leave Me Alone",
+                "isrc": "USSM11204990",
+                "playParams": {
+                  "id": "551515764",
+                  "kind": "song"
+                },
+                "trackNumber": 11,
+                "composerName": "Michael J. Jackson"
+              }
+            },
+            {
+              "id": "269573405",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/269573405",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/4d/d7/af/4dd7afa6-924a-d961-312a-b2dab6fab8ef/mzaf_6798915620040420689.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1399,
+                  "height": 1399,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/ec/2b/17/ec2b170d-2ecb-50af-02eb-39f0decc2847/source/{w}x{h}bb.jpg",
+                  "bgColor": "faf1ec",
+                  "textColor1": "060105",
+                  "textColor2": "2a2021",
+                  "textColor3": "373133",
+                  "textColor4": "534a4a"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/human-nature/id269572838?i=269573405",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 245913,
+                "releaseDate": "1982-11-30",
+                "name": "Human Nature",
+                "isrc": "USSM19902992",
+                "playParams": {
+                  "id": "269573405",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "Steve Porcaro & John Bettis"
+              }
+            },
+            {
+              "id": "322847187",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/322847187",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/9d/87/0b/9d870bcf-8a45-5348-d410-0ae0a3a5f065/mzaf_5862354033200935163.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/a5/9f/08/a59f08ca-fcfe-3692-de2f-c19168de7bc9/source/{w}x{h}bb.jpg",
+                  "bgColor": "010104",
+                  "textColor1": "c6e1f9",
+                  "textColor2": "db9069",
+                  "textColor3": "9fb4c8",
+                  "textColor4": "b07355"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/remember-the-time/id322847038?i=322847187",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 240134,
+                "releaseDate": "1991-11-26",
+                "name": "Remember the Time",
+                "isrc": "USSM10020715",
+                "playParams": {
+                  "id": "322847187",
+                  "kind": "song"
+                },
+                "trackNumber": 5,
+                "composerName": "M. J. Jackson, T. Riley & B. Belle"
+              }
+            },
+            {
+              "id": "269573447",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/269573447",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/df/d3/5f/dfd35f3a-844f-5d28-04f4-b7cdb0c655b9/mzaf_4364677068393145554.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1399,
+                  "height": 1399,
+                  "url": "https://is3-ssl.mzstatic.com/image/thumb/Music/v4/ec/2b/17/ec2b170d-2ecb-50af-02eb-39f0decc2847/source/{w}x{h}bb.jpg",
+                  "bgColor": "faf1ec",
+                  "textColor1": "060105",
+                  "textColor2": "2a2021",
+                  "textColor3": "373133",
+                  "textColor4": "534a4a"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/p-y-t-pretty-young-thing/id269572838?i=269573447",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music"
+                ],
+                "durationInMillis": 238724,
+                "releaseDate": "1982-11-30",
+                "name": "P.Y.T. (Pretty Young Thing)",
+                "isrc": "USSM19902993",
+                "playParams": {
+                  "id": "269573447",
+                  "kind": "song"
+                },
+                "trackNumber": 8,
+                "composerName": "James Ingram & Quincy Jones"
+              }
+            },
+            {
+              "id": "215739235",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/215739235",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview71/v4/fa/34/6a/fa346a58-b3d5-88d0-7db8-ba262209284e/mzaf_6400283218778379317.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 600,
+                  "height": 600,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music/v4/5f/1b/03/5f1b03e0-be02-d326-23b8-10cef56353ce/source/{w}x{h}bb.jpg",
+                  "bgColor": "fafafa",
+                  "textColor1": "080908",
+                  "textColor2": "2c231f",
+                  "textColor3": "383939",
+                  "textColor4": "554e4b"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/you-rock-my-world/id215738269?i=215739235",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Pop/Rock",
+                  "Adult Contemporary",
+                  "Dance",
+                  "Rock"
+                ],
+                "durationInMillis": 338947,
+                "releaseDate": "2001-08-22",
+                "name": "You Rock My World",
+                "isrc": "USSM10109858",
+                "playParams": {
+                  "id": "215739235",
+                  "kind": "song"
+                },
+                "trackNumber": 6,
+                "composerName": "Michael J. Jackson, Lashawn Daniels, Rodney Jerkins, Fred Jerkins III & Nora Payne"
+              }
+            },
+            {
+              "id": "551515760",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/551515760",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "http://a835.phobos.apple.com/us/r30/Music/f7/ba/eb/mzi.tlzrwymc.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is2-ssl.mzstatic.com/image/thumb/Music/v4/bd/79/62/bd796236-72ef-c51b-9453-40115db23bcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "ffffff",
+                  "textColor1": "0a0909",
+                  "textColor2": "0f0e0d",
+                  "textColor3": "3b3a3a",
+                  "textColor4": "3f3e3d"
+                },
+                "artistName": "Michael Jackson & Siedah Garrett",
+                "url": "https://itunes.apple.com/us/album/i-just-cant-stop-loving-you/id551515699?i=551515760",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "Pop/Rock",
+                  "Dance",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Rock"
+                ],
+                "durationInMillis": 253785,
+                "releaseDate": "1987-07-20",
+                "name": "I Just Can't Stop Loving You",
+                "isrc": "USSM11204987",
+                "playParams": {
+                  "id": "551515760",
+                  "kind": "song"
+                },
+                "trackNumber": 8,
+                "composerName": "Michael J. Jackson"
+              }
+            },
+            {
+              "id": "648508179",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/648508179",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "http://a636.phobos.apple.com/us/r30/Music4/v4/47/6b/10/476b108e-4500-00b7-7cd2-20dd0c3afdd8/mzaf_1049018477624712936.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1423,
+                  "height": 1411,
+                  "url": "https://is4-ssl.mzstatic.com/image/thumb/Music2/v4/48/17/44/48174415-6a7b-7330-03fb-9d0f162db4ff/source/{w}x{h}bb.jpg",
+                  "bgColor": "1d1c18",
+                  "textColor1": "a7cfcc",
+                  "textColor2": "ed6f32",
+                  "textColor3": "8baba8",
+                  "textColor4": "c35e2d"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/got-to-be-there/id648508173?i=648508179",
+                "discNumber": 1,
+                "genreNames": [
+                  "R&B/Soul",
+                  "Music",
+                  "Pop",
+                  "Soft Rock",
+                  "Soul",
+                  "Pop/Rock",
+                  "Motown"
+                ],
+                "durationInMillis": 197448,
+                "releaseDate": "1971-10-07",
+                "name": "Got to Be There",
+                "isrc": "USMO17100549",
+                "playParams": {
+                  "id": "648508179",
+                  "kind": "song"
+                },
+                "trackNumber": 5,
+                "composerName": "Elliot Willensky"
+              }
+            },
+            {
+              "id": "186166483",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/186166483",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview62/v4/7c/c3/82/7cc38224-72de-6dc3-814b-f9582fdeb56f/mzaf_5505532976537348353.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1500,
+                  "height": 1500,
+                  "url": "https://is1-ssl.mzstatic.com/image/thumb/Music69/v4/b1/32/51/b13251ab-ea80-3d5c-0f42-5875fe006dcf/source/{w}x{h}bb.jpg",
+                  "bgColor": "262521",
+                  "textColor1": "fffbf8",
+                  "textColor2": "ddc39d",
+                  "textColor3": "d3d0cc",
+                  "textColor4": "b8a384"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/shes-out-of-my-life/id186166282?i=186166483",
+                "discNumber": 1,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "R&B/Soul",
+                  "Contemporary R&B",
+                  "Quiet Storm",
+                  "Rock",
+                  "Soul",
+                  "Dance",
+                  "Disco",
+                  "Funk",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 218152,
+                "releaseDate": "1979-08-10",
+                "name": "She's Out of My Life",
+                "isrc": "USSM17900822",
+                "playParams": {
+                  "id": "186166483",
+                  "kind": "song"
+                },
+                "trackNumber": 7,
+                "composerName": "Tom Bahler"
+              }
+            },
+            {
+              "id": "310505597",
+              "type": "songs",
+              "href": "/v1/catalog/us/songs/310505597",
+              "attributes": {
+                "previews": [
+                  {
+                    "url": "https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview122/v4/d7/a3/3f/d7a33f84-ee1a-eee5-21da-4bd90b95cdb2/mzaf_154438257933885013.plus.aac.p.m4a"
+                  }
+                ],
+                "artwork": {
+                  "width": 1380,
+                  "height": 1380,
+                  "url": "https://is5-ssl.mzstatic.com/image/thumb/Music111/v4/33/21/e9/3321e94c-da9e-e10e-4a27-403661dbb23a/source/{w}x{h}bb.jpg",
+                  "bgColor": "010101",
+                  "textColor1": "effaf9",
+                  "textColor2": "8fb0d7",
+                  "textColor3": "c0c8c7",
+                  "textColor4": "738dac"
+                },
+                "artistName": "Michael Jackson",
+                "url": "https://itunes.apple.com/us/album/you-are-not-alone/id310505551?i=310505597",
+                "discNumber": 2,
+                "genreNames": [
+                  "Pop",
+                  "Music",
+                  "Rock",
+                  "Dance",
+                  "R&B/Soul",
+                  "Funk",
+                  "Pop/Rock"
+                ],
+                "durationInMillis": 344826,
+                "releaseDate": "1995-06-20",
+                "name": "You Are Not Alone",
+                "isrc": "USSM19500002",
+                "playParams": {
+                  "id": "310505597",
+                  "kind": "song"
+                },
+                "trackNumber": 9,
+                "composerName": "R. Kelly & Robert Kelly"
+              }
+            }
+          ],
+          "href": "/v1/catalog/us/playlists/pl.f475b81eaf7546ffb8ffd20889f37032/tracks"
+        }
+      }
+    }
+  ]
+}
