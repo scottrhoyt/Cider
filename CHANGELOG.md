@@ -2,6 +2,20 @@
 
 ##### Breaking
 
+* None
+
+##### Enhancements
+
+* None
+
+##### Bug Fixes
+
+* None
+
+## 0.9.0
+
+##### Breaking
+
 * `CiderClient` now is initialized with an optional `UrlFetcher` instead of a
   `URLSessionConfiguration`.
 * More descriptive generic types for `Resource`.
