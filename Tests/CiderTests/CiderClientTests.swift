@@ -50,6 +50,9 @@ struct MockUrlBuilder: UrlBuilder {
 // MARK: - Tests
 
 class CiderClientTests: XCTestCase {
+
+    // MARK: Search
+
     func testSearch() throws {
         let data = try fixtureData(name: "search")
         let expectedRequest = MockUrlBuilder.searchRequest
@@ -80,6 +83,19 @@ class CiderClientTests: XCTestCase {
         client.searchHints(term: "") { (result, error) in
             XCTAssertNil(error)
             XCTAssertEqual(result!.results!.terms, ["love on the brain", "love me now"])
+        }
+    }
+
+    // MARK: Lookup
+
+    func testArtistLookup() throws {
+        let data = try fixtureData(name: "artist")
+        let expectedRequest = MockUrlBuilder.fetchRequest
+        let client = CiderClient(urlBuilder: MockUrlBuilder(), urlFetcher: MockUrlFetcher(data: data, error: nil, expectedRequest: expectedRequest))
+
+        client.artist(id: "") { (result, error) in
+            XCTAssertNil(error)
+            XCTAssertEqual(result?.data?.first?.id, "32940")
         }
     }
 }

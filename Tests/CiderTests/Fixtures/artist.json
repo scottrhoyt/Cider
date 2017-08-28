@@ -1,0 +1,149 @@
+{
+  "data": [
+    {
+      "id": "32940",
+      "type": "artists",
+      "href": "/v1/catalog/us/artists/32940",
+      "attributes": {
+        "url": "https://itunes.apple.com/us/artist/michael-jackson/id32940",
+        "name": "Michael Jackson",
+        "genreNames": [
+          "Pop"
+        ]
+      },
+      "relationships": {
+        "albums": {
+          "data": [
+            {
+              "id": "1183962037",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/1183962037"
+            },
+            {
+              "id": "1151907090",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/1151907090"
+            },
+            {
+              "id": "1050444026",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/1050444026"
+            },
+            {
+              "id": "989705619",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/989705619"
+            },
+            {
+              "id": "905476757",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/905476757"
+            },
+            {
+              "id": "893753663",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/893753663"
+            },
+            {
+              "id": "877820190",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/877820190"
+            },
+            {
+              "id": "850693793",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/850693793"
+            },
+            {
+              "id": "850697616",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/850697616"
+            },
+            {
+              "id": "872038135",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/872038135"
+            },
+            {
+              "id": "872553025",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/872553025"
+            },
+            {
+              "id": "656444428",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/656444428"
+            },
+            {
+              "id": "663471729",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/663471729"
+            },
+            {
+              "id": "655260476",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/655260476"
+            },
+            {
+              "id": "656497329",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/656497329"
+            },
+            {
+              "id": "886887976",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/886887976"
+            },
+            {
+              "id": "646820883",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/646820883"
+            },
+            {
+              "id": "599515570",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/599515570"
+            },
+            {
+              "id": "557846787",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/557846787"
+            },
+            {
+              "id": "561891800",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/561891800"
+            },
+            {
+              "id": "551462164",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/551462164"
+            },
+            {
+              "id": "551972348",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/551972348"
+            },
+            {
+              "id": "552486374",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/552486374"
+            },
+            {
+              "id": "549625871",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/549625871"
+            },
+            {
+              "id": "520001805",
+              "type": "albums",
+              "href": "/v1/catalog/us/albums/520001805"
+            }
+          ],
+          "href": "/v1/catalog/us/artists/32940/albums",
+          "next": "/v1/catalog/us/artists/32940/albums?offset=25"
+        }
+      }
+    }
+  ]
+}

@@ -26,6 +26,22 @@ class ArtistTests: XCTestCase {
         XCTAssertEqual(attributes.genreNames, ["R&B/Soul"])
         XCTAssertEqual(attributes.url, URL(string: "https://itunes.apple.com/us/artist/james-brown/id117118")!)
     }
+
+    func testArtistFromFetch() throws {
+        let fetch = try fixture(ResponseRoot<Artist>.self, name: "artist")
+
+        let artist = fetch.data?.first
+
+        XCTAssertEqual(artist?.id, "32940")
+        XCTAssertEqual(artist?.type, .artists)
+        XCTAssertEqual(artist?.href, "/v1/catalog/us/artists/32940")
+
+        let attributes = artist?.attributes
+
+        XCTAssertEqual(attributes?.url, URL(string: "https://itunes.apple.com/us/artist/michael-jackson/id32940"))
+        XCTAssertEqual(attributes?.name, "Michael Jackson")
+        XCTAssertEqual(attributes!.genreNames, ["Pop"])
+    }
 }
 
 #if os(Linux)
@@ -33,6 +49,7 @@ class ArtistTests: XCTestCase {
         static var allTests: [(String, (ArtistTests) -> () throws -> Void)] {
             return [
                 ("testArtistFromSearch", testArtistFromSearch),
+                ("testArtistFromFetch", testArtistFromFetch),
             ]
         }
     }
