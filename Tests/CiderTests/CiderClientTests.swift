@@ -57,7 +57,7 @@ class CiderClientTests: XCTestCase {
         
         client.search(term: "") { (result, error) in
             XCTAssertNil(error)
-            XCTAssertEqual(result?.results.albums?.data?[0].id, "900721190")
+            XCTAssertEqual(result?.results?.albums?.data?[0].id, "900721190")
         }
     }
 

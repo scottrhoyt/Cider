@@ -56,7 +56,7 @@ public struct CiderClient {
        - types: The `MediaType`s to limit the search to.
        - completion: The completion handler to call with the results of the search.
      */
-    public func search(term: String, limit: Int? = nil, offset: Int? = nil, types: [MediaType]? = nil, completion: ((SearchResponseRoot?, Error?) -> Void)?) {
+    public func search(term: String, limit: Int? = nil, offset: Int? = nil, types: [MediaType]? = nil, completion: ((ResponseRoot<SearchResults>?, Error?) -> Void)?) {
         let request = urlBuilder.searchRequest(term: term, limit: limit, offset: offset, types: types)
         fetch(request, completion: completion)
     }

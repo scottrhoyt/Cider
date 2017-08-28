@@ -11,9 +11,9 @@ import XCTest
 
 class AlbumTests: XCTestCase {
     func testAlbumFromSearch() throws {
-        let search = try fixture(SearchResponseRoot.self, name: "search")
+        let search = try fixture(ResponseRoot<SearchResults>.self, name: "search")
 
-        let album = search.results.albums!.data![0]
+        let album = search.results!.albums!.data![0]
 
         XCTAssertEqual(album.id, "900721190")
         XCTAssertEqual(album.type, .albums)
