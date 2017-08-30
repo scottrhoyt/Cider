@@ -35,13 +35,16 @@ public struct Artwork: Codable {
     public let textColor4: String?
 
     /**
-     Returns a `URL` to retrieve the artwork image at a specific width (artwork images are square).
+     Returns a `URL` to retrieve the artwork image at a specific width. Most artwork images are square, however for other aspect ratios (e.g. music videos),
+     the aspect ratio will be preserved. If you request a width over the maximum width available, you will receive a URL with the maximum width available.
 
      - parameter forWidth: The width of the image to retrieve. If this is larger than the images maximum `width`, the maximum width will be used.
      - returns: A `URL` for the specified width.
      */
-    public func url(forWidth width: Int) -> URL? {
-        let urlString = url.replacingOccurrences(of: "{w}", with: "\(width)").replacingOccurrences(of: "{h}", with: "\(width)")
+    public func url(forWidth requestedWidth: Int) -> URL? {
+        let width = min(requestedWidth, self.width)
+        let height = Int(Double(width) * Double(self.height) / Double(self.width))
+        let urlString = url.replacingOccurrences(of: "{w}", with: "\(width)").replacingOccurrences(of: "{h}", with: "\(height)")
         return URL(string: urlString)
     }
 }

@@ -6,7 +6,10 @@
 
 ##### Enhancements
 
-* None
+* Generating an artwork `URL` for a specific width will now preserve the aspect
+  ratio (e.g. for music videos).
+* Requesting an artwork `URL` for a width over the maximum width will use the
+  maximum width.
 
 ##### Bug Fixes
 
