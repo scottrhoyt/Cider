@@ -15,7 +15,7 @@ public struct TrackAttributes: Codable {
     public let artwork: Artwork
     public let composerName: String?
     public let contentRating: ContentRating?
-    public let discNumber: Int
+    public let discNumber: Int?
     public let durationInMillis: Int?
     public let genreNames: [String]
     public let movementCount: Int? // Classical music only
