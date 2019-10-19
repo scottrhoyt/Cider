@@ -25,7 +25,7 @@ public struct AlbumAttributes: Codable {
     public let trackCount: Int
     public let url: URL
     
-    func getYearFromDateString() -> String {
+    public func releaseYear() -> String {
         return String(releaseDate.split(separator: "-").first!)
     }
 }
