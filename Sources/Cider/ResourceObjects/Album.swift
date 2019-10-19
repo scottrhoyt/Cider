@@ -24,6 +24,10 @@ public struct AlbumAttributes: Codable {
     public let playParams: PlayParameters?
     public let trackCount: Int
     public let url: URL
+    
+    func getYearFromDateString(from dateString:String) -> String {
+        return String(releaseDate.split(separator: "-").first!)
+    }
 }
 
 public struct AlbumRelationships: Codable {
